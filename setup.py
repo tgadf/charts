@@ -3,7 +3,7 @@ import setuptools
 
 setup(
   name = 'charts',
-  py_modules = [],
+  py_modules = ['top40charts', 'fullCharts'],
   version = '0.0.1',
   description = 'A Python Wrapper To Parse Music Chart Data',
   long_description = open('README.md').read(),
