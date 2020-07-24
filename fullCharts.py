@@ -54,11 +54,14 @@ class fullCharts:
                         
                 for i,item in enumerate(values):
                     artist = item["Artist"]
-                    renamedArtist = self.artistRenames.get(artist)
-                    if renamedArtist is not None:
-                        print("{0}  <---- From ---- {1}".format(renamedArtist, artist))
-                        renameStats[renamedArtist] += 1
-                        artist = renamedArtist
+                    renamedArtist = artist
+                    for testArtist in self.artistRenames.keys():
+                        if artist.find(testArtist) != -1:
+                            tmp = renamedArtist
+                            renamedArtist = renamedArtist.replace(testArtist, self.artistRenames.get(testArtist))
+                            print("{0}  <---- From ---- {1}".format(renamedArtist, tmp))
+                            renameStats[renamedArtist] += 1
+                            artist = renamedArtist
                     
                     album  = item["Album"]
                     if fullChartData.get(artist) is None:
