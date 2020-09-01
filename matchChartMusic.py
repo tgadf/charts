@@ -11,8 +11,13 @@ class matchChartMusic:
         self.debug = debug
         self.mdb   = mdb
         
-        self.results  = {}
-        self.cad      = None
+        self.results   = {}
+        self.cad       = None
+        self.dbartists = None
+        
+        
+    def setMatchedChartArtists(self, dbartists):
+        self.dbartists = dbartists
         
         
     def getResults(self):
@@ -26,6 +31,9 @@ class matchChartMusic:
     def matchChartArtistByName(self, ratioCut=0.95, returnData=True):
         chartArtist       = self.cad.artist
         chartArtistAlbums = self.cad.albums
+        
+        if self.mdb.isKnown(chartArtist):
+            return self.mdb.getArtistData(chartArtist)
         
         
         ######################################################################
@@ -44,13 +52,37 @@ class matchChartMusic:
                 artistIDs = list(artistDBartists.values())[0]
                 if len(artistIDs) == 1:
                     matches[db] = artistIDs[0]
-                
+                    if isinstance(matches[db], dict):
+                        try:
+                            matches[db] = matches[db]["ID"]
+                        except:
+                            raise ValueError("No ID in {0}".format(matches[db]))
+                    else:
+                        pass
         return matches
 
+        
+    def matchChartArtistByKnown(self, albumType=None, ratioCut=0.95, returnData=True):
+        chartArtist       = self.cad.artist
+        chartArtistAlbums = self.cad.albums
+        
+        if self.mdb.isKnown(chartArtist):
+            artistData = self.mdb.getArtistData(chartArtist)
+            retval = {k: None if v is None else v.get("ID") for k,v in artistData.items()}
+        else:
+            retval = {k: None for k in self.mdb.getDBs()}
+
+        return retval
+        
         
     def matchChartArtist(self, albumType=None, ratioCut=0.95, returnData=True):
         chartArtist       = self.cad.artist
         chartArtistAlbums = self.cad.albums
+        
+        if self.mdb.isKnown(chartArtist):
+            return self.mdb.getArtistData(chartArtist)
+        
+            
         
         
         ######################################################################
@@ -139,5 +171,120 @@ class matchChartMusic:
                     albums = [list(mediaTypeAlbums.values()) for mediaTypeAlbums in artistDBAlbumsFromID.values()]
                     print("mdb.add(\"{0}\", \"{1}\", \"{2}\")".format(unknownArtist, db, artistDBID))
                     print("         {0: <45}\t{1}".format(artistDBID, getFlatList(albums)))
+
+
+                    
+
+                    
+    def getArtistDBMatchLists(self, dbartist):
+        dbArtistData = self.dbartists.get(dbartist)
+        retval       = {"Matched": [], "Unmatched": []}
+        albumTypesData = {k: [] for k in [1,2,3,4]}
+        for db,dbIDdata in dbArtistData.items():
+            try:
+                int(dbIDdata)
+                retval["Matched"].append(db)
+            except:
+                retval["Unmatched"].append(db)
+        return retval
+    
+                    
+    def getMatchedArtistAlbumsFromDB(self, dbartist, merge=True):
+        dbArtistData   = self.dbartists.get(dbartist)
+        dbsToSearch    = self.getArtistDBMatchLists(dbartist)
+        albumTypesData = {k: [] for k in [1,2,3,4]}
+        for db in dbsToSearch["Matched"]:
+            dbIDdata = dbArtistData[db]
+            try:                
+                dbID = dbIDdata
+            except:
+                raise ValueError("This db {0} should already be known for {1}".format(db, dbartist))
+
+            dbAlbumsData = self.mdb.getArtistAlbumsFromID(db, dbID)
+
+            for albumType in albumTypesData.keys():
+                for mediaType, mediaTypeAlbums in dbAlbumsData.items():
+                    if mediaType not in self.mdb.getDBAlbumTypeNames(db, albumType):
+                        continue                
+                    #print(db,albumType,mediaType,mediaTypeAlbums)
+                    albumTypesData[albumType] += list(mediaTypeAlbums.values())
+
+        albumTypesData = {k: list(set(v)) for k,v in albumTypesData.items()}
+
+        ############################
+        ## Merge Albums
+        ############################
+        if merge is True:
+            artistAlbums = getFlatList(albumTypesData.values())
+        else:
+            artistAlbums = albumTypesData
+
+        return artistAlbums
+
+            
+    def searchForMutualDBEntries(self, chartType, cutoff=0.8, maxAdds=50):
+        if self.dbartists is None:
+            raise ValueError("Must set dbartist")
+        dbartists = self.dbartists
+            
+        ######################################################################
+        #### Get Map of Artists and Unmatched Albums
+        ######################################################################
+        cnts      = 0
+        print("Searching for mutual DB matches for {0} artists".format(len(dbartists)))
+        for ia,dbartist in enumerate(dbartists):
+            if ia % 100 == 0:
+                print("# Finished {0}/{1}".format(ia,len(dbartists)))
+            if cnts >= maxAdds:
+                break
+            artistAlbums = self.getMatchedArtistAlbumsFromDB(dbartist, merge=True)
+            dbsToSearch  = self.getArtistDBMatchLists(dbartist)
+            #print(dbartist,"\t",dbsToSearch)
+            
+            ############################
+            ## Loop Over Unmatched DBs
+            ############################
+            for db in dbsToSearch["Unmatched"]:
+                dbMatches = {}
+                artistDBartists = self.mdb.getArtistDBIDs(dbartist, db, num=10, cutoff=cutoff, debug=False)
+                
+                for artistDBartist,artistDBIDs in artistDBartists.items():
+                    #print('  ',db,'\t',artistDBartist)
+                    for artistDBID in artistDBIDs:
+                        #print('    ',artistDBID)
+                        dbMatches[artistDBID] = {}
+                        artistDBAlbumsFromID = self.mdb.getArtistAlbumsFromID(db, artistDBID)
+
+                        albumTypesData = {k: [] for k in [1,2,3,4]}
+                        for albumType in albumTypesData.keys():
+                            for mediaType, mediaTypeAlbums in artistDBAlbumsFromID.items():
+                                if mediaType not in self.mdb.getDBAlbumTypeNames(db, albumType):
+                                    continue
+                                albumTypesData[albumType] += list(mediaTypeAlbums.values())
+
+                        albumTypesData = {k: list(set(v)) for k,v in albumTypesData.items()}
+                        dbArtistAlbums = getFlatList(albumTypesData.values())
+            
+
+                        ma = matchAlbums(cutoff=cutoff)
+                        ma.match(artistAlbums, dbArtistAlbums)
+                        #ma.show(debug=True)
+                        
+                        dbMatches[artistDBID] = ma
+                
+                if len(dbMatches) > 0:
+                    bestMatch = {"ID": None, "Matches": 0, "Score": 0.0}
+                    for artistDBID,ma in dbMatches.items():
+                        if ma.near == 0:
+                            continue
+                        if ma.near > bestMatch["Matches"]:
+                            bestMatch = {"ID": artistDBID, "Matches": ma.near, "Score": ma.score}
+                        elif ma.near == bestMatch["Matches"]:
+                            if ma.score > bestMatch["Score"]:
+                                bestMatch = {"ID": artistDBID, "Matches": ma.near, "Score": ma.score}
+
+                    if bestMatch["ID"] is not None:
+                        cnts += 1
+                        print("matchedChartResults{0}[\"{1}\"][\"{2}\"] = '{3}'".format(chartType, dbartist, db, bestMatch["ID"]))
 
 

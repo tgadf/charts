@@ -83,10 +83,20 @@ class fullCharts:
                             renameStats[renamedArtist] += 1
                             artist = renamedArtist
                     
+
+                    artist = artist.replace("\r", "")                    
+                    
                     if artist in ["Original Broadway Cast", "Soundtrack", "Who", "Music From The Television Event", "Various"]:
+                        continue
+                    if artist in ["Artists Stand Up To Cancer"]:
+                        continue
+                    if len(artist.strip()) == 0:
                         continue
                     
                     album  = item["Album"]
+                    if album in ["Soundtrack"]:
+                        continue
+
                     if fullChartData.get(artist) is None:
                         fullChartData[artist] = {"Songs": {}, "Albums": {}}
                     if chartName.endswith("Albums"):
