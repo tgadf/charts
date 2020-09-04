@@ -4,7 +4,7 @@ from listUtils import isIn
 from collections import Counter
 
 class fullCharts:
-    def __init__(self, t40charts, ctype=None, country=None, minYear=None, debug=False):
+    def __init__(self, t40charts, ctype=None, country=None, minYear=None, maxYear=None, debug=False):
         self.t40charts = t40charts
         self.debug     = False
         
@@ -23,6 +23,7 @@ class fullCharts:
                 raise ValueError("Ctype must be Albums or Singles")                
             
         self.minYear   = minYear
+        self.maxYear   = maxYear
         
         self.artistRenames   = {}
 
@@ -71,6 +72,10 @@ class fullCharts:
                 if self.minYear is not None:
                     if getDateTime(date).year < int(self.minYear):
                         continue
+                if self.maxYear is not None:
+                    if getDateTime(date).year > int(self.maxYear):
+                        continue
+
                         
                 for i,item in enumerate(values):
                     artist = item["Artist"]
