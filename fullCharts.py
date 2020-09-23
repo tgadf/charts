@@ -91,11 +91,8 @@ class fullCharts:
 
                     artist = artist.replace("\r", "")                    
                     
-                    if artist in ["Original Broadway Cast", "Soundtrack", "Who", "Music From The Television Event", "Various"]:
-                        continue
-                    if artist in ["Artists Stand Up To Cancer"]:
-                        continue
-                    if len(artist.strip()) == 0:
+                    ignoreStatus = getArtistIgnores(artist)
+                    if ignoreStatus is False:
                         continue
                     
                     album  = item["Album"]
