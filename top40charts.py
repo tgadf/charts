@@ -2,7 +2,7 @@ from fsUtils import setDir, isDir, setFile, isFile
 from webUtils import getURL, getHTML
 from time import sleep
 from timeUtils import getDateTime, isDate
-from ioUtils import getFile
+from ioUtils import getFile, saveFile
 
 
 class top40:

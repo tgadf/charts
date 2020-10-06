@@ -2,6 +2,7 @@ from top40charts import top40chart
 from timeUtils import getDateTime, isDate
 from listUtils import isIn
 from collections import Counter
+from artistIgnores import getArtistIgnores
 
 class fullCharts:
     def __init__(self, t40charts, ctype=None, country=None, minYear=None, maxYear=None, debug=False):
