@@ -28,7 +28,7 @@ class matchChartMusic:
         self.cad = chartArtistData(chartArtist, chartAlbums)
         
         
-    def matchChartArtistByName(self, ratioCut=0.95, returnData=True):
+    def matchChartArtistByName(self, dbs=None, num=3, ratioCut=0.95, returnData=True):
         chartArtist       = self.cad.artist
         chartArtistAlbums = self.cad.albums
         
@@ -39,8 +39,15 @@ class matchChartMusic:
         ######################################################################
         #### Get Potential DB Artists
         ######################################################################
-        artistNameDBIDs = self.mdb.getArtistIDs(chartArtist, num=50, cutoff=ratioCut)
-        
+        if dbs is None:
+            artistNameDBIDs = self.mdb.getArtistIDs(chartArtist, num=50, cutoff=0.7)
+        else:
+            if isinstance(dbs, list):
+                artistNameDBIDs = self.mdb.getArtistIDsFromDBs(chartArtist, dbs=dbs, num=50, cutoff=0.7)
+            else:
+                raise ValueError("DBs must be a list")
+        #print("")
+        #print("ArtistNameDBIDs: {0}".format(artistNameDBIDs))
         
         ######################################################################
         #### Get Database Albums
@@ -59,8 +66,16 @@ class matchChartMusic:
                             raise ValueError("No ID in {0}".format(matches[db]))
                     else:
                         pass
+                    
+        #print("Matches: {0}".format(matches))
+        #print("")
         return matches
 
+    
+    def getFullArtistMatchDF(self, artists):
+        retval = {artistName: {k: None for k in self.mdb.getDBs()} for artistName in artists}
+        return retval
+        
         
     def matchChartArtistByKnown(self, albumType=None, ratioCut=0.95, returnData=True):
         chartArtist       = self.cad.artist
@@ -75,7 +90,7 @@ class matchChartMusic:
         return retval
         
         
-    def matchChartArtist(self, albumType=None, ratioCut=0.95, returnData=True):
+    def matchChartArtist(self, dbs=None, albumType=None, ratioCut=0.95, returnData=True):
         chartArtist       = self.cad.artist
         chartArtistAlbums = self.cad.albums
         
@@ -88,7 +103,13 @@ class matchChartMusic:
         ######################################################################
         #### Get Potential DB Artists
         ######################################################################
-        artistNameDBIDs = self.mdb.getArtistIDs(chartArtist, num=50, cutoff=0.7)
+        if dbs is None:
+            artistNameDBIDs = self.mdb.getArtistIDs(chartArtist, num=50, cutoff=0.7)
+        else:
+            if isinstance(dbs, list):
+                artistNameDBIDs = self.mdb.getArtistIDsFromDBs(chartArtist, dbs=dbs, num=50, cutoff=0.7)
+            else:
+                raise ValueError("DBs must be a list")
         
         
         ######################################################################
