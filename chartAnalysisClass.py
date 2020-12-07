@@ -1,4 +1,5 @@
 from ioUtils import getFile, saveFile
+from fsUtils import isFile
 from multiArtist import multiartist
 from myMusicDBMap import myMusicDBMap
 from matchChartMusic import matchChartMusic
@@ -32,8 +33,12 @@ class matchedChartArtistsClass:
         if force is False:
             return self.matchedChartResults
         
-        print("\tLoading Previously Matched Artists From {0}".format(self.savename))
-        self.matchedChartResults = getFile(ifile=self.savename, debug=True)
+        if isFile(self.savename):
+            print("\tLoading Previously Matched Artists From {0}".format(self.savename))
+            self.matchedChartResults = getFile(ifile=self.savename, debug=True)
+        else:
+            print("\tReturning Empty Matched Artists")
+            self.matchedChartResults = {}
         return self.matchedChartResults
     
 
@@ -157,11 +162,11 @@ class chartAnalysisClass:
         print("\n"*2)
         
         
-    def loadPreviouslyMatchedChartArtists(self, init=False):
+    def loadPreviouslyMatchedChartArtists(self, init=False, split=True):
         if self.mca is not None:
             print("-"*50,"Loading Previously Matched Chart Artists","-"*50)
             self.matchedChartResults = self.mca.getMatchedChartArtists(init=init)
-            self.setChartArtists()
+            self.setChartArtists(split=split)
             self.findArtistsMatchedStatus()
             print("-"*125)
             print("\n"*2)
@@ -235,25 +240,30 @@ class chartAnalysisClass:
     ################################################################################################
     # Split Single/Many Artist Data
     ################################################################################################
-    def splitSingleManyArtistsData(self, artists):
+    def splitSingleManyArtistsData(self, artists, split=True):
         if not isinstance(artists, list):
             raise ValueError("Artists must be a list!")
         
-        manySingleArtists = [artist for artist in artists if len(self.mularts.getArtistNames(artist)) > 1]        
-        manyArtists       = {artist: self.mularts.getArtistNames(artist) for artist in manySingleArtists}
-        singleArtists     = [artist for artist in artists if len(self.mularts.getArtistNames(artist)) == 1]
+        if split is True:
+            manySingleArtists = [artist for artist in artists if len(self.mularts.getArtistNames(artist)) > 1]
+            manyArtists       = {artist: self.mularts.getArtistNames(artist) for artist in manySingleArtists}
+            singleArtists     = [artist for artist in artists if len(self.mularts.getArtistNames(artist)) == 1]
+        else:
+            manyArtists       = {}
+            singleArtists     = artists
+            
         return {"Single": singleArtists, "Many": manyArtists}
         
     
     ################################################################################################
     # Load Chart Data
     ################################################################################################
-    def setChartArtists(self):
+    def setChartArtists(self, split=True):
         print("-"*50,"setChartArtists()","-"*50)
         allArtists      = list(self.artistAlbumData.keys())
         print("   There are {0: <6} artist entries".format(len(allArtists)))
         
-        retval = self.splitSingleManyArtistsData(allArtists)
+        retval = self.splitSingleManyArtistsData(allArtists, split)
         singleArtists = retval["Single"]
         print("   There are {0: <6} single artist entries".format(len(singleArtists)))
         manyArtists   = retval["Many"]
@@ -284,9 +294,12 @@ class chartAnalysisClass:
         if matchVal is None:
             return False
         else:
-            #print("isMatchedArtist:",artistName,matchVal)
             if isinstance(matchVal, dict):
-                result = Series(matchVal).nunique() > 0
+                #print("isMatchedArtist:",artistName,matchVal)
+                try:
+                    result = Series(matchVal).nunique() > 0
+                except:
+                    result = False
                 return result
             else:
                 raise ValueError("Dictionary match value for artistName {0} is a {1}".format(artistName, type(matchVal)))

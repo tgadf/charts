@@ -1,28 +1,25 @@
 from top40charts import top40chart
 from timeUtils import getDateTime, isDate
+from fileUtils import getBaseFilename
 from listUtils import isIn
 from collections import Counter
 from artistIgnores import getArtistIgnores
+from top40Charts import top40Charts
+from top40 import top40chart
+from os.path import join
+from ioUtils import getFile, saveFile
+from searchUtils import findExt
 
-class fullCharts:
-    def __init__(self, t40charts, ctype=None, country=None, minYear=None, maxYear=None, debug=False):
-        self.t40charts = t40charts
-        self.debug     = False
+class top40Data:
+    def __init__(self, minYear=None, maxYear=None, debug=False):
+        self.debug  = False
         
-        if country is None:
-            self.country   = None
-        elif isinstance(country, str):
-            self.country   = [country]
-        elif isinstance(country, list):
-            self.country   = country
-        else:
-            raise ValueError("No idea about country value {0}".format(country))
-            
-        self.ctype = ctype
-        if self.ctype is not None:
-            if self.ctype not in ["Albums", "Singles"]:
-                raise ValueError("Ctype must be Albums or Singles")                
-            
+        self.basedir  = "/Volumes/Piggy/Charts/"
+        self.basename = "Top40"
+                
+        self.tc     = top40Charts()
+        self.charts = []
+        
         self.minYear   = minYear
         self.maxYear   = maxYear
         
@@ -32,6 +29,32 @@ class fullCharts:
         self.fullChartData   = {}
         self.artistAlbumData = {}
         
+        
+    def getFullChartDataFilename(self):
+        ifile="current{0}FullChartArtistAlbumData.p".format(self.basename)
+        return ifile
+
+    def getFullChartData(self):
+        return getFile(self.getFullChartDataFilename())
+        
+    def saveFullChartData(self):
+        print("Saving {0} Full Artist Data".format(len(self.fullChartData)))
+        saveFile(idata=self.fullChartData, ifile=self.getFullChartDataFilename(), debug=True)        
+        
+        
+    def getArtistAlbumDataFilename(self):
+        ifile="current{0}ArtistAlbumData.p".format(self.basename)
+        return ifile
+    
+    def getArtistAlbumData(self):
+        return getFile(self.getArtistAlbumDataFilename())
+        
+    def saveArtistAlbumData(self):
+        print("Saving {0} Artist Album Data to {1}".format(len(self.artistAlbumData), self.getArtistAlbumDataFilename()))
+        saveFile(idata=self.artistAlbumData, ifile=self.getArtistAlbumDataFilename(), debug=True)
+        
+        
+        
     def setRenames(self, artistRenames):
         self.artistRenames = artistRenames
         
@@ -39,39 +62,49 @@ class fullCharts:
         self.dbRenames = dbRenames
         
         
-    def getArtistAlbumData(self):
-        return self.artistAlbumData
-    
-    def getFullChartData(self):
-        return self.fullChartData
-        
-        
     def setArtistAlbumData(self):
         self.artistAlbumData = {artist: list(artistData["Songs"].keys()) + list(artistData["Albums"].keys()) for artist,artistData in self.fullChartData.items()}
+        
+        
+    
+    def setChartUsage(self, name=None, rank=None):
+        if rank is not None:
+            if isinstance(rank, list):
+                for item in rank:
+                    self.charts += self.tc.getChartsByRank(item)
+            elif isinstance(rank, int):
+                self.charts += self.tc.getChartsByRank(rank)
+        elif name is not None:
+            self.charts += self.tc.getCharts(name)
+        else:
+            self.charts = self.tc.getCharts(None)
+        if name is None:
+            name = "None"
+        print("  Using Charts ({0}): {1}".format(name, self.charts))
+        
+        
+    def findFiles(self):
+        savedir = join(self.basedir, "data", "top40")
+        self.files   = findExt(savedir, ext='.p')         
+        print("Found {0} files.".format(len(self.files)))
         
         
         
     def setFullChartData(self):
         fullChartData = {}
         renameStats   = Counter()
-        for chartName, chartData in self.t40charts.items():
-            
-            if self.country is not None:
-                if not isIn(self.country, chartName):
-                    continue
-            if self.ctype is not None:
-                if self.ctype == "Albums":
-                    if not chartName.endswith("Albums"):
-                        continue
-                elif self.ctype == "Singles":
-                    if chartName.endswith("Albums"):
-                        continue
-            
+        
+        self.findFiles()
+        if len(self.files) == 0:
+            raise ValueError("There are no files. Something is wrong...")
+        self.files = {getBaseFilename(x).replace("/", " "): x for x in self.files}
+        
+        for chartName, ifile in self.files.items():
+            if chartName not in self.charts:
+                continue
             print("==> {0: <40}".format(chartName), end="\t")
-            chartURL = chartData["URL"]
-            chartID  = chartData["ID"]
-            t40chart = top40chart(chartID, chartName, chartURL)
-            chartResults = t40chart.getFullChartData()
+            #t40chart = top40chart(chartID, chartName, chartURL)
+            chartResults = getFile(ifile)
 
             for date, values in chartResults.items():
                 if self.minYear is not None:

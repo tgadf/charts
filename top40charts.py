@@ -1,197 +1,56 @@
-from fsUtils import setDir, isDir, setFile, isFile
-from webUtils import getURL, getHTML
-from time import sleep
-from timeUtils import getDateTime, isDate
-from ioUtils import getFile, saveFile
+from ioUtils import getFile
+from artistIgnores import getArtistIgnores
 
+class top40Charts:
+    def __init__(self):
 
-class top40:
-    def __init__(self, debug=False):
-        self.chartsDir = "/Volumes/Piggy/Charts"
-        if not isDir(self.chartsDir):
-            raise ValueError("Charts directory [{0}] does not exist".format(self.chartsDir))
-        self.dataDir   = setDir(self.chartsDir, "data")
-        self.dataDir   = setDir(self.dataDir, "top40")
-        if not isDir(self.dataDir):
-            raise ValueError("Data directory [{0}] does not exist".format(self.dataDir))
-            
-        self.baseURL = "https://top40-charts.com"
+        self.usa = ['USA Singles Top 40', 'USA Albums']
+        self.usa = [x.replace("/", " ") for x in self.usa]
         
+        self.uk = ['UK Singles Top 40', 'UK Top 20 Albums', 'Canada Top 20']
+        self.uk = [x.replace("/", " ") for x in self.uk]
         
-class top40chart(top40):
-    def __init__(self, chartID, chartName, chartURL, debug=False):
-        super().__init__()
-        self.chartStarterDir = setDir(self.dataDir, "starters")
-        self.chartDir        = setDir(self.dataDir, chartName.replace("/", " "))
-        self.chartID         = chartID
-        self.chartName       = chartName
-        self.chartBaseURL    = chartURL
-        self.starterFile     = setFile(self.chartStarterDir, "{0}.p".format(self.chartName.replace("/", " ")))
-        self.resultsFile     = setFile(self.dataDir, "{0}.p".format(self.chartName.replace("/", " ")))
+        self.world = ['Top40-Charts.com Web Top 100', 'China Top 20', 'German Top 40', 'Japan Top 20', 'Australia Top 20', 'Brazil Top 20',
+                      'Greece Top 20', 'New Zealand Top 20', 'Bulgaria Top 20', 'Portugal Top 20', 'Airplay World Official Top 100', 
+                      'Argentina Top 20', 'Austria Top 20', 'Belgium Top 20', 'Chile Top 20', 'Denmark Top 20',
+                      'Digital Sales Top 100', 'Europe Official Top 100', 'Finland Top 20', 'France Top 20', 'HeatSeekers Radio Tracks',
+                      'Hispanic America Top 40', 'India Top 20', 'Ireland Top 20', 'Italy Top 20', 'Muchmusic Top 30', 'Netherlands Top 20',
+                      'Norway Top 20', 'Russia Top 20', 'Spain Top 20', 'Sweden Top 20', 'Switzerland Top 20', 'Taiwan Top 10',
+                      'Ukraine Top 20', 'World Adult Top 20 Singles', 'World Country Top 20 Singles', 'World Dance / Trance Top 30 Singles',
+                      'World Jazz Top 20 Singles', 'World Latin Top 30 Singles', 'World Modern Rock Top 30 Singles', 'World RnB Top 30 Singles',
+                      'World Singles Official Top 100', 'World Soundtracks / OST Top 20 Singles'] 
+        self.world = [x.replace("/", " ") for x in self.world]
         
-        self.setChartDates()
-        if debug:
-            print("There are {0} dates for this chart".format(len(self.chartDates)))
-        
-            
-            
-    ####################################################################################
-    # Chart Starter File
-    ####################################################################################    
-    def downloadStarterChart(self):
-        getURL(url=self.chartBaseURL, savename=self.starterFile, debug=True)
-        sleep(2)
-        
-        
-    def setChartDates(self):
-        if isFile(self.starterFile):
-            fdata = getHTML(self.starterFile)
-            dates = []
-            for iform,formdata in enumerate(fdata.findAll("form")):
-                for isel,seldata in enumerate(formdata.findAll("select", {"name": "date"})):
-                    for iop,opdata in enumerate(seldata.findAll("option")):
-                        attrs  = opdata.attrs
-                        value  = attrs['value']
-                        dates.append(value)
-            self.chartDates = sorted(list(set(dates)))
-        
-        
-            
-    ####################################################################################
-    # Chart Starter File
-    ####################################################################################    
-    def downloadChartDates(self):
-        if len(self.chartDates) == 0:
-            self.setChartDates()
-            
-        print("There are {0} dates for the {1} chart".format(len(self.chartDates), self.chartName))
-        for idts,value in enumerate(self.chartDates):
-            if value is None:
-                continue
+        self.chartNames = self.__dict__.keys()
 
-            try:
-                if getDateTime(value).year < 1900:
-                    continue
-            except:
-                continue
-
-            url   = "https://top40-charts.com/chart.php?cid={0}&date={1}".format(self.chartID, value)
-            savename = setFile(self.chartDir, "{0}.p".format(value))
-            if savename is None:
-                continue
-
-            if isFile(savename):
-                continue
-                #print("Touching {0}".format(savename))
-                #Path(savename).touch()
-            else:
-                print(idts,'/',len(self.chartDates),'\t',url,'\t',savename)
-                getURL(url=url, savename=savename, debug=True)
-                sleep(2)
-
-
-    def getCharts(self):
-        fdata = getHTML(self.starterFile)
-        charts = {}
-        for iform,formdata in enumerate(fdata.findAll("form")):
-            for isel,seldata in enumerate(formdata.findAll("select", {"name": "cid"})):
-                for iop,opdata in enumerate(seldata.findAll("option")):
-                    attrs  = opdata.attrs
-                    cid    = attrs['value']
-                    name   = opdata.text
-                    url    = 'https://top40-charts.com/chart.php?cid={0}'.format(cid)
-                    charts[name] = {"ID": cid, "URL": url}
+        
+        self.chartRanks = {}
+        self.chartRanks[0] = ['usa']
+        self.chartRanks[1] = ['uk']
+        self.chartRanks[2] = ['world']
+        
+        
+    def getChartsByRank(self, rank):
+        categories = self.chartRanks[rank]
+        charts = []
+        for chart in categories:
+            charts += self.getCharts(chart)
+        print("  Using {0} Charts".format(len(charts)))
         return charts
-
-    
-        url  = "{0}{1}".format(self.baseURL, href)
-        try:
-            cid = int(href.split("cid=")[1])
-        except:
-            raise ValueError("Could not find CID from {0}".format(ref))            
-        self.chartIDs[name] = {"ID": cid, "URL": url}
         
-    
-    
-    ####################################################################################
-    # Individual Charts
-    ####################################################################################  
-    def getFullChartData(self):
-        return getFile(self.resultsFile)
-    
-    
-    def parseCharts(self):
-        chartResults = {}
-        for chartDate in self.chartDates:
-            chartFile = setFile(self.chartDir, "{0}.p".format(chartDate))
-            if isFile(chartFile):
-                chartResults[chartDate] = self.parseChart(chartFile)
-        saveFile(idata=chartResults, ifile=self.resultsFile, debug=True)
-        
-    def parseChart(self, chartFile):
-        chartData = getHTML(chartFile)
-        results = []
-        pos = 1
-
-        debVars = None
-
-        for it,table in enumerate(chartData.findAll("table")):
-            ths = table.findAll("th")
-            trs = table.findAll("tr")
-            attrs = table.attrs
-            #if debug:
-            #    print(it,len(ths),len(trs),attrs)
-
-            if attrs == {'cellpadding': '0', 'cellspacing': '0', 'borer': '0'}:
-                if len(trs) == 1:
-                    tds = trs[0].findAll("td")
-                    if len(tds) == 3:
-                        refs = tds[2].findAll("a")
-                        if len(refs) == 2:
-                            album  = refs[0].text
-                            artist = refs[1].text
-                            results.append({"Artist": artist, "Album": album})
-                            #if debug:
-                            #    print(pos,'\t',artist,'\t',album)
-                            pos += 1
-
-        return results        
-
-        
-class top40starter(top40):
-    def __init__(self, debug=False):
-        super().__init__()
-        self.starterURL  = self.baseURL
-        self.starterFile = setFile(self.dataDir, "starter_test.p")
-                   
-        self.chartIDs = {}
-        
-    def getChartIDs(self):
-        return self.chartIDs
-            
-    def download(self):
-        url      = self.starterURL
-        savename = self.starterFile
-        getURL(url=url, savename=savename, debug=True)
-        
-    def parse(self):
-        fdata = getHTML(self.starterFile)
-        rows  = fdata.findAll("div", {"class": "row"})
-        for i,row in enumerate(rows):
-            divs = row.findAll("div", {"class": "latc_song"})
-            for j,div in enumerate(divs):
-                span = div.find("span", {"class": "bigblue"})
-                if span is not None:
-                    ref = span.find("a")
-                    self.parseChartID(ref)
-        
-    def parseChartID(self, ref):
-        name = ref.text
-        href = ref.attrs['href']
-        url  = "{0}{1}".format(self.baseURL, href)
-        try:
-            cid = int(href.split("cid=")[1])
-        except:
-            raise ValueError("Could not find CID from {0}".format(ref))            
-        self.chartIDs[name] = {"ID": cid, "URL": url}
-        
+    def getCharts(self, name=None):        
+        charts = []
+        if name is None:
+            print("  Getting All Charts")
+            for chart in self.chartNames:
+                charts += self.__dict__[chart]
+        else:
+            print("  Getting Chart For {0}".format(name))
+            if name in self.__dict__.keys():
+                charts += self.__dict__[name]
+            if name == "country":
+                charts += self.__dict__["countryMusic"]                
+        if len(charts) == 0:
+            raise ValueError("Could not find any charts: {0}".format(self.__dict__.keys()))
+        print("  Using {0} Charts".format(len(charts)))
+        return charts

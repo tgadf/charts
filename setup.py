@@ -24,6 +24,7 @@ setup(
   dependency_links=['git+ssh://git@github.com/tgadf/multiartist.git#egg=multiartist-0.0.1',
                     'git+ssh://git@github.com/tgadf/utils.git#egg=utils-0.0.1',
                     'git+ssh://git@github.com/tgadf/music.git#egg=music-0.0.1',
+                    'git+ssh://git@github.com/tgadf/matchAlbums.git#egg=music-0.0.1',
                     'git+ssh://git@github.com/tgadf/discogs.git#egg=discogs-0.0.1']
 )
  
