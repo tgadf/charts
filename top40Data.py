@@ -1,14 +1,15 @@
-from top40charts import top40chart
 from timeUtils import getDateTime, isDate
 from fileUtils import getBaseFilename
 from listUtils import isIn
 from collections import Counter
-from artistIgnores import getArtistIgnores
-from top40Charts import top40Charts
-from top40 import top40chart
 from os.path import join
 from ioUtils import getFile, saveFile
 from searchUtils import findExt
+
+from artistIgnores import getArtistIgnores
+from top40Charts import top40Charts
+from top40 import top40chart
+
 
 class top40Data:
     def __init__(self, minYear=None, maxYear=None, debug=False):

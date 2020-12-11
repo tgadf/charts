@@ -3,7 +3,7 @@ import setuptools
 
 setup(
   name = 'charts',
-  py_modules = ['top40charts', 'fullCharts'],
+  py_modules = ['top40Data', 'top40Charts', 'top40', 'billboardData', 'billboardCharts', 'artistIgnores'],
   version = '0.0.1',
   description = 'A Python Wrapper To Parse Music Chart Data',
   long_description = open('README.md').read(),
@@ -25,6 +25,7 @@ setup(
                     'git+ssh://git@github.com/tgadf/utils.git#egg=utils-0.0.1',
                     'git+ssh://git@github.com/tgadf/music.git#egg=music-0.0.1',
                     'git+ssh://git@github.com/tgadf/matchAlbums.git#egg=music-0.0.1',
+                    'git+ssh://git@github.com/tgadf/musicnames.git#egg=musicnames-0.0.1',
                     'git+ssh://git@github.com/tgadf/discogs.git#egg=discogs-0.0.1']
 )
  
