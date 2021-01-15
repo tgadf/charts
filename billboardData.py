@@ -28,12 +28,14 @@ class billboardData:
         self.minYear   = minYear
         self.maxYear   = maxYear
         
-        self.artistRenames   = {}
-        self.dbRenames       = {}
+        self.dbRenames       = None
+        self.multirenameDB   = None
 
         self.chartData       = {}
         self.fullChartData   = {}
         self.artistAlbumData = {}
+        
+        self.albumsLookup = {}
         
         
     def getFullChartDataFilename(self):
@@ -61,9 +63,6 @@ class billboardData:
 
         
         
-    def setRenames(self, artistRenames):
-        self.artistRenames = artistRenames  
-        
     def setDBRenames(self, dbRenames):
         self.dbRenames = dbRenames 
         
@@ -72,6 +71,9 @@ class billboardData:
     
     def getFullChartData(self):
         return self.fullChartData
+        
+    def getArtists(self):
+        return list(self.artistAlbumData.keys())
     
     def setChartUsage(self, name=None, rank=None):
         #charts = ['adult', 'alternative', 'folkblue', 'christian', 'countryMusic', 'electronic', 'hot', 'top', 'rnb', 'rock',
@@ -101,11 +103,13 @@ class billboardData:
         savedir = join(self.basedir, "data", "billboard", "results")
         self.files   = findExt(savedir, ext='.p')         
         print("Found {0} files.".format(len(self.files)))
-
+        
+        
     
     def setFullChartData(self):        
-        renameStats  = Counter()
-        chartCounter = Counter()
+        dbRenameStats     = 0    
+        multiRenameStats  = 0
+        
         
         if len(self.files) == 0:
             raise ValueError("There are no files. Something is wrong...")
@@ -125,30 +129,40 @@ class billboardData:
                             continue
                     stryear = getDateTime(date).year
 
-                    artist = dResults["Artist"]
-
-                    renamedArtist = artist
-                    for testArtist in self.artistRenames.keys():
-                        if artist.find(testArtist) != -1:
-                            tmp = renamedArtist
-                            renamedArtist = renamedArtist.replace(testArtist, self.artistRenames.get(testArtist))
-                            #print("{0}  <---- From ---- {1}".format(renamedArtist, tmp))
-                            renameStats[renamedArtist] += 1
-                            artist = renamedArtist 
+                    artistName = dResults["Artist"]
                     
-                    if self.dbRenames.get(artist) is not None:
-                        renamedArtist = self.dbRenames[artist]
-                        renameStats[renamedArtist] += 1
-                        artist = renamedArtist  
+
+                    ## Test for rename
+                    renamedArtistName = artistName
+                    if self.dbRenames is not None:
+                        tmpName = self.dbRenames.renamed(renamedArtistName)
+                        if tmpName != renamedArtistName:
+                            dbRenameStats += 1
+                        renamedArtistName = tmpName
+
+                    ## Test for multi rename
+                    #renamedArtistName = artistName
+                    if self.multirenameDB is not None:
+                        tmpName = self.multirenameDB.renamed(renamedArtistName)
+                        if tmpName != renamedArtistName:
+                            multiRenameStats += 1
+                        renamedArtistName = tmpName
+
+                    artist = renamedArtistName
+                    
+                    ## Test for crazy stuff
+                    tmp = artist
+                    if "\r" in artist:
+                        print(artist)
+                    artist = artist.replace("\r", "").strip()
+                    if tmp != artist:
+                        print("\t\tFixing {0}".format(tmp))
 
                     ignoreStatus = getArtistIgnores(artist)
                     if ignoreStatus is False:
                         continue
 
-
-                    chartCounter[chartName] += 1
-
-                    album  = dResults["Name"]
+                    album  = dResults["Name"]                        
 
                     if self.chartData.get(artist) is None:
                         self.chartData[artist] = Counter()
@@ -166,3 +180,6 @@ class billboardData:
                         self.fullChartData[artist][key][album][chartName] = {}
                     self.fullChartData[artist][key][album][chartName][date] = 0
                 #print("{0: <40}{1}".format("{0}-{1}".format(chartName,stryear),len(self.fullChartData)))
+                
+        print("Renamed {0} single artists".format(dbRenameStats))
+        print("Renamed {0} multi artists".format(multiRenameStats))

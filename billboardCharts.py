@@ -22,7 +22,7 @@ class billboardCharts:
 
         self.electronic  = ['dance-club-play-songs', 'dance-electronic-albums', 'dance-electronic-digital-song-sales', 'dance-electronic-songs', 'dance-electronic-streaming-songs']
         self.electronic += ["DAN", "DAS", "DDT", "BSI", "BST", "DSI", "ELP"]
-
+        
         self.hot  = ['hot-100', 'pop-songs', 'radio-songs']
         self.hot += ['streaming-songs', 'rhythmic-40', 'heatseekers-albums']    
         self.top  = ['billboard-200', 'artist-100', 'top-album-sales']
@@ -82,10 +82,11 @@ class billboardCharts:
 
         
         self.chartRanks = {}
-        self.chartRanks[0] = ['hot', 'adult', 'top']
-        self.chartRanks[1] = ['alternative', 'countryMusic', 'rock', 'rnb']
-        self.chartRanks[2] = ['christian', 'canadian', 'comedy', 'general', 'twitter']
-        self.chartRanks[3] = ['folkblue', 'electronic', 'latin', 'mexican', 'world', 'classical', 'jazz', 'newage', 'kids', 'vinyl', 'rare', 'soundtrack', 'holiday']
+        self.chartRanks[0] = ['top']
+        self.chartRanks[1] = ['hot', 'adult']
+        self.chartRanks[2] = ['alternative', 'countryMusic', 'rock', 'rnb']
+        self.chartRanks[3] = ['christian', 'canadian', 'comedy', 'general', 'twitter']
+        self.chartRanks[4] = ['folkblue', 'electronic', 'latin', 'mexican', 'world', 'classical', 'jazz', 'newage', 'kids', 'vinyl', 'rare', 'soundtrack', 'holiday']
         
         
     def getChartsByRank(self, rank):

@@ -24,8 +24,8 @@ class top40Data:
         self.minYear   = minYear
         self.maxYear   = maxYear
         
-        self.artistRenames   = {}
-        self.dbRenames       = {}
+        self.dbRenames       = None
+        self.multirenameDB   = None
 
         self.fullChartData   = {}
         self.artistAlbumData = {}
@@ -53,6 +53,9 @@ class top40Data:
     def saveArtistAlbumData(self):
         print("Saving {0} Artist Album Data to {1}".format(len(self.artistAlbumData), self.getArtistAlbumDataFilename()))
         saveFile(idata=self.artistAlbumData, ifile=self.getArtistAlbumDataFilename(), debug=True)
+        
+    def getArtists(self):
+        return list(self.artistAlbumData.keys())
         
         
         
@@ -91,9 +94,12 @@ class top40Data:
         
         
         
-    def setFullChartData(self):
+    def setFullChartData(self):   
+        dbRenameStats     = 0    
+        multiRenameStats  = 0
+
         fullChartData = {}
-        renameStats   = Counter()
+
         
         self.findFiles()
         if len(self.files) == 0:
@@ -117,28 +123,38 @@ class top40Data:
 
                         
                 for i,item in enumerate(values):
-                    artist = item["Artist"]
-                    renamedArtist = artist
-                    for testArtist in self.artistRenames.keys():
-                        if artist.find(testArtist) != -1:
-                            tmp = renamedArtist
-                            renamedArtist = renamedArtist.replace(testArtist, self.artistRenames.get(testArtist))
-                            #print("{0}  <---- From ---- {1}".format(renamedArtist, tmp))
-                            renameStats[renamedArtist] += 1
-                            artist = renamedArtist
-                    
-                    if self.dbRenames.get(artist) is not None:
-                        renamedArtist = self.dbRenames[artist]
-                        renameStats[renamedArtist] += 1
-                        artist = renamedArtist
+                    artistName = item["Artist"]
                     
 
-                    artist = artist.replace("\r", "")                    
-                    
+                    ## Test for rename
+                    renamedArtistName = artistName
+                    if self.dbRenames is not None:
+                        tmpName = self.dbRenames.renamed(renamedArtistName)
+                        if tmpName != renamedArtistName:
+                            dbRenameStats += 1
+                        renamedArtistName = tmpName
+
+                    ## Test for multi rename
+                    #renamedArtistName = artistName
+                    if self.multirenameDB is not None:
+                        tmpName = self.multirenameDB.renamed(renamedArtistName)
+                        if tmpName != renamedArtistName:
+                            multiRenameStats += 1
+                        renamedArtistName = tmpName
+
+                    artist = renamedArtistName
+
+                    renamedArtistName = artist
+                    renamedArtistName = renamedArtistName.replace("\r", "").strip()
+                    if renamedArtistName != artist:
+                        dbRenameStats += 1
+                    artist = renamedArtistName
+
                     ignoreStatus = getArtistIgnores(artist)
                     if ignoreStatus is False:
                         continue
-                    
+                        
+                                            
                     album  = item["Album"]
                     if album in ["Soundtrack"]:
                         continue
@@ -156,9 +172,6 @@ class top40Data:
                     fullChartData[artist][key][album][chartName][date] = i
             print(len(fullChartData))
         self.fullChartData = fullChartData
-        
-        if self.artistRenames is not None:
-            print("Renamed {0} artists".format(len(renameStats)))
-            print("Most Common Artists:")
-            for item in renameStats.most_common(5):
-                print(item)
+                
+        print("Renamed {0} single artists".format(dbRenameStats))
+        print("Renamed {0} multi artists".format(multiRenameStats))

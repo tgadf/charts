@@ -4,18 +4,23 @@ from artistIgnores import getArtistIgnores
 class top40Charts:
     def __init__(self):
 
-        self.usa = ['USA Singles Top 40', 'USA Albums']
+        self.usa = ['USA Albums']
         self.usa = [x.replace("/", " ") for x in self.usa]
+        
+        self.usaSingles = ['USA Singles Top 40']
+        self.usaSingles = [x.replace("/", " ") for x in self.usaSingles]
         
         self.uk = ['UK Singles Top 40', 'UK Top 20 Albums', 'Canada Top 20']
         self.uk = [x.replace("/", " ") for x in self.uk]
         
-        self.world = ['Top40-Charts.com Web Top 100', 'China Top 20', 'German Top 40', 'Japan Top 20', 'Australia Top 20', 'Brazil Top 20',
+        self.europe = ['German Top 40', 'Belgium Top 20', 'Denmark Top 20', 'France Top 20', 'Sweden Top 20', 'Netherlands Top 20', 'Europe Official Top 100']
+        
+        self.world = ['Top40-Charts.com Web Top 100', 'China Top 20', 'Japan Top 20', 'Australia Top 20', 'Brazil Top 20',
                       'Greece Top 20', 'New Zealand Top 20', 'Bulgaria Top 20', 'Portugal Top 20', 'Airplay World Official Top 100', 
-                      'Argentina Top 20', 'Austria Top 20', 'Belgium Top 20', 'Chile Top 20', 'Denmark Top 20',
-                      'Digital Sales Top 100', 'Europe Official Top 100', 'Finland Top 20', 'France Top 20', 'HeatSeekers Radio Tracks',
-                      'Hispanic America Top 40', 'India Top 20', 'Ireland Top 20', 'Italy Top 20', 'Muchmusic Top 30', 'Netherlands Top 20',
-                      'Norway Top 20', 'Russia Top 20', 'Spain Top 20', 'Sweden Top 20', 'Switzerland Top 20', 'Taiwan Top 10',
+                      'Argentina Top 20', 'Austria Top 20', 'Chile Top 20', 
+                      'Digital Sales Top 100', 'Finland Top 20', 'HeatSeekers Radio Tracks',
+                      'Hispanic America Top 40', 'India Top 20', 'Ireland Top 20', 'Italy Top 20', 'Muchmusic Top 30', 
+                      'Norway Top 20', 'Russia Top 20', 'Spain Top 20', 'Switzerland Top 20', 'Taiwan Top 10',
                       'Ukraine Top 20', 'World Adult Top 20 Singles', 'World Country Top 20 Singles', 'World Dance / Trance Top 30 Singles',
                       'World Jazz Top 20 Singles', 'World Latin Top 30 Singles', 'World Modern Rock Top 30 Singles', 'World RnB Top 30 Singles',
                       'World Singles Official Top 100', 'World Soundtracks / OST Top 20 Singles'] 
@@ -26,8 +31,10 @@ class top40Charts:
         
         self.chartRanks = {}
         self.chartRanks[0] = ['usa']
-        self.chartRanks[1] = ['uk']
-        self.chartRanks[2] = ['world']
+        self.chartRanks[1] = ['usaSingles']
+        self.chartRanks[2] = ['uk']
+        self.chartRanks[3] = ['europe']
+        self.chartRanks[4] = ['world']
         
         
     def getChartsByRank(self, rank):
