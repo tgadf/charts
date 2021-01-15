@@ -18,7 +18,7 @@ class billboardData:
         debug=False    
         
         self.basedir  = "/Volumes/Piggy/Charts/"
-        self.basename = "Billboard"
+        self.basename = "Top40"
         
         self.bc = billboardCharts()
         self.charts = []

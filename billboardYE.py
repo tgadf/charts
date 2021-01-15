@@ -8,7 +8,9 @@ from billboardYECharts import billboardYECharts
 
 class billboardYE:
     def __init__(self, debug=False, minYear=1, maxYear=9999):
-        self.baseDir   = "chartData"
+        
+        self.basedir  = "/Volumes/Piggy/Charts/"
+        self.baseDir  = "/Volumes/Piggy/Charts/"
         self.basename  = "BillboardYE"
         self.files     = []
         self.chartData = None
