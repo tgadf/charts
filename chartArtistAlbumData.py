@@ -107,6 +107,9 @@ class chartArtistAlbumData:
         print("Renamed {0} artists".format(nRenamed))
         print("Renamed {0} artists (multi)".format(nRenamedMulti))
         self.artistAlbumData = fixedArtistAlbumData
+                
+    def getArtistData(self, artist):
+        return self.artistAlbumData.get(artist)
         
 
         

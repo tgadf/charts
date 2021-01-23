@@ -1,17 +1,18 @@
 from searchUtils import findExt
 from webUtils import getHTML
 from fileUtils import getBaseFilename
-from fsUtils import setDir, setFile, isFile
+from fsUtils import setDir, setFile, isFile, isDir
 from ioUtils import getFile, saveFile
 from collections import Counter
+from os.path import join
 from billboardYECharts import billboardYECharts
 
 class billboardYE:
     def __init__(self, debug=False, minYear=1, maxYear=9999):
         
         self.basedir  = "/Volumes/Piggy/Charts/"
-        self.baseDir  = "/Volumes/Piggy/Charts/"
         self.basename  = "BillboardYE"
+        #self.baseDir  = "/Volumes/Piggy/Charts/{0}".format(self.
         self.files     = []
         self.chartData = None
         
@@ -144,9 +145,16 @@ class billboardYE:
         return retval
 
 
+    def findFiles(self):
+        savedir = join(self.basedir, "data", "billboardYE", "categories")
+        if not isDir(savedir):
+            raise ValueError("Could not find directory: {0}".format(savedir))
+        self.files   = findExt(savedir, ext='.p')
+        print("Found {0} files.".format(len(self.files)))
+        
+    
     def parse(self):
-        self.files = findExt(self.baseDir, ext='.p')
-        print("Found {0} files".format(len(self.files)))
+        self.findFiles()
 
         data = {}
         for ifile in self.files:
@@ -183,13 +191,17 @@ class billboardYE:
         
     def saveChartData(self):
         for category,categoryData in self.chartData.items():
-            saveDir  = setDir(self.baseDir,"summary")
+            savedir = join(self.basedir, "data", "billboardYE", "results")
+            if not isDir(savedir):
+                raise ValueError("Could not find directory: {0}".format(savedir))
             saveName = setFile(saveDir, "{0}.p".format(category))
             saveFile(idata=categoryData, ifile=saveName, debug=True)
                 
         
     def getSummaryFiles(self):
-        saveDir  = setDir(self.baseDir,"summary")
+        saveDir = join(self.basedir, "data", "billboardYE", "results")
+        if not isDir(saveDir):
+            raise ValueError("Could not find directory: {0}".format(saveDir))
         files    = findExt(saveDir, ".p")
         print("Found {0} summary files".format(len(files)))
         return files
@@ -230,8 +242,6 @@ class billboardYE:
                         
                         #print(artistName,'\t',chartName,'\t\t',item,'\t\t',song,album)
 
-                        if self.fullChartData.get(artistName) is None:
-                            self.fullChartData[artistName] = {"Songs": {}, "Albums": {}}
 
                         if song is not None:
                             key = "Songs"
@@ -243,6 +253,10 @@ class billboardYE:
                             continue
                             #print(chartName)
                             #raise ValueError("Not a song or album")
+                            
+                            
+                        if self.fullChartData.get(artistName) is None:
+                            self.fullChartData[artistName] = {"Songs": {}, "Albums": {}}
                         date = year
 
 
