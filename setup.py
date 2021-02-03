@@ -3,7 +3,7 @@ import setuptools
 
 setup(
   name = 'charts',
-  py_modules = ['top40Data', 'top40Charts', 'top40', 'billboardData', 'billboardCharts', 'billboardYE', 'billboardYECharts', 'artistIgnores'],
+  py_modules = ['spotifyData', 'top40Data', 'top40Charts', 'top40', 'billboardData', 'billboardCharts', 'billboardYE', 'billboardYECharts', 'artistIgnores'],
   version = '0.0.1',
   description = 'A Python Wrapper To Parse Music Chart Data',
   long_description = open('README.md').read(),

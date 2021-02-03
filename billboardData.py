@@ -11,6 +11,7 @@ import urllib
 from time import sleep
 from collections import Counter
 from artistIgnores import getArtistIgnores
+from pandas import DataFrame
 
 
 class billboardData:
@@ -18,11 +19,12 @@ class billboardData:
         debug=False    
         
         self.basedir  = "/Volumes/Piggy/Charts/"
-        self.basename = "Top40"
+        self.basename = "Billboard"
         
         self.bc = billboardCharts()
         self.charts = []
         self.files = []
+        self.chartfiles = []
         self.findFiles()
             
         self.minYear   = minYear
@@ -66,6 +68,9 @@ class billboardData:
     def setDBRenames(self, dbRenames):
         self.dbRenames = dbRenames 
         
+    def setMultiDBRenames(self, multirenameDB):
+        self.multirenameDB = multirenameDB
+        
     def getArtistAlbumData(self):
         return self.artistAlbumData
     
@@ -104,7 +109,46 @@ class billboardData:
         self.files   = findExt(savedir, ext='.p')         
         print("Found {0} files.".format(len(self.files)))
         
+    def findChartFiles(self):
+        savedir = join(self.basedir, "data", "billboard", "categories")
+        self.chartfiles   = findExt(savedir, ext='.p')         
+        print("Found {0} files.".format(len(self.chartfiles)))
         
+    def parseCharts(self):
+        self.findChartFiles()
+        for ifile in self.chartfiles:
+            print(ifile)
+            
+            
+    def createDFs(self, singleName=None):
+        bMap = getFile("billboardMapping.p")
+        chartDFs = {}
+        for ifile in self.files:
+            data = getFile(ifile)
+            for chartName,chartData in data.items():
+                if bMap.get(chartName) is not None:
+                    chartName = bMap[chartName]
+                if singleName is not None:
+                    if singleName != chartName:
+                        continue
+                df = DataFrame(chartData).T
+                if chartDFs.get(chartName) is None:
+                    chartDFs[chartName] = df.copy(deep=True)
+                else:
+                    chartDFs[chartName] = chartDFs[chartName].append(df.copy(deep=True))        
+                    
+        return chartDFs
+        for chartName in chartDFs.keys():
+            try:
+                chartDFs[chartName]["RenamedArtist"] = chartDFs[chartName]["Artist"]
+                if self.multirenameDB is not None:
+                    chartDFs[chartName]["RenamedArtist"] = chartDFs[chartName]["RenamedArtist"].apply(self.multirenameDB.renamed)
+                if self.dbRenames is not None:
+                    chartDFs[chartName]["RenamedArtist"] = chartDFs[chartName]["RenamedArtist"].apply(self.dbRenames.renamed)
+            except:
+                print("Error with {0}".format(chartName))
+        return chartDFs
+    
     
     def setFullChartData(self):        
         dbRenameStats     = 0    
@@ -152,11 +196,7 @@ class billboardData:
                     
                     ## Test for crazy stuff
                     tmp = artist
-                    if "\r" in artist:
-                        print(artist)
                     artist = artist.replace("\r", "").strip()
-                    if tmp != artist:
-                        print("\t\tFixing {0}".format(tmp))
 
                     ignoreStatus = getArtistIgnores(artist)
                     if ignoreStatus is False:

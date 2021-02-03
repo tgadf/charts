@@ -65,6 +65,9 @@ class top40Data:
     def setDBRenames(self, dbRenames):
         self.dbRenames = dbRenames
         
+    def setMultiDBRenames(self, multirenameDB):
+        self.multirenameDB = multirenameDB
+        
         
     def setArtistAlbumData(self):
         self.artistAlbumData = {artist: list(artistData["Songs"].keys()) + list(artistData["Albums"].keys()) for artist,artistData in self.fullChartData.items()}

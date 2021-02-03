@@ -3,13 +3,14 @@ from masterArtistNameDB import masterArtistNameDB
 from billboardData import billboardData
 from billboardYE import billboardYE
 from top40Data import top40Data
+from spotifyData import spotifyData
 from multiArtist import multiartist
 
 class chartArtistAlbumData:    
     def __init__(self, chartType, ignoreMultiNames=False):
         self.chartType = chartType
         print("chartArtistAlbumData({0})".format(chartType))
-        self.dclass = {"Billboard": billboardData(), "BillboardYE": billboardYE(), "Top40": top40Data()}
+        self.dclass = {"Billboard": billboardData(), "BillboardYE": billboardYE(), "Top40": top40Data(), "Spotify": spotifyData()}
         if self.chartType not in self.dclass.keys():
             raise ValueError("ChartType {0} is not allowed".format(self.chartType))
             
