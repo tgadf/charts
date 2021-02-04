@@ -14,6 +14,9 @@ class spotifyCharts:
         self.mexico      = ['regional-mx-weekly']
         self.brazil      = ['regional-br-weekly']
         self.southafrica = ['regional-za-weekly']
+        self.russia      = ['regional-ru-weekly']
+        self.isreal      = ['regional-il-weekly']
+        self.italy       = ['regional-it-weekly']
         
         self.chartNames = self.__dict__.keys()
         
@@ -22,10 +25,11 @@ class spotifyCharts:
         self.chartRanks[1] = ['england']
         self.chartRanks[2] = ['world']
         self.chartRanks[3] = ['denmark', 'southafrica']
-        self.chartRanks[4] = ['india']
-        self.chartRanks[5] = ['japan']
-        self.chartRanks[6] = ['mexico']
-        self.chartRanks[7] = ['brazil']
+        self.chartRanks[4] = ['italy', 'isreal']
+        self.chartRanks[5] = ['india', 'russia']
+        self.chartRanks[6] = ['japan']
+        self.chartRanks[7] = ['mexico']
+        self.chartRanks[8] = ['brazil']
         
         
     def getChartsByRank(self, rank):
