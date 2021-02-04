@@ -2220,6 +2220,275 @@ def extraAddsForSpotify(mdbmaps, chartType):
         ### YES
         ### YES  ---> [['BEN & TAN']]
 
+
+        addDeezer(mdbmaps, "Spotify", "c54b8fef28b706d7a5523126b3661f10", "50258612")    ### [MC Kevin o Chris]
+        ### Medley da Gaiola - DENNIS Remix  ,  Eu Vou pro Baile da Gaiola  ,  Tu Tá na Gaiola - Radio Edit  ,  Finalidade Era Ficar em Casa  ,  Dentro do Carro  ,  Vamos pra Gaiola  ,  Sobe Balão Desce Princesa  ,  Ela É do Tipo  ,  Evoluiu  ,  Namorar Não Dá  ,  Resenha lá em casa  ,  Morena Cor do Pecado  ,  Ela É do Tipo (feat. Drake) - Remix  ,  Romance Proibido - Ao Vivo  ,  Pode Jogar  ,  Romance Proibido
+        ### Medley da Gaiola - DENNIS Remix  ---> [['MC Kevin o Chris']]
+        ### Eu Vou pro Baile da Gaiola  ---> [['MC Kevin o Chris']]
+        ### Tu Tá na Gaiola - Radio Edit  ---> [['MC Kevin o Chris']]
+        ### Finalidade Era Ficar em Casa  ---> [['MC Kevin o Chris']]
+        ### Dentro do Carro  ---> [['MC Kevin o Chris']]
+        ### Vamos pra Gaiola  ---> [['MC Kevin o Chris']]
+        ### Sobe Balão Desce Princesa  ---> [['MC Kevin o Chris']]
+        ### Ela É do Tipo  ---> [['MC Kevin o Chris']]
+        ### Evoluiu  ---> [['MC Kevin o Chris']]
+        ### Namorar Não Dá  ---> [['MC Kevin o Chris']]
+        ### Resenha lá em casa  ---> [['MC Kevin o Chris']]
+        ### Morena Cor do Pecado  ---> [['MC Kevin o Chris']]
+        ### Ela É do Tipo (feat. Drake) - Remix  ---> [['MC Kevin o Chris']]
+        ### Romance Proibido - Ao Vivo  ---> [['MC Kevin o Chris']]
+        ### Pode Jogar  ---> [['MC Kevin o Chris']]
+        ### Romance Proibido  ---> [['MC Kevin o Chris']]
+
+
+        addDeezer(mdbmaps, "Spotify", "e192061642f69f993f2a80f614b334b7", "7765128")    ### [ANAVITÓRIA]
+        ### Agora Eu Quero Ir  ,  Singular  ,  Trevo (Tu)  ,  Cor De Marte  ,  Fica  ,  Fica - Bonus Track  ,  Ai, Amor  ,  Porque Eu Te Amo  ,  Cecília  ,  Calendário  ,  Outrória  ,  Perdoa  ,  Pupila  ,  relicário  ,  Me conta da tua janela  ,  não passa vontade
+        ### Agora Eu Quero Ir  ---> [['ANAVITÓRIA']]
+        ### Singular  ---> [['ANAVITÓRIA']]
+        ### Trevo (Tu)  ---> [['ANAVITÓRIA']]
+        ### Cor De Marte  ---> [['ANAVITÓRIA']]
+        ### Fica  ---> [['ANAVITÓRIA']]
+        ### Fica - Bonus Track  ---> [['ANAVITÓRIA']]
+        ### Ai, Amor  ---> [['ANAVITÓRIA']]
+        ### Porque Eu Te Amo  ---> [['ANAVITÓRIA']]
+        ### Cecília  ---> [['ANAVITÓRIA']]
+        ### Calendário  ---> [['ANAVITÓRIA']]
+        ### Outrória  ---> [['ANAVITÓRIA']]
+        ### Perdoa  ---> [['ANAVITÓRIA']]
+        ### Pupila  ---> [['ANAVITÓRIA']]
+        ### relicário  ---> [['ANAVITÓRIA']]
+        ### Me conta da tua janela  ---> [['ANAVITÓRIA']]
+        ### não passa vontade  ---> [['ANAVITÓRIA']]
+
+
+        addDeezer(mdbmaps, "Spotify", "cccfbce4f5b1fc2b0c9714715951173f", "4448284")    ### [DENNIS]
+        ### Malandramente  ,  Automaticamente  ,  Coração Tá Gelado (feat. MC TH)  ,  Um Brinde (feat. Marília Mendonça & Maiara & Maraisa)  ,  Vou Pegar  ,  Só Você  ,  Eu Te Amo Tanto  ,  Agora é Tudo Meu  ,  Sou Teu Fã  ,  Ninguém Conta Pra Ninguém  ,  Apimentadíssima  ,  Te Prometo  ,  Isso Que é Vida
+        ### Malandramente  ---> [['DENNIS']]
+        ### Automaticamente  ---> [['DENNIS']]
+        ### Coração Tá Gelado (feat. MC TH)  ---> [['DENNIS']]
+        ### Um Brinde (feat. Marília Mendonça & Maiara & Maraisa)  ---> [['DENNIS']]
+        ### Vou Pegar  ---> [['DENNIS']]
+        ### Só Você  ---> [['DENNIS', 'Leo Santana', 'MC Rogerinho']]
+        ### Eu Te Amo Tanto  ---> [['DENNIS']]
+        ### Agora é Tudo Meu  ---> [['DENNIS']]
+        ### Sou Teu Fã  ---> [['DENNIS']]
+        ### Ninguém Conta Pra Ninguém  ---> [['DENNIS']]
+        ### Apimentadíssima  ---> [['DENNIS']]
+        ### Te Prometo  ---> [['DENNIS']]
+        ### Isso Que é Vida  ---> [['DENNIS']]
+
+
+        addDeezer(mdbmaps, "Spotify", "e36c00d0c30e3e95d4fdd3e6fdd611fb", "5918943")    ### [Mc Livinho]
+        ### Tudo de Bom  ,  Cheia de Marra  ,  Tenebrosa  ,  Fazer Falta  ,  Tchau e Bença  ,  Esse Dom  ,  Azul Piscina  ,  Rebeca  ,  Irmã Gostosa  ,  Hoje Eu Vou Parar Na Gaiola  ,  Se Prepara 2
+        ### Tudo de Bom  ---> [['Mc Livinho']]
+        ### Cheia de Marra  ---> [['Mc Livinho']]
+        ### Tenebrosa  ---> [['Mc Livinho']]
+        ### Fazer Falta  ---> [['Mc Livinho']]
+        ### Tchau e Bença  ---> [['Mc Livinho']]
+        ### Esse Dom  ---> [['Mc Livinho']]
+        ### Azul Piscina  ---> [['Mc Livinho']]
+        ### Rebeca  ---> [['Mc Livinho']]
+        ### Irmã Gostosa  ---> [['Mc Livinho']]
+        ### Hoje Eu Vou Parar Na Gaiola  ---> [['Mc Livinho']]
+        ### Se Prepara 2  ---> [['Mc Livinho']]
+
+
+        addDeezer(mdbmaps, "Spotify", "6c0d044b61b4c03d8b9cfd1b477f4cd7", "1444643")    ### [Jerry Smith]
+        ### Pode Se Soltar  ,  Troféu do Ano  ,  Nossa Que Absurdo  ,  Menina Braba  ,  Não Se Apaixona  ,  Kikadinha  ,  Vou Falar Pra Tu  ,  Quem Tem o Dom  ,  Os Boys Amam O Ex Chora  ,  Bumbum Granada
+        ### Pode Se Soltar  ---> [['Jerry Smith']]
+        ### Troféu do Ano  ---> [['Jerry Smith']]
+        ### Nossa Que Absurdo  ---> [['Jerry Smith']]
+        ### Menina Braba  ---> [['Jerry Smith']]
+        ### Não Se Apaixona  ---> [['Jerry Smith']]
+        ### Kikadinha  ---> [['Jerry Smith']]
+        ### Vou Falar Pra Tu  ---> [['Jerry Smith']]
+        ### Quem Tem o Dom  ---> [['Jerry Smith']]
+        ### Os Boys Amam O Ex Chora  ---> [['Jerry Smith']]
+        ### Bumbum Granada  ---> [["Mc's Zaac & Jerry Smith"]]
+
+
+        addDeezer(mdbmaps, "Spotify", "28415568dbefa7a338bafbb7cd9e483e", "8403120")    ### [Mc Don Juan]
+        ### Oh Novinha  ,  Lei do Retorno  ,  A Gente Brigou  ,  Se Eu Tiver Solteiro  ,  Amar Amei  ,  Os Opostos Se Atraem  ,  To Gostando Tanto de Você  ,  Bye Bye  ,  Sai Pra Lá  ,  Vai Ter Que Aguentar
+        ### Oh Novinha  ---> [['Mc Don Juan']]
+        ### Lei do Retorno  ---> [['Mc Don Juan']]
+        ### A Gente Brigou  ---> [['Mc Don Juan']]
+        ### Se Eu Tiver Solteiro  ---> [['Mc Don Juan']]
+        ### Amar Amei  ---> [['Mc Don Juan']]
+        ### Os Opostos Se Atraem  ---> [['Mc Don Juan']]
+        ### To Gostando Tanto de Você  ---> [['Mc Don Juan']]
+        ### Bye Bye  ---> [['Mc Don Juan']]
+        ### Sai Pra Lá  ---> [['Mc Don Juan']]
+        ### Vai Ter Que Aguentar  ---> [['Mc Don Juan']]
+
+
+        addDeezer(mdbmaps, "Spotify", "e454489dc33686e16c66bf855deffc1e", "12896823")    ### [Pineapple StormTv]
+        ### Poesia Acústica #3: Capricorniana  ,  Poesia Acústica #4: Todo Mundo Odeia Acústico  ,  Poesia Acústica #6: Era uma Vez  ,  Você Não Ama Ninguém  ,  Canção Infantil  ,  Poesia Acústica #7: Céu Azul  ,  Poesia Acústica #8: Amor e Samba  ,  Poesia Acústica - Paris  ,  Poesia Acústica #9: Melhor Forma  ,  Poesia Acústica 10: Recomeçar
+        ### Poesia Acústica #3: Capricorniana  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica #4: Todo Mundo Odeia Acústico  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica #6: Era uma Vez  ---> [['Pineapple StormTv']]
+        ### Você Não Ama Ninguém  ---> [['Pineapple StormTv']]
+        ### Canção Infantil  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica #7: Céu Azul  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica #8: Amor e Samba  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica - Paris  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica #9: Melhor Forma  ---> [['Pineapple StormTv']]
+        ### Poesia Acústica 10: Recomeçar  ---> [['Pineapple StormTv']]
+
+
+        addDeezer(mdbmaps, "Spotify", "3aa9736661f70b6db7f291368dbeba82", "54330242")    ### [Grupo Menos É Mais]
+        ### Melhor Eu Ir / Ligando os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo  ,  Fatalmente / Separação / Temporal - Ao Vivo  ,  Tempo de Aprender / Energia Surreal / Não Pedi Pra Me Apaixonar - Ao Vivo  ,  Recaída  ,  Vai Me Dando Corda - Ao Vivo  ,  Pot-Pourri: Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo  ,  Pot-Pourri: Tempo de Aprender / Energia Surreal / Não Pedi Pra Me Apaixonar / Deixa Acontecer - Ao Vivo  ,  Adorei
+        ### Melhor Eu Ir / Ligando os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo  ---> [['Grupo Menos É Mais']]
+        ### Fatalmente / Separação / Temporal - Ao Vivo  ---> [['Grupo Menos É Mais']]
+        ### Tempo de Aprender / Energia Surreal / Não Pedi Pra Me Apaixonar - Ao Vivo  ---> [['Grupo Menos É Mais']]
+        ### Recaída  ---> [['Grupo Menos É Mais']]
+        ### Vai Me Dando Corda - Ao Vivo  ---> [['Grupo Menos É Mais']]
+        ### Pot-Pourri: Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer - Ao Vivo  ---> [['Grupo Menos É Mais']]
+        ### Pot-Pourri: Tempo de Aprender / Energia Surreal / Não Pedi Pra Me Apaixonar / Deixa Acontecer - Ao Vivo  ---> [['Grupo Menos É Mais']]
+
+
+        addDeezer(mdbmaps, "Spotify", "c3c2fee2ed2b90b15559cf2fe290d21a", "5454687")    ### [Hungria Hip Hop]
+        ### Coração de Aço  ,  Não Troco  ,  Beijo Com Trap  ,  Chovendo Inimigo  ,  Um Pedido  ,  Amor e Fé - Acústico  ,  Um Brinde pra Nós
+        ### Coração de Aço  ---> [['Hungria Hip Hop']]
+        ### Não Troco  ---> [['Hungria Hip Hop']]
+        ### Beijo Com Trap  ---> [['Hungria Hip Hop']]
+        ### Chovendo Inimigo  ---> [['Hungria Hip Hop']]
+        ### Um Pedido  ---> [['Hungria Hip Hop']]
+        ### Amor e Fé - Acústico  ---> [['Hungria Hip Hop']]
+        ### Um Brinde pra Nós  ---> [['Hungria Hip Hop']]
+
+
+        addDeezer(mdbmaps, "Spotify", "a8957d2b795d9ce2b9ce8e9c105214c5", "5817388")    ### [Vitão]
+        ### Caderninho  ,  Café  ,  Embrasa  ,  Edredom  ,  Complicado  ,  7 Chamadas  ,  Flores
+        ### Caderninho  ---> [['Vitão']]
+        ### Café  ---> [['Vitão']]
+        ### Embrasa  ---> [['Vitão']]
+        ### Edredom  ---> [['Vitão']]
+        ### Complicado  ---> [['Vitão']]
+        ### 7 Chamadas  ---> [['Vitão']]
+        ### Flores  ---> [['Vitão']]
+
+
+        addDeezer(mdbmaps, "Spotify", "ce6b0fcfbfe491d0f041f651c0b2789b", "262833")    ### [IZA]
+        ### Pesadão (Participação especial Marcelo Falcão)  ,  Ginga (Participação especial de Rincon Sapiência)  ,  Bateu (Participação especial de Ruxell)  ,  Dona de mim  ,  Brisa  ,  Meu talismã
+        ### Pesadão (Participação especial Marcelo Falcão)  ---> [['IZA']]
+        ### Ginga (Participação especial de Rincon Sapiência)  ---> [['IZA']]
+        ### Bateu (Participação especial de Ruxell)  ---> [['IZA']]
+        ### Dona de mim  ---> [['IZA']]
+        ### Brisa  ---> [['IZA']]
+        ### Meu talismã  ---> [['IZA']]
+
+
+        addDeezer(mdbmaps, "Spotify", "3cc7512b8b8e3d08ddc79bc24f0f7b39", "11922823")    ### [UM44K]
+        ### 4 da manhã  ,  Nossa música  ,  Solução  ,  Grupo bom  ,  Tudo que sonhamos
+        ### 4 da manhã  ---> [['UM44K']]
+        ### Nossa música  ---> [['UM44K']]
+        ### Solução  ---> [['UM44K']]
+        ### Grupo bom  ---> [['UM44K']]
+        ### Tudo que sonhamos  ---> [['UM44K']]
+
+
+        addDeezer(mdbmaps, "Spotify", "7042b99191e72f4e0b460c4a0c3a386a", "13552757")    ### [MC Paulin da Capital]
+        ### Eu Achei  ,  Mulher Cativante  ,  Morena  ,  SET DJ GM 2.0  ,  Os Mandrake Curte a Vida
+        ### Eu Achei  ---> [['MC Paulin da Capital']]
+        ### Mulher Cativante  ---> [['MC Paulin da Capital']]
+        ### Morena  ---> [['Vitor Kley', 'Pezão', 'MC Paulin da Capital']]
+        ### SET DJ GM 2.0  ---> [['MC Paulin da Capital']]
+        ### Os Mandrake Curte a Vida  ---> [['MC Paulin da Capital']]
+
+
+        addDeezer(mdbmaps, "Spotify", "4cb02ca3a3eda63bf7b84ed8c48e99cf", "7351232")    ### [Lexa]
+        ### Sapequinha  ,  Provocar  ,  Só Depois do Carnaval  ,  Chama Ela (feat. Pedro Sampaio)  ,  Aquecimento da Lexa
+        ### Sapequinha  ---> [['Lexa']]
+        ### Provocar  ---> [['Lexa']]
+        ### Só Depois do Carnaval  ---> [['Lexa']]
+        ### Chama Ela (feat. Pedro Sampaio)  ---> [['Lexa']]
+        ### Aquecimento da Lexa  ---> [['Lexa']]
+
+
+        addDeezer(mdbmaps, "Spotify", "d458eab92baed6ed1e33633b0b47e280", "11136556")    ### [Baco Exu do Blues]
+        ### Me Desculpa Jay Z  ,  Flamingos  ,  Bluesman  ,  Queima Minha Pele  ,  Girassóis de Van Gogh
+        ### Me Desculpa Jay Z  ---> [['Baco Exu do Blues']]
+        ### Flamingos  ---> [['Baco Exu do Blues']]
+        ### Bluesman  ---> [['Baco Exu do Blues']]
+        ### Queima Minha Pele  ---> [['Baco Exu do Blues']]
+        ### Girassóis de Van Gogh  ---> [['Baco Exu do Blues']]
+
+
+        addDeezer(mdbmaps, "Spotify", "e241d579493d1d3c11e1cd8040674d6a", "13025953")    ### [WC no Beat]
+        ### Meu Mundo  ,  Nossa Que Isso (feat. Mc Rebecca & MC Rogê)  ,  BALANÇA (feat. Pedro Sampaio)  ,  SEM LIMITES  ,  BALANÇA
+        ### Meu Mundo  ---> [['WC no Beat']]
+        ### Nossa Que Isso (feat. Mc Rebecca & MC Rogê)  ---> [['WC no Beat']]
+        ### BALANÇA (feat. Pedro Sampaio)  ---> [['WC no Beat']]
+        ### SEM LIMITES  ---> [['WC no Beat']]
+        ### BALANÇA  ---> [['WC no Beat']]
+
+
+        addDeezer(mdbmaps, "Spotify", "c0571f0ebfbd74bfeb54e13959346741", "13139755")    ### [MC JottaPê]
+        ### Sentou e Gostou  ,  Eterna Sacanagem  ,  Bate Palma  ,  Nem Guindaste  ,  Ménage
+        ### Sentou e Gostou  ---> [['MC JottaPê']]
+        ### Eterna Sacanagem  ---> [['MC JottaPê']]
+        ### Bate Palma  ---> [['MC JottaPê']]
+        ### Nem Guindaste  ---> [['MC JottaPê']]
+        ### Ménage  ---> [['MC JottaPê']]
+
+
+        addDeezer(mdbmaps, "Spotify", "95a2a5c802758e9f2c8761f7edcdadf1", "9596260")    ### [Dj Guuga]
+        ### Vidrado Em Você  ,  7 Dias 7 Corpos  ,  Cabaré  ,  Ta Apaixonado Babaca
+        ### Vidrado Em Você  ---> [['Dj Guuga']]
+        ### 7 Dias 7 Corpos  ---> [['Dj Guuga']]
+        ### Cabaré  ---> [['Dj Guuga']]
+        ### Ta Apaixonado Babaca  ---> [['Dj Guuga']]
+
+
+        addDeezer(mdbmaps, "Spotify", "58b1be9190abc201770618f3a10f0001", "7554724")    ### [Costa Gold]
+        ### Nada Bom II  ,  Dás Arábia, Pt. 2  ,  Irmão DQbrada!  ,  Uau!
+        ### Nada Bom II  ---> [['Costa Gold']]
+        ### Dás Arábia, Pt. 2  ---> [['Costa Gold']]
+        ### Irmão DQbrada!  ---> [['Costa Gold']]
+        ### Uau!  ---> [['Costa Gold']]
+
+
+        addDeezer(mdbmaps, "Spotify", "1376c567f2863d7dc459f14e2259696a", "10672471")    ### [Mano Walter]
+        ### Não Deixo Não  ,  Juramento do Dedinho  ,  Então Vem Cá - Ao Vivo  ,  Fingindo Maturidade - Ao Vivo
+        ### Não Deixo Não  ---> [['Mano Walter']]
+        ### Juramento do Dedinho  ---> [['Mano Walter']]
+        ### Então Vem Cá - Ao Vivo  ---> [['Mano Walter']]
+        ### Fingindo Maturidade - Ao Vivo  ---> [['Mano Walter']]
+
+
+        addDeezer(mdbmaps, "Spotify", "a4edd8f5827956ce28295f63fb5671fa", "1107447")    ### [Orochi]
+        ### Balão  ,  Acende o Isqueiro  ,  Amor de Fim de Noite  ,  Mitsubishi
+        ### Balão  ---> [['Orochi']]
+        ### Acende o Isqueiro  ---> [['Orochi']]
+        ### Amor de Fim de Noite  ---> [['Orochi']]
+        ### Mitsubishi  ---> [['Orochi']]
+
+
+        addDeezer(mdbmaps, "Spotify", "ff269d9a5ac2c852f71495cdb576df7b", "5832280")    ### [Xand Avião]
+        ### Casal Raiz - Ao Vivo  ,  Algo Mais (Amante) - Ao Vivo  ,  Ela Aperta a Minha Mente  ,  Surra de Cama
+        ### Casal Raiz - Ao Vivo  ---> [['Xand Avião']]
+        ### Algo Mais (Amante) - Ao Vivo  ---> [['Xand Avião']]
+        ### Ela Aperta a Minha Mente  ---> [['Xand Avião']]
+        ### Surra de Cama  ---> [['Xand Avião']]
+
+
+        addDeezer(mdbmaps, "Spotify", "435ff6dc0e86bb99af2f13e7a2a9e826", "398961")    ### [Pk]
+        ### Quando a vontade bater (Participação especial de PK Delas)  ,  Do jeito que tu gosta  ,  Indomável (Participação especial de Belo)  ,  Tudo de bom
+        ### Quando a vontade bater (Participação especial de PK Delas)  ---> [['Pk']]
+        ### Do jeito que tu gosta  ---> [['Pk']]
+        ### Indomável (Participação especial de Belo)  ---> [['Pk']]
+        ### Tudo de bom  ---> [['Pk']]
+
+
+        addDeezer(mdbmaps, "Spotify", "5decc01916c5a93c4a8924f25a5cd266", "10640291")    ### [1Kilo]
+        ### Deixe Me Ir - Acústico  ,  Duro Igual Concreto  ,  Tenta Vir - Acústico  ,  Só por Hoje
+        ### Deixe Me Ir - Acústico  ---> [['1Kilo']]
+        ### Duro Igual Concreto  ---> [['1Kilo']]
+        ### Tenta Vir - Acústico  ---> [['1Kilo']]
+        ### Só por Hoje  ---> [['1Kilo']]
+
+        
+        
         
         mdbmaps["Spotify"].save()
         
@@ -2491,6 +2760,160 @@ def extraAddsForBillboard(mdbmaps, chartType):
         addDiscogs(mdbmaps, "Billboard", "a626013386ca6bc138efacdf05aa7a96", "380314")    ### [Mickey]
         ### A Real Labour Of Love
         ### A Real Labour Of Love  ---> [['UB40 Featuring Ali, Astro & Mickey']]
+
+        addDeezer(mdbmaps, "Billboard", "7229ea37a1a8f87bce43dfe553fecd5b", "2737281")    ### [James Wilson]
+        ### Songs For The Church  ,  Wait On The Lord  ,  Give Me Jesus
+        ### Songs For The Church  ---> [['James Wilson']]
+        ### Wait On The Lord  ---> [['James Wilson Featuring Brooke Staten']]
+        ### Give Me Jesus  ---> [['James Wilson Featuring Draylin Young']]
+
+
+        addDeezer(mdbmaps, "Billboard", "5396115fee88d97c51bee14ae2088b35", "316")    ### [Thrice]
+        ### To Be Everywhere Is To Be Nowhere  ,  Palms
+        ### To Be Everywhere Is To Be Nowhere  ---> [['Thrice']]
+        ### Palms  ---> [['Thrice']]
+
+
+        addDeezer(mdbmaps, "Billboard", "a0ec3ffe08120ccf0c9b5345714a5c51", "2743")    ### [LTD]
+        ### Something To Love  ,  (Every Time I Turn Around) Back In Love Again
+        ### Something To Love  ---> [['LTD']]
+        ### (Every Time I Turn Around) Back In Love Again  ---> [['LTD']]
+
+
+        addDiscogs(mdbmaps, "Billboard", "fa00044058206494d4335094632fe4eb", "83751")    ### [Boss]
+        ### Deeper  ,  Recipe Of A Hoe
+        ### Deeper  ---> [['Boss', 'Anthony Nelson & The Overcomer']]
+        ### Recipe Of A Hoe  ---> [['Boss']]
+
+
+        addDeezer(mdbmaps, "Billboard", "66dca5283eac29a7b8c9714ed919bb78", "442981")    ### [Red Sun Rising]
+        ### The Otherside  ,  Emotionless
+        ### The Otherside  ---> [['Red Sun Rising']]
+        ### Emotionless  ---> [['Red Sun Rising']]
+
+
+        addDeezer(mdbmaps, "Billboard", "6cde371c9f96a16c4221ecaf6ee34f5c", "15432")    ### [Consequence]
+        ### Don't Quit Your Day Job  ,  Gone
+        ### a  ---> [['Consequence']]
+        ### Gone  ---> [['Red', "Kanye West Featuring Cam'ron & Consequence"]]
+
+
+        addDeezer(mdbmaps, "Billboard", "55be138b7b3faad5764a62dc13c9c402", "1236346")    ### [John Reilly]
+        ### Joyful Noise
+        ### Joyful Noise  ---> [['Flame Featuring Lecrae & John Reilly']]
+
+
+        addDeezer(mdbmaps, "Billboard", "b470feb6f3d72bfae87a83e16dd83886", "76640")    ### [Sons of the Desert]
+        ### I Hope You Dance
+        ### I Hope You Dance  ---> [['Lee Ann Womack', 'Lee Ann Womack With Sons Of The Desert']]
+
+
+        addDiscogs(mdbmaps, "Billboard", "0f5996206ed17aee986e961e69109699", "268902")    ### [Paul McCoy]
+        ### Bring Me To Life
+        ### Bring Me To Life  ---> [['Evanescence Featuring Paul McCoy']]
+
+
+        addAllMusic(mdbmaps, "Billboard", "172d1fbe2511219acd80e391536e87a2", "mn0003322275")   ### [I LOVE MAKONNEN]
+        addDeezer(mdbmaps, "Billboard", "172d1fbe2511219acd80e391536e87a2", "6901127")    ### [I LOVE MAKONNEN]
+        ### Tuesday
+        ### Tuesday  ---> [['I LOVE MAKONNEN Featuring Drake']]
+
+
+        addDeezer(mdbmaps, "Billboard", "8ee259441c323be544eb3b8c50c0af30", "13669055")    ### [LIL PHAG]
+        ### resERECTION (EP)
+        ### resERECTION (EP)  ---> [['LIL PHAG']]
+
+
+        addDeezer(mdbmaps, "Billboard", "07c0deba90ed751e5c2ec92d0d60d7dd", "59218332")    ### [Brooke Staten]
+        ### Wait On The Lord
+        ### Wait On The Lord  ---> [['James Wilson Featuring Brooke Staten']]
+
+
+        addDeezer(mdbmaps, "Billboard", "3863015a37429bd36794583e155c242d", "6307368")    ### [Steffany Gretzinger]
+        ### Good & Loved
+        ### Good & Loved  ---> [['Travis Greene Featuring Steffany Gretzinger']]
+
+
+        addDeezer(mdbmaps, "Billboard", "6c999baddd68939e501aa0561d3e0eda", "4052173")    ### [King Bach]
+        ### Medicine
+        ### Medicine  ---> [['King Bach']]
+
+
+        addAllMusic(mdbmaps, "Billboard", "3bb7b26b6dee914d5d35651092ebbd38", "mn0000567190")   ### [Questian Mark & The Mysterians]
+        addDeezer(mdbmaps, "Billboard", "3bb7b26b6dee914d5d35651092ebbd38", "123941")    ### [Questian Mark & The Mysterians]
+        ### 96 Tears
+        ### 96 Tears  ---> [['Questian Mark & The Mysterians']]
+
+
+        addDeezer(mdbmaps, "Billboard", "9a0fdd63c4aa97fc9716413a6111c187", "148184")    ### [Enchantment]
+        ### It's You That I Need
+        ### It's You That I Need  ---> [['Enchantment']]
+
+
+        addDeezer(mdbmaps, "Billboard", "ef9d8e82a6937e87668db5702cd43b2f", "1816301")    ### [UMC's]
+        ### Blue Cheese
+        ### Blue Cheese  ---> [["UMC's"]]
+
+
+        addDeezer(mdbmaps, "Billboard", "7087547bca580c898106d8f7eb761f58", "251366")    ### [Michael Peterson]
+        ### From Here To Eternity
+        ### From Here To Eternity  ---> [['Michael Peterson']]
+
+
+        addDeezer(mdbmaps, "Billboard", "dd6d9c8273de500d5019cb6c2d3a443e", "211037")    ### [Bill & Gloria Gaither]
+        ### Let Freedom Ring: Live From Carnegie Hall
+        ### Let Freedom Ring: Live From Carnegie Hall  ---> [['Bill & Gloria Gaither']]
+
+
+        addDeezer(mdbmaps, "Billboard", "ee476cb24bebb0cbe4d7061b0d33a707", "1533511")    ### [Rock Star Supernova]
+        ### Rock Star Supernova
+        ### Rock Star Supernova  ---> [['Rock Star Supernova']]
+
+
+        addDeezer(mdbmaps, "Billboard", "31aa5ad81b2a6342572b6bd54425deae", "390649")    ### [Iration]
+        ### Fresh Grounds (EP)
+        ### Fresh Grounds (EP)  ---> [['Iration']]
+
+
+        addDeezer(mdbmaps, "Billboard", "62fe13f7952a052298750c432e191a08", "4037981")    ### [Trinidad James]
+        ### Don't Be S.A.F.E.
+        ### Don't Be S.A.F.E.  ---> [['Trinidad James']]
+
+
+        addDeezer(mdbmaps, "Billboard", "4fdc8908f2ee7ad25e35f2ad9531c681", "15080705")    ### [Dennis Reed & Gap]
+        ### Necessary
+        ### Necessary  ---> [['Dennis Reed & Gap']]
+
+
+        addDeezer(mdbmaps, "Billboard", "8dafa71fa9a51e9418124a225aa9aed2", "712900")    ### [KONGOS]
+        ### Come With Me Now
+        ### Come With Me Now  ---> [['KONGOS']]
+
+
+        addDeezer(mdbmaps, "Billboard", "71e904485de1ca65917eb99f886f9c4d", "69608322")    ### [Marty]
+        ### Marty For President (EP)
+        ### Marty For President (EP)  ---> [['Marty']]
+
+
+        addDeezer(mdbmaps, "Billboard", "7a85a9d8804e19413bab514f5f51dfb9", "8322164")    ### [Donnie Trumpet & The Social Experiment]
+        ### Sunday Candy
+        ### Sunday Candy  ---> [['Donnie Trumpet & The Social Experiment']]
+
+
+        addDeezer(mdbmaps, "Billboard", "4891617ed29a8fe8a1775bd2b17c71b2", "668525")    ### [The Internet]
+        ### Special Affair
+        ### Special Affair  ---> [['The Internet']]
+
+
+        addAllMusic(mdbmaps, "Billboard", "c5281bc610aaf5fcb1be3ea9b5aef4a7", "mn0000046177")   ### [Bo Donaldson And The Heywoods]
+        addDeezer(mdbmaps, "Billboard", "c5281bc610aaf5fcb1be3ea9b5aef4a7", "1078918")    ### [Bo Donaldson And The Heywoods]
+        ### Billy, Don't Be A Hero
+        ### Billy, Don't Be A Hero  ---> [['Bo Donaldson And The Heywoods']]
+
+
+        addDeezer(mdbmaps, "Billboard", "5e374f537637dfbb639dcb7d363e896b", "566096")    ### [Last Call]
+        ### Victory
+        ### Victory  ---> [['Tye Tribbett & G.A.', 'Fred Jerkins Featuring Last Call']]
 
 
 
@@ -3946,6 +4369,122 @@ def extraAddsForBillboardYE(mdbmaps, chartType):
         ### The Most Relaxing Piano Music In The Universe
         
         addDiscogs(mdbmaps, "BillboardYE", "9397a5c4ab0e4fb8cb8f309fc2880f4d", "7118")    ### [DJ Snake]
+
+        addDeezer(mdbmaps, "BillboardYE", "c8abf18e25a2ca4d30ffb6035445dd51", "406342")    ### [Unspoken]
+        ### Reason  ,  Start A Fire
+        ### Reason  ---> [['Unspoken']]
+        ### Start A Fire  ---> [['Unspoken']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "6b4ea7f06bfc6d3e2914f906d49b2f9c", "4831298")    ### [Pat Barrett]
+        ### Build My Life  ,  The Way (New Horizon)
+        ### Build My Life  ---> [['Pat Barrett']]
+        ### The Way (New Horizon)  ---> [['Pat Barrett']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "1516885e1eb960fe8ce48b8b0c18013f", "13669055")    ### [LIL PHAG]
+        ### The Final Album (EP)  ,  resERECTION (EP)
+        ### The Final Album (EP)  ---> [['LIL PHAG']]
+        ### resERECTION (EP)  ---> [['LIL PHAG']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "be0f0791c0f7ba1718fdabe23ad825f0", "7797")    ### [Keith Anderson]
+        ### Every Time I Hear Your Name  ,  I Still Miss You
+        ### Every Time I Hear Your Name  ---> [['Keith Anderson']]
+        ### I Still Miss You  ---> [['Keith Anderson']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "2b1e6a7e423a10610fe08af987a95e10", "4037981")    ### [Trinidad James]
+        ### All Gold Everything  ,  I Luv This Sh*t
+        ### All Gold Everything  ---> [['Trinidad James']]
+        ### I Luv This Sh*t  ---> [['August Alsina Featuring Trinidad James']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "dd41af3d62ed157a1cf87b2874ec4221", "205804")    ### [Unk]
+        ### Walk It Out  ,  2 Step
+        ### Walk It Out  ---> [['Unk']]
+        ### 2 Step  ---> [['Unk']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "0930d7117fbf6bdc9e8841a02ba609a3", "49992552")    ### [The Bonfyre]
+        ### Automatic  ,  U Say
+        ### Automatic  ---> [['Miranda Lambert', 'The Bonfyre']]
+        ### U Say  ---> [['The Bonfyre Featuring 6LACK']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "2e8eeabf755112170bd4aa85bde811d7", "282934")    ### [Selah]
+        ### Bless The Broken Road
+        ### Bless The Broken Road  ---> [['Rascal Flatts', 'Selah']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "0fe0f6e89f6d9620861e9ceb1b36f711", "712900")    ### [KONGOS]
+        ### Come With Me Now
+        ### Come With Me Now  ---> [['KONGOS']]
+
+
+        addAllMusic(mdbmaps, "BillboardYE", "8d693828c3945e42f5d73723212ac3d4", "mn0003322275")   ### [I LOVE MAKONNEN]
+        addDeezer(mdbmaps, "BillboardYE", "8d693828c3945e42f5d73723212ac3d4", "6901127")    ### [I LOVE MAKONNEN]
+        ### Tuesday
+        ### Tuesday  ---> [['I LOVE MAKONNEN Featuring Drake']]
+
+
+        addDiscogs(mdbmaps, "BillboardYE", "79d15dbe07efb6748a2e6f46094b7b75", "268902")    ### [Paul McCoy]
+        ### Bring Me To Life
+        ### Bring Me To Life  ---> [['Evanescence Featuring Paul McCoy']]
+        
+
+        addDeezer(mdbmaps, "BillboardYE", "d83c1191555126f2bba5f3cbc30c12c2", "566096")    ### [Last Call]
+        ### Victory
+        ### Victory  ---> [['Yolanda Adams', 'Fred Jerkins Featuring Last Call', 'The Clark Sisters', 'Tye Tribbett & G.A.']]
+        
+
+        addAllMusic(mdbmaps, "BillboardYE", "814300eaeabc9ea9a440bb5069e8bd22", "mn0000573965")   ### [Helen Jane Long]
+        ### Porcelain
+        ### Porcelain  ---> [['Helen Jane Long']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "207e27adc7483948baea636ad0293d00", "129723")    ### [Dora The Explorer]
+        ### Dora The Explorer: Dance Fiesta!
+        ### Dora The Explorer: Dance Fiesta!  ---> [['Dora The Explorer']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "2c9e9667a41636bf52e6604dd765d044", "8907120")    ### [Arsenal Efectivo]
+        ### En La Fuga
+        ### En La Fuga  ---> [['Arsenal Efectivo']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "40047f23a7ebcc10b31de43a3294c35c", "13916083")    ### [Fuerza Regida]
+        ### Del Barrio Hasta Aqui
+        ### Del Barrio Hasta Aqui  ---> [['Fuerza Regida']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "78eac13a6059146e01c35f744e91e8c6", "1183466")    ### [Asian Meditation Music Collective]
+        ### Asian Meditation Music: 101 Songs
+        ### Asian Meditation Music: 101 Songs  ---> [['Asian Meditation Music Collective']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "f7325c4bc982455f674db476ebd013ff", "13788905")    ### [Henricci]
+        ### Sister Caro (EP)
+        ### Sister Caro (EP)  ---> [['Henricci']]
+
+
+        addDeezer(mdbmaps, "BillboardYE", "171f8644afcd1bb3b25dfc0b7334b295", "242975")    ### [Chloe]
+        ### Walking In The Air
+        ### Walking In The Air  ---> [['Chloe']]
+
+
+        addDiscogs(mdbmaps, "BillboardYE", "48418341b2d3cd5101f072b0ea38f67c", "778532")   ### [The Polish National Radio Symphony Orchestra]
+        addDeezer(mdbmaps, "BillboardYE", "48418341b2d3cd5101f072b0ea38f67c", "6764825")    ### [The Polish National Radio Symphony Orchestra]
+        ### Henryk Gorecki: Symphony No. 3 "Symphony Of Sorrowful Songs" Op. 36
+        ### Henryk Gorecki: Symphony No. 3 "Symphony Of Sorrowful Songs" Op. 36  ---> [['Beth Gibbons And The Polish National Radio Symphony Orchestra/Krzysztof Penderecki']]
+
+
+        addAllMusic(mdbmaps, "BillboardYE", "c995a8d4bfc131004a14915b152f7bdf", "mn0000164050")   ### [Vienna Philharmonic Orchestra]
+        addDeezer(mdbmaps, "BillboardYE", "c995a8d4bfc131004a14915b152f7bdf", "287113")    ### [Vienna Philharmonic Orchestra]
+        ### Chopin: The Piano Concertos
+        ### Chopin: The Piano Concertos  ---> [['Lang Lang ::: Vienna Philharmonic Orchestra']]
+
+
         ### Lean On  ,  Turn Down For What
         ### Lean On  ---> [['Major Lazer & DJ Snake Featuring MO']]
         ### Turn Down For What  ---> [["DJ Snake ::: Lil' Jon"]]

@@ -17,18 +17,24 @@ class spotifyCharts:
         self.russia      = ['regional-ru-weekly']
         self.isreal      = ['regional-il-weekly']
         self.italy       = ['regional-it-weekly']
+        self.egypt       = ['regional-eg-weekly']
+        self.australia   = ['regional-au-weekly']
+        self.phillipines = ['regional-ph-weekly']
+        self.hongkong    = ['regional-hk-weekly']
+        self.vietnam     = ['regional-vn-weekly']
+        self.colombia    = ['regional-co-weekly']
         
         self.chartNames = self.__dict__.keys()
         
         self.chartRanks = {}
         self.chartRanks[0] = ['us']
-        self.chartRanks[1] = ['england']
+        self.chartRanks[1] = ['england', 'australia']
         self.chartRanks[2] = ['world']
         self.chartRanks[3] = ['denmark', 'southafrica']
-        self.chartRanks[4] = ['italy', 'isreal']
-        self.chartRanks[5] = ['india', 'russia']
-        self.chartRanks[6] = ['japan']
-        self.chartRanks[7] = ['mexico']
+        self.chartRanks[4] = ['italy', 'isreal', 'phillipines']
+        self.chartRanks[5] = ['india', 'russia', 'egypt']
+        self.chartRanks[6] = ['japan', 'hongkong', 'vietnam']
+        self.chartRanks[7] = ['mexico', 'colombia']
         self.chartRanks[8] = ['brazil']
         
         
