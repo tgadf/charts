@@ -2487,9 +2487,425 @@ def extraAddsForSpotify(mdbmaps, chartType):
         ### Tenta Vir - Acústico  ---> [['1Kilo']]
         ### Só por Hoje  ---> [['1Kilo']]
 
-        
-        
-        
+        addDeezer(mdbmaps, "Spotify", "f7cec01e67ca39864c0f2fd75d761660", "7511588")    ### [Brytiago]
+        ### Bebé - Remix  ,  Netflixxx  ,  Asesina  ,  Asesina - Remix  ,  Controla
+        ### Bebé - Remix  ---> [['Brytiago']]
+        ### Netflixxx  ---> [['Brytiago']]
+        ### Asesina  ---> [['Brytiago']]
+        ### Asesina - Remix  ---> [['Brytiago']]
+        ### Controla  ---> [['Brytiago']]
+
+
+        addDeezer(mdbmaps, "Spotify", "3586ef1c4ceeaeee64213a33e8bac4d3", "14539467")    ### [Carin Leon]
+        ### Me La Avente  ,  Tú  ,  Si Tu Amor No Vuelve  ,  El Amor De Tu Vida
+        ### Me La Avente  ---> [['Carin Leon']]
+        ### Tú  ---> [['Carin Leon', 'Los Elegantes de Jerez']]
+        ### Si Tu Amor No Vuelve  ---> [['Carin Leon']]
+        ### El Amor De Tu Vida  ---> [['Carin Leon']]
+
+
+        addDeezer(mdbmaps, "Spotify", "cb4ed5e91d3324243a563ca34d2b648b", "5862399")    ### [Ghetto Kids]
+        ### Tra Tra Tra  ,  Tra Tra Tra (Remix)  ,  Tra Tra Tra Remix - Remix
+        ### Tra Tra Tra  ---> [['Ghetto Kids']]
+        ### Tra Tra Tra (Remix)  ---> [['Ghetto Kids']]
+        ### Tra Tra Tra Remix - Remix  ---> [['Ghetto Kids']]
+
+
+        addDeezer(mdbmaps, "Spotify", "85dd6cf0051e2b50e41d29958701ac14", "133049")    ### [Los Enanitos Verdes]
+        ### Lamento Boliviano  ,  La Muralla Verde  ,  Luz De Dia
+        ### Lamento Boliviano  ---> [['Los Enanitos Verdes']]
+        ### La Muralla Verde  ---> [['Los Enanitos Verdes']]
+        ### Luz De Dia  ---> [['Los Enanitos Verdes']]
+
+
+        addDeezer(mdbmaps, "Spotify", "430127df17cc008edddc66ccb6e474b5", "4951751")    ### [Aleman]
+        ### Rucón  ,  Humo en la Trampa  ,  Mi Tío Snoop
+        ### Rucón  ---> [['Aleman']]
+        ### Humo en la Trampa  ---> [['Aleman']]
+        ### Mi Tío Snoop  ---> [['Aleman']]
+
+
+        addDeezer(mdbmaps, "Spotify", "a76a8d66442cec00447bb8479e983502", "12756025")    ### [Jd Pantoja]
+        ### Me Fascina  ,  Se Motiva  ,  Error
+        ### Me Fascina  ---> [['Jd Pantoja']]
+        ### Se Motiva  ---> [['Jd Pantoja']]
+        ### Error  ---> [['Jd Pantoja']]
+
+
+        addDeezer(mdbmaps, "Spotify", "c266e7e5b949ab8426f55b44260fe36f", "10185442")    ### [Leon Leiden]
+        ### Gitana (feat. Jeis, Pao Alvarado & Charly Romero)  ,  Fondo de Bikini
+        ### Gitana (feat. Jeis, Pao Alvarado & Charly Romero)  ---> [['Leon Leiden']]
+        ### Fondo de Bikini  ---> [['Leon Leiden']]
+
+
+        addDeezer(mdbmaps, "Spotify", "d0b921ab3f041697daeefda08e364f8f", "101706332")    ### [Chris Jedi]
+        ### Bipolar  ,  Ahora Dice
+        ### Bipolar  ---> [['Chris Jedi']]
+        ### Ahora Dice  ---> [['Chris Jeday', 'Chris Jedi']]
+
+
+        addDeezer(mdbmaps, "Spotify", "a0b12e66a134b1600dc0af2e0e5bf439", "50030162")    ### [Kenia OS]
+        ### Mentiroso  ,  Cocteles
+        ### Mentiroso  ---> [['Kenia OS']]
+        ### Cocteles  ---> [['Kenia OS']]
+
+
+        addDeezer(mdbmaps, "Spotify", "ba0f0f252418ff2a3b710cb6310286a4", "4458767")    ### [Ed Maverick]
+        ### Fuentes de Ortiz  ,  Acurrucar
+        ### Fuentes de Ortiz  ---> [['Ed Maverick']]
+        ### Acurrucar  ---> [['Ed Maverick']]
+
+
+        addDeezer(mdbmaps, "Spotify", "480e1f91ff3f877587027dbf04d535fb", "61384072")    ### [Marca MP]
+        ### El Güero - En vivo  ,  El Güero
+        ### El Güero - En vivo  ---> [['Marca MP']]
+        ### El Güero  ---> [['Marca MP']]
+
+
+        addDeezer(mdbmaps, "Spotify", "a820b5e0f6cba2bdd1b5f59e75772c8c", "66031652")    ### [Kim Loaiza]
+        ### No seas Celoso  ,  Me perdiste
+        ### No seas Celoso  ---> [['Kim Loaiza']]
+        ### Me perdiste  ---> [['Kim Loaiza']]
+
+
+        addDeezer(mdbmaps, "Spotify", "9af5f8f84575f105ef9c1b308cf631ba", "1460107")    ### [Dayvi]
+        ### Baila Conmigo  ,  Baila Conmigo (feat. Kelly Ruiz)
+        ### Baila Conmigo  ---> [['Juan Magán', 'Dayvi']]
+        ### Baila Conmigo (feat. Kelly Ruiz)  ---> [['Dayvi']]
+
+
+        addDeezer(mdbmaps, "Spotify", "f12d539ccd32f4ed551e9dd0a661d064", "7792810")    ### [Virlan Garcia]
+        ### Y Cambió Mi Suerte  ,  En Donde Esta Tu Amor
+        ### Y Cambió Mi Suerte  ---> [['Virlan Garcia']]
+        ### En Donde Esta Tu Amor  ---> [['Virlan Garcia']]
+
+
+        addDeezer(mdbmaps, "Spotify", "8bf8a20a249dfdc01269807dc8ec9f98", "804817")    ### [Serge]
+        ### Seguro Te Pierdo
+        ### Seguro Te Pierdo  ---> [['Serge']]
+
+
+        addDeezer(mdbmaps, "Spotify", "4f0883c744c24765f66d092de7e28689", "14672457")    ### [DJ Pedro Fuentes]
+        ### Rompelo
+        ### Rompelo  ---> [['DJ Pedro Fuentes']]
+
+
+        addDeezer(mdbmaps, "Spotify", "498171365bab1652d98358b239dade35", "8675234")    ### [Nanpa Básico]
+        ### Canela
+        ### Canela  ---> [['Nanpa Básico']]
+
+
+        addDeezer(mdbmaps, "Spotify", "ef0bba00805c2389630d815c6393afaa", "10010270")    ### [WOS]
+        ### CANGURO
+        ### CANGURO  ---> [['WOS']]
+
+
+        addDeezer(mdbmaps, "Spotify", "80a68a34e178289783b60c43ee35e874", "11226198")    ### [Ms Nina]
+        ### Tu Sicaria
+        ### Tu Sicaria  ---> [['Ms Nina']]
+
+
+        addDeezer(mdbmaps, "Spotify", "4d54463a88911627fed2febab5b33688", "5286414")    ### [Lasso]
+        ### Subtítulos
+        ### Subtítulos  ---> [['Lasso']]
+
+
+        addDeezer(mdbmaps, "Spotify", "4fe052f3eb0680f623640bcdc24ecff7", "4812795")    ### [Yera]
+        ### Mejores Amigos
+        ### Mejores Amigos  ---> [['Yera']]
+
+
+        addDeezer(mdbmaps, "Spotify", "89b6fd39a55e327244bd0099a61654a5", "85216072")    ### [Luis Angel "El Flaco"]
+        ### Hasta la Miel Amarga (feat. Grupo Firme)
+        ### Hasta la Miel Amarga (feat. Grupo Firme)  ---> [['Luis Angel "El Flaco"']]
+
+
+        addDeezer(mdbmaps, "Spotify", "d35181f741914038bc1341754060f618", "53441822")    ### [Kevin Kaarl]
+        ### Vámonos a Marte
+        ### Vámonos a Marte  ---> [['Kevin Kaarl']]
+
+
+        addDeezer(mdbmaps, "Spotify", "778f1cbed106d17eff230c74525827e9", "49553592")    ### [Los 2 de la S]
+        ### Somos Los Que Somos - En Vivo
+        ### Somos Los Que Somos - En Vivo  ---> [['Los 2 de la S']]
+
+
+        addDeezer(mdbmaps, "Spotify", "41fd5ff9a7ebb5a9577c096030bef762", "14505511")    ### [Sonideros de MEX USA]
+        ### Tus Jefes No Me Quieren
+        ### Tus Jefes No Me Quieren  ---> [['Sonideros de MEX USA', 'Grupo Ensamble']]
+
+
+        addDeezer(mdbmaps, "Spotify", "9c0607ce29d74dff9e10d09ab970c3d5", "5524597")    ### [Mike Bahía]
+        ### Detente
+        ### Detente  ---> [['Mike Bahía']]
+
+
+        addDeezer(mdbmaps, "Spotify", "c3a8108e249d8dcf6272806a7f26224e", "73395002")    ### [Flyboiz]
+        ### Vitamina
+        ### Vitamina  ---> [['Flyboiz']]
+
+
+        addDeezer(mdbmaps, "Spotify", "8b1fb1f42a3a3f6e7b41684aeea767db", "2572")    ### [DIVINE]
+        ### Mere Gully Mein (feat. Naezy)  ,  Sher Aaya Sher  ,  Teesri Manzil  ,  Kaam 25 - Sacred Games  ,  Farak  ,  Kohinoor  ,  Chal Bombay  ,  Gandhi Money  ,  Wallah  ,  Vibe Hai  ,  Remand  ,  Punya Paap  ,  Mirchi  ,  3:59 AM
+        ### Mere Gully Mein (feat. Naezy)  ---> [['DIVINE']]
+        ### Sher Aaya Sher  ---> [['Ranveer Singh', 'DIVINE']]
+        ### Teesri Manzil  ---> [['DIVINE']]
+        ### Kaam 25 - Sacred Games  ---> [['DIVINE']]
+        ### Farak  ---> [['DIVINE']]
+        ### Kohinoor  ---> [['DIVINE']]
+        ### Chal Bombay  ---> [['DIVINE']]
+        ### Gandhi Money  ---> [['DIVINE']]
+        ### Wallah  ---> [['DIVINE']]
+        ### Vibe Hai  ---> [['DIVINE']]
+        ### Remand  ---> [['DIVINE']]
+        ### Punya Paap  ---> [['DIVINE']]
+        ### Mirchi  ---> [['DIVINE']]
+        ### 3:59 AM  ---> [['DIVINE']]
+
+
+        addDiscogs(mdbmaps, "Spotify", "7c54dff57cbb306955f4dcdb08c1ed01", "4993198")    ### [J SOUL BROTHERS III]
+        ### Rat-tat-tat  ,  Movin' on  ,  R.Y.U.S.E.I.  ,  J.S.B. HAPPINESS  ,  Welcome to TOKYO  ,  HAPPY  ,  RAINBOW  ,  恋と愛  ,  RAINBOW (feat. Yellow Claw)  ,  Yes we are  ,  SCARLET - feat. Afrojack  ,  冬空
+        ### Rat-tat-tat  ---> [['J SOUL BROTHERS III']]
+        ### Movin' on  ---> [['J SOUL BROTHERS III']]
+        ### R.Y.U.S.E.I.  ---> [['J SOUL BROTHERS III']]
+        ### J.S.B. HAPPINESS  ---> [['J SOUL BROTHERS III']]
+        ### Welcome to TOKYO  ---> [['J SOUL BROTHERS III']]
+        ### HAPPY  ---> [['J SOUL BROTHERS III']]
+        ### RAINBOW  ---> [['J SOUL BROTHERS III']]
+        ### 恋と愛  ---> [['J SOUL BROTHERS III']]
+        ### RAINBOW (feat. Yellow Claw)  ---> [['J SOUL BROTHERS III']]
+        ### Yes we are  ---> [['J SOUL BROTHERS III']]
+        ### SCARLET - feat. Afrojack  ---> [['J SOUL BROTHERS III']]
+        ### 冬空  ---> [['J SOUL BROTHERS III']]
+
+
+        addDiscogs(mdbmaps, "Spotify", "49e21f6d48a52c061cc0770fc5fd0691", "450046")    ### [SPITZ]
+        ### チェリー  ,  ロビンソン  ,  優しいあの子  ,  楓  ,  空も飛べるはず  ,  春の歌
+        ### チェリー  ---> [['SPITZ']]
+        ### ロビンソン  ---> [['SPITZ']]
+        ### 優しいあの子  ---> [['SPITZ']]
+        ### 楓  ---> [['SPITZ']]
+        ### 空も飛べるはず  ---> [['SPITZ', 'negoto']]
+        ### 春の歌  ---> [['SPITZ']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "10752da8250b10a3129d950b21d023f8", "mn0003504243")   ### [Hiroomi Tosaka]
+        addDiscogs(mdbmaps, "Spotify", "10752da8250b10a3129d950b21d023f8", "7028353")    ### [Hiroomi Tosaka]
+        ### WASTED LOVE  ,  DIAMOND SUNSET  ,  LUXE  ,  BLUE SAPPHIRE
+        ### WASTED LOVE  ---> [['Hiroomi Tosaka']]
+        ### DIAMOND SUNSET  ---> [['Hiroomi Tosaka']]
+        ### LUXE  ---> [['Hiroomi Tosaka']]
+        ### BLUE SAPPHIRE  ---> [['Hiroomi Tosaka']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "0811a2f0d1e49bb08d7c8065d5e96975", "mn0003616005")   ### [CHANMINA]
+        addDeezer(mdbmaps, "Spotify", "0811a2f0d1e49bb08d7c8065d5e96975", "11507881")    ### [CHANMINA]
+        ### Never Grow Up  ,  Angel  ,  Chocolate  ,  Doctor
+        ### Never Grow Up  ---> [['CHANMINA']]
+        ### Angel  ---> [['Fifth Harmony', 'CHANMINA']]
+        ### Chocolate  ---> [['CHANMINA']]
+        ### Doctor  ---> [['Sidhu Moose Wala', 'CHANMINA']]
+
+
+        addDeezer(mdbmaps, "Spotify", "00c730f93d370adca1e1986f2be6e04c", "5200027")    ### [sumika]
+        ### Lovers  ,  願い  ,  ファンファーレ  ,  センス・オブ・ワンダー
+        ### Lovers  ---> [['sumika']]
+        ### 願い  ---> [['sumika']]
+        ### ファンファーレ  ---> [['sumika']]
+        ### センス・オブ・ワンダー  ---> [['sumika']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "3e0b78a0848a4203bda7fba81a79d9fa", "mn0000510902")   ### [Yuzu]
+        addDiscogs(mdbmaps, "Spotify", "3e0b78a0848a4203bda7fba81a79d9fa", "3719757")    ### [Yuzu]
+        ### 光榮之橋  ,  Koushikondou  ,  夏色  ,  Natsuiro
+        ### 光榮之橋  ---> [['Yuzu']]
+        ### Koushikondou  ---> [['Yuzu']]
+        ### 夏色  ---> [['Yuzu']]
+        ### Natsuiro  ---> [['Yuzu']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "5e79ea82800612f6d8594983a34d5756", "mn0001399754")   ### [Sukima Switch]
+        addDiscogs(mdbmaps, "Spotify", "5e79ea82800612f6d8594983a34d5756", "2928334")    ### [Sukima Switch]
+        addDeezer(mdbmaps, "Spotify", "5e79ea82800612f6d8594983a34d5756", "13259173")    ### [Sukima Switch]
+
+        ### 奏(かなで)  ,  全力少年  ,  奏(かなで) - ARENA TOUR '07 "W-ARENA"
+        ### 奏(かなで)  ---> [['Sukima Switch']]
+        ### 全力少年  ---> [['Sukima Switch']]
+        ### 奏(かなで) - ARENA TOUR '07 "W-ARENA"  ---> [['Sukima Switch']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "d785b71eed850b8e5f587a19b02d8327", "mn0003836615")   ### [milet]
+        addDeezer(mdbmaps, "Spotify", "d785b71eed850b8e5f587a19b02d8327", "5879939")    ### [milet]
+        ### us  ,  inside you  ,  Who I Am
+        ### us  ---> [['milet']]
+        ### inside you  ---> [['milet']]
+        ### Who I Am  ---> [['milet']]
+
+
+        addDeezer(mdbmaps, "Spotify", "29801fa0c76a1a48ffd4a1ab03b48510", "652547")    ### [SHAUN]
+        ### Way Back Home  ,  Way Back Home (feat. Conor Maynard) - Sam Feldt Edit
+        ### Way Back Home  ---> [['SHAUN']]
+        ### Way Back Home (feat. Conor Maynard) - Sam Feldt Edit  ---> [['SHAUN']]
+
+
+        addDeezer(mdbmaps, "Spotify", "27b107711f4ac28e39e9fdded6853a3a", "150444")    ### [QUEEN BEE]
+        ### HALF  ,  火炎
+        ### HALF  ---> [['QUEEN BEE']]
+        ### 火炎  ---> [['QUEEN BEE']]
+
+
+        addAllMusic(mdbmaps, "Spotify", "edb8335b26599b704a5a9fe50207c842", "mn0003171003")   ### [MC Dede]
+        addDeezer(mdbmaps, "Spotify", "edb8335b26599b704a5a9fe50207c842", "4551457")    ### [MC Dede]
+        ### Pega a Receita
+        ### Pega a Receita  ---> [['MC Dede']]
+
+
+        addDeezer(mdbmaps, "Spotify", "8d3995f51759e2d9a5b4e7f1695c6e14", "11821447")    ### [Mc Denny]
+        ### Vai Faz a Fila
+        ### Vai Faz a Fila  ---> [['Mc Denny']]
+
+
+        addDeezer(mdbmaps, "Spotify", "3b6adf9fcb8c995908aba17d1b3eceb1", "14491939")    ### [Analaga]
+        ### Lençol Dobrado
+        ### Lençol Dobrado  ---> [['Analaga', 'João Gustavo e Murilo']]
+
+
+        addDeezer(mdbmaps, "Spotify", "cb9848fb6737c2d441d857a33a12ddc5", "72751382")    ### [DJ Dollynho Da Lapa]
+        ### Surtada - Versão Funk
+        ### Surtada - Versão Funk  ---> [['DJ Dollynho Da Lapa']]
+
+
+        addDeezer(mdbmaps, "Spotify", "f2d715cb06b94d8f533444911d83a31b", "11085788")    ### [Mc Leléto]
+        ### Chacoalhando
+        ### Chacoalhando  ---> [['Mc Leléto']]
+
+
+        addDeezer(mdbmaps, "Spotify", "898471fc4dc6089531d2f37f6eaab75a", "10847570")    ### [MC Gudan]
+        ### Boca de Pêlo
+        ### Boca de Pêlo  ---> [['MC Gudan']]
+
+
+        addDeezer(mdbmaps, "Spotify", "7758c04c98a6e60001fb3c7af8564387", "14907231")    ### [Dj Henrique de Ferraz]
+        ### Garupa, Pt. 2
+        ### Garupa, Pt. 2  ---> [['Dj Henrique de Ferraz']]
+
+
+        addDeezer(mdbmaps, "Spotify", "6df04384d7db64524b617c2554c1b47e", "52890062")    ### [Mc Brunyn]
+        ### Vai Luan, Rainha dos Faixa Preta
+        ### Vai Luan, Rainha dos Faixa Preta  ---> [['Mc Brunyn']]
+
+
+        addDeezer(mdbmaps, "Spotify", "0879dc1db0c9c03739f0cd4f89b92bae", "13960505")    ### [MC Ws]
+        ### Senta Concentrada
+        ### Senta Concentrada  ---> [['MC Ws']]
+
+
+        addDeezer(mdbmaps, "Spotify", "b3e0f33068c40deecc60cf2b83d15316", "11270172")    ### [MC Mari]
+        ### Senta Concentrada (feat. MC WS)
+        ### Senta Concentrada (feat. MC WS)  ---> [['MC Mari']]
+
+
+        addDeezer(mdbmaps, "Spotify", "97c50da99f12c3ed4d550a7556881402", "51219002")    ### [Dstance]
+        ### Niña Bonita - Acústico
+        ### Niña Bonita - Acústico  ---> [['Dstance']]
+
+
+        addDeezer(mdbmaps, "Spotify", "35c35c4d0cfd418ae91316837e87a9e4", "5261299")    ### [Mc Sapao]
+        ### Vou Desafiar Você
+        ### Vou Desafiar Você  ---> [['Mc Sapao']]
+
+
+        addDeezer(mdbmaps, "Spotify", "ffaa47c99f4c30d20e954f44136c6eb1", "9488316")    ### [Tempalay]
+        ### どうしよう
+        ### どうしよう  ---> [['Tempalay']]
+
+
+        addDeezer(mdbmaps, "Spotify", "21d192ffb90a9efef9895015c8df1745", "16468")    ### [ChiChi Peralta]
+        ### Procura
+        ### Procura  ---> [['ChiChi Peralta']]
+
+
+        addDeezer(mdbmaps, "Spotify", "d8c2ec8d0b7f2e7e0c2d7c659e347934", "198347")    ### [KURT]
+        ### La Mujer Perfecta
+        ### La Mujer Perfecta  ---> [['KURT']]
+
+
+        addDeezer(mdbmaps, "Spotify", "7ddf29e2b2e4fdf8237a05d45ae4926b", "5569223")    ### [JONY]
+        ### Love Your Voice
+        ### Love Your Voice  ---> [['JONY']]
+
+
+        addDeezer(mdbmaps, "Spotify", "6c26bd550c877b3a886f2daffb0661b9", "77319382")    ### [JVLA]
+        ### Such a Whore (Stellular Remix)
+        ### Such a Whore (Stellular Remix)  ---> [['JVLA']]
+
+
+        addDeezer(mdbmaps, "Spotify", "c25f0f1fd4c51df0acf8a9ea192e7897", "64294972")    ### [Harnoor]
+        ### Waalian
+        ### Waalian  ---> [['Harnoor']]
+
+
+        addDeezer(mdbmaps, "Spotify", "efacb208316a171077bac9cf6354ceed", "4871377")    ### [MONGOL800]
+        ### 小さな恋のうた
+        ### 小さな恋のうた  ---> [['MONGOL800']]
+
+
+        addDeezer(mdbmaps, "Spotify", "416bf281e11ac7d58ef58aba62554222", "14095307")    ### [balloon]
+        ### シャルル
+        ### シャルル  ---> [['balloon']]
+
+
+        addDeezer(mdbmaps, "Spotify", "5eed321e32d538a4eebf3b0a12f0edea", "5620206")    ### [GeG]
+        ### I gotta go
+        ### I gotta go  ---> [['GeG']]
+
+
+        addDeezer(mdbmaps, "Spotify", "88ab55e73bb70cd0469468bffd5b108b", "810401")    ### [SHE'S]
+        ### Letter
+        ### Letter  ---> [["SHE'S"]]
+
+
+        addDeezer(mdbmaps, "Spotify", "aca0dfe958f9a23dbe5a574a084aba32", "4512694")    ### [Indigo la End]
+        ### 夏夜のマジック
+        ### 夏夜のマジック  ---> [['Indigo la End']]
+
+
+        addDeezer(mdbmaps, "Spotify", "1737d094d4142dedd15212067d691b8d", "13760123")    ### [Yamazaru]
+        ### 名前の無い歌
+        ### 名前の無い歌  ---> [['Yamazaru']]
+
+
+        addDeezer(mdbmaps, "Spotify", "580a8e58e45e183fec696ba7d2924a44", "9676916")    ### [negoto]
+        ### 空も飛べるはず
+        ### 空も飛べるはず  ---> [['SPITZ', 'negoto']]
+
+
+        addDiscogs(mdbmaps, "Spotify", "032c8248e700d2a9bb26e9ec282487c7", "6032545")   ### [LUCKY TAPES]
+        ### Lonely Lonely
+        ### Lonely Lonely  ---> [['LUCKY TAPES']]
+
+
+        addDeezer(mdbmaps, "Spotify", "3b5a9d6cd62f944f7518829c7d22e8ef", "8540540")    ### [QARAN]
+        ### Haaye Oye (feat. Ash King)
+        ### Haaye Oye (feat. Ash King)  ---> [['QARAN']]
+
+
+        addDeezer(mdbmaps, "Spotify", "d160e296323de212cb7f9ae45318100a", "12363878")    ### [POLKADOT STINGRAY]
+        ### ヒミツ
+        ### ヒミツ  ---> [['POLKADOT STINGRAY']]
+
+
+        addDiscogs(mdbmaps, "Spotify", "ba57265622202c0b8f8dbde577b879f5", "3002989")    ### [PornoGraffitti]
+        ### ミュージック・アワー
+        ### ミュージック・アワー  ---> [['PornoGraffitti']]
+
+
+        addDiscogs(mdbmaps, "Spotify", "3c1c25397df244e016fb91ce01f48dc3", "381113")   ### [Panteon Rococo]
+        addDeezer(mdbmaps, "Spotify", "3c1c25397df244e016fb91ce01f48dc3", "7974")    ### [Panteon Rococo]
+        ### La Dosis Perfecta
+        ### La Dosis Perfecta  ---> [['Panteon Rococo']]
+
+
         mdbmaps["Spotify"].save()
         
         
@@ -2914,6 +3330,23 @@ def extraAddsForBillboard(mdbmaps, chartType):
         addDeezer(mdbmaps, "Billboard", "5e374f537637dfbb639dcb7d363e896b", "566096")    ### [Last Call]
         ### Victory
         ### Victory  ---> [['Tye Tribbett & G.A.', 'Fred Jerkins Featuring Last Call']]
+        ### Masterpiece: Nuestra Obra Maestra
+
+
+        addDeezer(mdbmaps, "Billboard", "dd9ca9f1eec3ec7324764098928fa90a", "62490")    ### [Nils]
+        ### Summer Nights  ,  Jump Start
+        ### Summer Nights  ---> [['Nils', 'Jazz Holdouts']]
+        ### Jump Start  ---> [['Nils']]
+
+
+        addDeezer(mdbmaps, "Billboard", "8126b866ffdc150d799057c736ff708e", "577628")    ### [Steve Oliver]
+        ### Fun In The Sun
+        ### Fun In The Sun  ---> [['Steve Oliver']]
+
+
+        addDeezer(mdbmaps, "Billboard", "4ba36e510dd7bbd2009fb8ff90aa48c7", "1575744")    ### [Francis & The Lights]
+        ### Friends
+        ### Friends  ---> [['Shalamar', 'Francis & The Lights Featuring Bon Iver']]
 
 
 
@@ -2982,10 +3415,7 @@ def extraAddsForBillboard(mdbmaps, chartType):
 
             #832b5faffd094a5ab3b22f67d40db4b7	None	None	None	None	None	None	None	None	None	None	None	0        
             addAllMusic(mdbmaps, "Billboard", "832b5faffd094a5ab3b22f67d40db4b7", "mn0001049094")   ### [RKM]
-            ### Masterpiece: Nuestra Obra Maestra
 
-
-        
         #addAllMusic(mdbmaps, "Billboard", "fa00044058206494d4335094632fe4eb", "mn0000771069")   ### Boss
         ### Deeper  ,  Recipe Of A Hoe
         #addDiscogs(mdbmaps, "Billboard", "265d96f09b9e09bd2ea57aa249d40bd6", "4995184")    ### [New Life]
@@ -4180,6 +4610,617 @@ def extraAddsForTop40(mdbmaps, chartType):
         ### Tuesday
         ### Tuesday  ---> [['I Love Makonnen & Drake', 'Burak Yeter & Danelle Sandoval', 'The Revs']]
 
+
+        addDeezer(mdbmaps, "Top40", "0166cabfe7594a261af1250ad91c5ebe", "3039")    ### [Di-rect]
+        ### She  ,  Hungry For Love  ,  Cool Without You  ,  Inside My Head  ,  Free  ,  Adrenaline  ,  Rollercoaster  ,  Webcam Girl  ,  Blind For You  ,  A Good Thing  ,  Johnny  ,  Times Are Changing  ,  This Is Who We Are  ,  Hold On  ,  Natural High  ,  The Chase  ,  Young Ones
+        ### She  ---> [['Groove Coverage', 'Di-rect', 'Prominent']]
+        ### Hungry For Love  ---> [['Di-rect']]
+        ### Cool Without You  ---> [['Di-rect']]
+        ### Inside My Head  ---> [['Di-rect']]
+        ### Free  ---> [['Mya', 'Gavin DeGraw', 'Zac Brown Band', 'Estelle', 'Twin Atlantic', 'Natalia Kills', 'Rudimental & Emeli Sande', 'Lighthouse Family', 'Starsplash', 'Graffiti6', 'Di-rect', 'Frantic Jack', 'Tatana']]
+        ### Adrenaline  ---> [['DJ Mendez', 'Di-rect']]
+        ### Rollercoaster  ---> [['B*Witched', 'Julian Le Play', 'Di-rect', 'Emis Killa', 'Dolly Style']]
+        ### Webcam Girl  ---> [['Di-rect']]
+        ### Blind For You  ---> [['Di-rect']]
+        ### A Good Thing  ---> [['Di-rect']]
+        ### Johnny  ---> [['Di-rect']]
+        ### Times Are Changing  ---> [['Di-rect']]
+        ### This Is Who We Are  ---> [['Di-rect']]
+        ### Hold On  ---> [['Sean Paul', 'KT Tunstall', 'Skepta', 'Måns Zelmerlöw', 'Darius & Finlay', 'Di-rect', 'Alain Clark', 'Frantic Jack', 'Nano', 'Lazee & Neverstore']]
+        ### Natural High  ---> [['Di-rect', 'HammerFall']]
+        ### The Chase  ---> [['Di-rect']]
+        ### Young Ones  ---> [['Di-rect']]
+
+
+        addDeezer(mdbmaps, "Top40", "79947bd82f85385cf579852761e3bcca", "5432668")    ### [Grafa]
+        ### Vrag  ,  Disco Party  ,  Ostavyash Sledi  ,  Nevidim  ,  Nikoi  ,  Domino  ,  Momenti  ,  Nadezhda  ,  Tyalo V Tyalo  ,  Dim Da Me Nama  ,  Kauza Perduta  ,  Kakto Iskash  ,  A Dano, Ama Nadali  ,  Na Ruba Na Ludostta  ,  Zapazeno Mjasto
+        ### Vrag  ---> [['Grafa']]
+        ### Disco Party  ---> [['Grafa']]
+        ### Ostavyash Sledi  ---> [['Grafa']]
+        ### Nevidim  ---> [['Grafa']]
+        ### Nikoi  ---> [['Grafa']]
+        ### Domino  ---> [['Jessie J', 'Benny Jamz', 'Grafa', 'Dani Moreno']]
+        ### Momenti  ---> [['Grafa']]
+        ### Nadezhda  ---> [['Grafa']]
+        ### Tyalo V Tyalo  ---> [['Grafa, Santra & Spens']]
+        ### Dim Da Me Nama  ---> [['Grafa, Bobo & Pecenkata']]
+        ### Kauza Perduta  ---> [['Grafa & Jahmmi']]
+        ### Kakto Iskash  ---> [['Billy Hlapeto & Grafa']]
+        ### A Dano, Ama Nadali  ---> [['Grafa, Mihaela Fileva & Venzy']]
+        ### Na Ruba Na Ludostta  ---> [['Grafa & Mihaela Fileva']]
+        ### Zapazeno Mjasto  ---> [['Billy Hlapeto, Venzi & Grafa']]
+
+
+        addAllMusic(mdbmaps, "Top40", "996dc2db2e60fc3de7a14828df795171", "mn0003729938")   ### [Z. E.]
+        ### Positiv  ,  Boomerang  ,  74 Bars  ,  Herren Pa Trappan  ,  Glommer  ,  Igen  ,  Branschen  ,  Gflow  ,  Sverige Vet  ,  Ungefar  ,  Latch  ,  Klick
+        ### Positiv  ---> [['Z. E.']]
+        ### Boomerang  ---> [['Nicole Scherzinger', 'DJ Felli Fel', 'Blümchen', 'Z. E.']]
+        ### 74 Bars  ---> [['Z. E.']]
+        ### Herren Pa Trappan  ---> [['Z. E.']]
+        ### Glommer  ---> [['Z. E.']]
+        ### Igen  ---> [['Z. E.']]
+        ### Branschen  ---> [['Z. E.']]
+        ### Gflow  ---> [['Z. E.']]
+        ### Sverige Vet  ---> [['Z. E. & Jiggz']]
+        ### Ungefar  ---> [['Z. E. & Jiggz']]
+        ### Latch  ---> [['Disclosure', 'Disclosure & Sam Smith', 'Z. E. & Jiggz']]
+        ### Klick  ---> [['Z. E., Thrife & Nigma']]
+
+
+        addDeezer(mdbmaps, "Top40", "73ea300db5aa1c2154adfe42186a887e", "5418")    ### [Ark]
+        ### One Of Us Is Gonna Die Young  ,  It Takes A Fool To Remain Sane  ,  Let Your Body Decide  ,  Calleth You Cometh I  ,  Calleth You  ,  Father Of A Son  ,  Tell Me This Night Is Over  ,  Clamour For Glamour  ,  Absolutely No Decorum  ,  The Worrying Kind
+        ### One Of Us Is Gonna Die Young  ---> [['Ark']]
+        ### It Takes A Fool To Remain Sane  ---> [['Ark']]
+        ### Let Your Body Decide  ---> [['Ark']]
+        ### Calleth You Cometh I  ---> [['Ark', 'Amanda Jenssen']]
+        ### Calleth You  ---> [['Ark']]
+        ### Father Of A Son  ---> [['Ark']]
+        ### Tell Me This Night Is Over  ---> [['Ark', 'Carola']]
+        ### Clamour For Glamour  ---> [['Ark']]
+        ### Absolutely No Decorum  ---> [['Ark']]
+        ### The Worrying Kind  ---> [['Ark', 'Maia Hirasawa']]
+
+
+        addDeezer(mdbmaps, "Top40", "c0e4ba1ede3532ccfde5b29e8aacc50b", "789194")    ### [Skryabin]
+        ### Ljudy Jak Korabli  ,  Kvinty  ,  Hovoryly I Kuryly  ,  A Pamiataiesh  ,  Mam  ,  Dobriak  ,  Delfiny  ,  Kinets Filmu  ,  Prognoz Pogody  ,  Hay Bude Tak...
+        ### Ljudy Jak Korabli  ---> [['Skryabin']]
+        ### Kvinty  ---> [['Skryabin']]
+        ### Hovoryly I Kuryly  ---> [['Skryabin']]
+        ### A Pamiataiesh  ---> [['Skryabin']]
+        ### Mam  ---> [['Skryabin']]
+        ### Dobriak  ---> [['Skryabin']]
+        ### Delfiny  ---> [['Skryabin']]
+        ### Kinets Filmu  ---> [['Skryabin']]
+        ### Prognoz Pogody  ---> [['Skryabin']]
+        ### Hay Bude Tak...  ---> [['Skryabin & Julija Zabrodska']]
+
+
+        addDeezer(mdbmaps, "Top40", "12a8a35953b0633264cd439f7dc723ad", "13244969")    ### [Elias]
+        ### Benzo  ,  Sayonara  ,  Thinking Of You  ,  Who's Da'man  ,  Bayram  ,  Shorty Ringer  ,  Brandvarm  ,  Who\'s Da\' Man  ,  Fotbollsfest
+        ### Benzo  ---> [['Elias']]
+        ### Sayonara  ---> [['Elias', 'MADH', 'Club Dogo & Lele Spedicato Negramaro']]
+        ### Thinking Of You  ---> [['Katy Perry', 'Paul Weller', 'Status Quo', 'Elias', 'Republic Of Loose']]
+        ### Who's Da'man  ---> [['Elias']]
+        ### Bayram  ---> [['Summer Cem & Elias']]
+        ### Shorty Ringer  ---> [['Josef & Elias']]
+        ### Brandvarm  ---> [['Josef & Elias']]
+        ### Who\'s Da\' Man  ---> [['Elias & Frans']]
+        ### Fotbollsfest  ---> [['Frans & Elias']]
+
+
+
+        addDiscogs(mdbmaps, "Top40", "60044c2592b77d0e4a7d4df0d5fdcbba", "908078")    ### [Julia Savicheva]
+        ### Believe Me  ,  Prosti Za Lubovj  ,  Korabli  ,  Stop  ,  Esli V Serdce Zyvet Ljubov  ,  Moskva-Vladivostok  ,  Julija  ,  Ya Tak Tebya Jdu
+        ### Believe Me  ---> [['Fort Minor', 'Lil Wayne & Drake', 'Julia Savicheva']]
+        ### Prosti Za Lubovj  ---> [['Julia Savicheva']]
+        ### Korabli  ---> [['Julia Savicheva', 'Ani Lorak']]
+        ### Stop  ---> [['Spice Girls', 'Black Rebel Motorcycle Club', 'Julia Savicheva', 'Moe', 'Sibel']]
+        ### Esli V Serdce Zyvet Ljubov  ---> [['Julia Savicheva']]
+        ### Moskva-Vladivostok  ---> [['Julia Savicheva']]
+        ### Julija  ---> [['Julia Savicheva']]
+        ### Ya Tak Tebya Jdu  ---> [['Julia Savicheva']]
+
+
+        addDiscogs(mdbmaps, "Top40", "c8c1ade4a56b82b143856c2c590e3fc1", "369368")    ### [Gola]
+        ### D'stadt  ,  I Ha Di Garn  ,  Aues Wär So Liecht  ,  D Starne  ,  Indianer  ,  SCL  ,  Oh Wiehnachtszyt  ,  Ma Cherie
+        ### D'stadt  ---> [['Gola']]
+        ### I Ha Di Garn  ---> [['Gola']]
+        ### Aues Wär So Liecht  ---> [['Gola']]
+        ### D Starne  ---> [['Gola']]
+        ### Indianer  ---> [['Barbara Moleko', 'Gola']]
+        ### SCL  ---> [['Gola']]
+        ### Oh Wiehnachtszyt  ---> [['Gola & Trauffer']]
+        ### Ma Cherie  ---> [['DJ Antoine', 'Hov 1', 'DJ Antoine, Gola & Trauffer']]
+
+
+        addDiscogs(mdbmaps, "Top40", "8422de1228cdf9aa9ee5888a858a98b1", "8707189")   ### [Mihaela Fileva]
+        addDeezer(mdbmaps, "Top40", "8422de1228cdf9aa9ee5888a858a98b1", "5471912")    ### [Mihaela Fileva]
+        ### Prilivi I Otlivi  ,  Inkognito  ,  Kogato Ti Triabvam  ,  Opasno Blizki  ,  A Dano, Ama Nadali  ,  Dai Znak Pak  ,  Na Ruba Na Ludostta  ,  Zabranen Dost
+        ### Prilivi I Otlivi  ---> [['Mihaela Fileva']]
+        ### Inkognito  ---> [['Mihaela Fileva']]
+        ### Kogato Ti Triabvam  ---> [['Billy Hlapeto & Mihaela Fileva']]
+        ### Opasno Blizki  ---> [['Mihaela Fileva & Venzy']]
+        ### A Dano, Ama Nadali  ---> [['Grafa, Mihaela Fileva & Venzy']]
+        ### Dai Znak Pak  ---> [['Absolutni Jivotni & Mihaela Fileva']]
+        ### Na Ruba Na Ludostta  ---> [['Grafa & Mihaela Fileva']]
+        ### Zabranen Dost  ---> [['Mihaela Fileva, Preja & Divna']]
+
+
+        addDeezer(mdbmaps, "Top40", "8e0a54291a8ae6add5c89ae6bd744591", "2077221")    ### [Pavell]
+        ### Izgreva I Zaleza  ,  Kade Si Brat?  ,  Kade Si Brat?  ,  Nyama Da Si Tragnesh S Drug  ,  Listata Padat  ,  Listata Padat  ,  Geroi  ,  Geroi
+        ### Izgreva I Zaleza  ---> [['Santra, Pavell & Venci Venc']]
+        ### Kade Si Brat?  ---> [['Angel, Moisey, Pavell & Venci Venc']]
+        ### Kade Si Brat?  ---> [['Angel, Moisey, Pavell & Venci Venc']]
+        ### Nyama Da Si Tragnesh S Drug  ---> [['Plamen & Ivo, Pavell']]
+        ### Listata Padat  ---> [['Mihaela Marinova, Pavell & Venci Venc']]
+        ### Listata Padat  ---> [['Mihaela Marinova, Pavell & Venci Venc']]
+        ### Geroi  ---> [['Krisko & Pavell, Venci Venc']]
+        ### Geroi  ---> [['Krisko & Pavell, Venci Venc']]
+
+
+        addDeezer(mdbmaps, "Top40", "5793bffe6cf2b42fbcf5ecc4cdf66911", "4796386")    ### [Venci Venc']
+        ### Izgreva I Zaleza  ,  Kade Si Brat?  ,  Kade Si Brat?  ,  Nyama Da Si Tragnesh S Drug  ,  Listata Padat  ,  Listata Padat  ,  Geroi  ,  Geroi
+        ### Izgreva I Zaleza  ---> [['Santra, Pavell & Venci Venc']]
+        ### Kade Si Brat?  ---> [['Angel, Moisey, Pavell & Venci Venc']]
+        ### Kade Si Brat?  ---> [['Angel, Moisey, Pavell & Venci Venc']]
+        ### Nyama Da Si Tragnesh S Drug  ---> [['Plamen & Ivo, Pavell']]
+        ### Listata Padat  ---> [['Mihaela Marinova, Pavell & Venci Venc']]
+        ### Listata Padat  ---> [['Mihaela Marinova, Pavell & Venci Venc']]
+        ### Geroi  ---> [['Krisko & Pavell, Venci Venc']]
+        ### Geroi  ---> [['Krisko & Pavell, Venci Venc']]
+
+
+        addDeezer(mdbmaps, "Top40", "e4a1ed07636cc650fcd92f2ee99a44fe", "1288678")    ### [Lazza]
+        ### Netflix  ,  Ho Paura Di Uscire 2  ,  Gigolo  ,  gua10  ,  Charles Manson (Buon Natale2)  ,  Parola  ,  Catrame
+        ### Netflix  ---> [['Lazza']]
+        ### Ho Paura Di Uscire 2  ---> [['Machete, Salmo & Lazza']]
+        ### Gigolo  ---> [['Nick Cannon', 'Anders & Fahrenkrog', 'Elena Paparizou', 'Lazza & Sfera Ebbasta, Capo Plaza']]
+        ### gua10  ---> [['Tha Supreme & Lazza']]
+        ### Charles Manson (Buon Natale2)  ---> [['Salmo, Dani Faiv & Nitro, Lazza']]
+        ### Parola  ---> [['Giaime, Lazza & Emis Killa, Andry The Hitmaker']]
+        ### Catrame  ---> [['Lazza & Tedua']]
+
+
+        addDeezer(mdbmaps, "Top40", "c29dd858b42c5e8d6caecd0302c47dfe", "9060182")    ### [Hov 1]
+        ### Hon Dansar Vidare I Livet  ,  Gray Area  ,  Ma Cherie  ,  Vindar Pa Mars  ,  Smokebreak  ,  Ensammst I Varlden  ,  Alskling
+        ### Hon Dansar Vidare I Livet  ---> [['HOV1', 'Hov 1']]
+        ### Gray Area  ---> [['Hov 1']]
+        ### Ma Cherie  ---> [['DJ Antoine', 'Hov 1', 'DJ Antoine, Gola & Trauffer']]
+        ### Vindar Pa Mars  ---> [['HOV1', 'Hov 1']]
+        ### Smokebreak  ---> [['Hov 1']]
+        ### Ensammst I Varlden  ---> [['Hov 1']]
+        ### Alskling  ---> [['Hov 1']]
+
+
+        addDeezer(mdbmaps, "Top40", "981871e41d004689023b3867cca2003c", "4239461")    ### [Maan]
+        ### Perfect World  ,  Lief Zoals Je Bent  ,  Zo Kan Het Dus Ook  ,  Ze Huilt Maar Ze Lacht  ,  In Amsterdam  ,  Blijf Blj Mij  ,  Hij Is Van Mij
+        ### Perfect World  ---> [['Gossip', 'Maan']]
+        ### Lief Zoals Je Bent  ---> [['Maan']]
+        ### Zo Kan Het Dus Ook  ---> [['Nielson', 'Maan']]
+        ### Ze Huilt Maar Ze Lacht  ---> [['Maan']]
+        ### In Amsterdam  ---> [['Sevn Alias & Maan']]
+        ### Blijf Blj Mij  ---> [['Ronnie Flex & Maan']]
+        ### Hij Is Van Mij  ---> [['Kris Kross Amsterdam, Maan & Tabitha, Bizzey']]
+
+
+        addDeezer(mdbmaps, "Top40", "6eb8df7aacfb80b8a5aefbb8155dc13a", "247284")    ### [George Sampanis]
+        ### Meres Pou Den Sou Eipa S' Agapo  ,  Mono An Thes Emena  ,  Mi Milas  ,  Kanis Den Kseri  ,  Prin Peis S'Agapo  ,  Min Anisihis  ,  Mono Esi
+        ### Meres Pou Den Sou Eipa S' Agapo  ---> [['George Sampanis']]
+        ### Mono An Thes Emena  ---> [['George Sampanis']]
+        ### Mi Milas  ---> [['George Sampanis']]
+        ### Kanis Den Kseri  ---> [['George Sampanis']]
+        ### Prin Peis S'Agapo  ---> [['George Sampanis']]
+        ### Min Anisihis  ---> [['George Sampanis']]
+        ### Mono Esi  ---> [['George Sampanis']]
+
+
+        addDeezer(mdbmaps, "Top40", "daf03202751046b2d8cc380e7535cc39", "529")    ### [Raphael]
+        ### Caravane  ,  Ne Partons Pas Faches  ,  Le Vent De L'Hiver  ,  Et Dans 150 Ans  ,  Schengen  ,  Adieu Haiti  ,  Sur La Route
+        ### Caravane  ---> [['Raphael']]
+        ### Ne Partons Pas Faches  ---> [['Raphael']]
+        ### Le Vent De L'Hiver  ---> [['Raphael']]
+        ### Et Dans 150 Ans  ---> [['Raphael']]
+        ### Schengen  ---> [['Raphael']]
+        ### Adieu Haiti  ---> [['Raphael']]
+        ### Sur La Route  ---> [['Raphael & Jean-louis Aubert']]
+
+
+        addDeezer(mdbmaps, "Top40", "8a65b04059e971e76dc736fcf1ab4dd2", "13440379")    ### [Nino]
+        ### Theos  ,  14 Flevari  ,  Ok  ,  Apopse Den Pame Spiti  ,  Kinos Paronomastis  ,  Toso Peripou S'Agapo
+        ### Theos  ---> [['Nino']]
+        ### 14 Flevari  ---> [['Nino']]
+        ### Ok  ---> [['Big Brovaz', 'Selvmord', 'Nino']]
+        ### Apopse Den Pame Spiti  ---> [['Nino']]
+        ### Kinos Paronomastis  ---> [['Nino']]
+        ### Toso Peripou S'Agapo  ---> [['Nino']]
+
+
+        addDeezer(mdbmaps, "Top40", "1533082f4491090f90aa6f086be1b2b6", "4018571")    ### [Arif]
+        ### Hvem Er Hun  ,  Waanderland  ,  Jeg Bruker Ikke Kondom  ,  Jeg Er Lei Meg  ,  Jjeg Grater Tarer I En Mansion  ,  Jeg Foler Meg Som Tshawe
+        ### Hvem Er Hun  ---> [['Arif']]
+        ### Waanderland  ---> [['Arif']]
+        ### Jeg Bruker Ikke Kondom  ---> [['Mars, Karpe Diem, Unge Ferrari, Arif']]
+        ### Jeg Er Lei Meg  ---> [['Mars, Karpe Diem, Unge Ferrari, Arif']]
+        ### Jjeg Grater Tarer I En Mansion  ---> [['Mars, Karpe Diem, Unge Ferrari, Arif']]
+        ### Jeg Foler Meg Som Tshawe  ---> [['Mars, Karpe Diem, Unge Ferrari, Arif']]
+
+
+        addDeezer(mdbmaps, "Top40", "3e5169154b281b19469ce1fb806a3919", "795146")    ### [Machete]
+        ### Yoshi  ,  Ho Paura Di Uscire 2  ,  Marylean  ,  Star Wars  ,  no14  ,  Charles Manson (Buon Natale2)
+        ### Yoshi  ---> [['Machete, Dani Faiv, Tha Supreme & Fabri Fibra']]
+        ### Ho Paura Di Uscire 2  ---> [['Machete, Salmo & Lazza']]
+        ### Marylean  ---> [['Machete, Salmo, Nitro & Marracash']]
+        ### Star Wars  ---> [['Machete, Fabri Fibra & Massimo Pericolo']]
+        ### no14  ---> [['Tha Supreme & Dani Faiv']]
+        ### Charles Manson (Buon Natale2)  ---> [['Salmo, Dani Faiv & Nitro, Lazza']]
+
+
+        addDeezer(mdbmaps, "Top40", "cd5004d3b03507b93a5154c8f703ffb1", "1358419")    ### [KataStrofe]
+        ### Bleik Og Sur  ,  Maria  ,  Pattaya  ,  Sangen Du Hater  ,  Om Alt Gar Til Helvete
+        ### Bleik Og Sur  ---> [['KataStrofe']]
+        ### Maria  ---> [['US5', 'Bizzey & Ronnie Flex, $hirak', 'KataStrofe']]
+        ### Pattaya  ---> [['KataStrofe']]
+        ### Sangen Du Hater  ---> [['KataStrofe']]
+        ### Om Alt Gar Til Helvete  ---> [['KataStrofe']]
+
+
+        addDeezer(mdbmaps, "Top40", "f4c09b9cc9b7184e363a22d1a7565ef9", "176639")    ### [Nitro]
+        ### Chairaggione  ,  Dispovery Channel  ,  Marylean  ,  6itch  ,  Charles Manson (Buon Natale2)
+        ### Chairaggione  ---> [['Nitro & Salmo']]
+        ### Dispovery Channel  ---> [['Salmo & Nitro']]
+        ### Marylean  ---> [['Machete, Salmo, Nitro & Marracash']]
+        ### 6itch  ---> [['Tha Supreme & Nitro']]
+        ### Charles Manson (Buon Natale2)  ---> [['Salmo, Dani Faiv & Nitro, Lazza']]
+
+
+        addDeezer(mdbmaps, "Top40", "a2f3f9edf03e4bf85df289edf3084780", "58916452")    ### [Dnoteondabeat]
+        ### HotSpot  ,  Sprayad  ,  Nr 1  ,  Apoteket  ,  Ice Cream
+        ### HotSpot  ---> [['Greekazo & Dnoteondabeat']]
+        ### Sprayad  ---> [['Greekazo & Dnoteondabeat']]
+        ### Nr 1  ---> [['Einar & Greekazo']]
+        ### Apoteket  ---> [['Greekazo, Yei Gonzalez & Dnoteonbandabeat']]
+        ### Ice Cream  ---> [['Mika', 'New Young Pony Club', 'Greekazo & Dree Low']]
+
+
+        addDeezer(mdbmaps, "Top40", "8bbd146262d01da925cec72df725f3cf", "11937599")    ### [Blockparty]
+        ### HUTS  ,  SVP  ,  In Die Life  ,  Senorita  ,  Doekoe
+        ### HUTS  ---> [['Blockparty & Esko, Mouad Locos, Joeyak, Young Ellens & Chivv']]
+        ### SVP  ---> [['BOEF, Joey AK, Young Ellens & Sevn Alias']]
+        ### In Die Life  ---> [['Joeyak & Lijpe']]
+        ### Senorita  ---> [['Justin Timberlake', 'Shawn Mendes & Camila Cabello', 'Aminé', 'Kay One & Pietro Lombardi', 'Alexinno & Starlight', 'Abraham Mateo', 'Young Ellens, Josylvio & Kevin, Bko', 'Dr. Bellido & Papa Joe']]
+        ### Doekoe  ---> [['Joeyak & Djaga Djaga']]
+
+
+        addDeezer(mdbmaps, "Top40", "0d866c18af54941ec8f33ce3df4be902", "3848")    ### [Elize]
+        ### Automatic  ,  I'm No Latino  ,  Into Your System  ,  Lovesick  ,  Hot Stuff
+        ### Automatic  ---> [['Miranda Lambert', 'Sarah Whatmore', 'Tokio Hotel', 'Elize', 'Josylvio', 'Luke Thomas', 'Ultra Naté', 'Kaskade']]
+        ### I'm No Latino  ---> [['Elize']]
+        ### Into Your System  ---> [['Elize']]
+        ### Lovesick  ---> [['Elize', 'Lindstrom & Christabelle']]
+        ### Hot Stuff  ---> [['Elize']]
+
+
+        addDeezer(mdbmaps, "Top40", "0c6423fdddb18f976061565d288baded", "1005065")    ### [Como]
+        ### Suitcase  ,  Silent Girl Next Door  ,  Look Out, It's Christmas  ,  One Of Those Days  ,  Hallelujah
+        ### Suitcase  ---> [['Como']]
+        ### Silent Girl Next Door  ---> [['Como']]
+        ### Look Out, It's Christmas  ---> [['Como']]
+        ### One Of Those Days  ---> [['Como']]
+        ### Hallelujah  ---> [['Bon Jovi', 'Panic! At The Disco', 'Lee DeWyze', 'Matthew Schuler', 'Pentatonix', 'Jeff Buckley', 'Alexandra Burke', 'Leonard Cohen', 'Brings', 'Xavier Naido', 'Justin Timberlake & Charlie Sexton', 'Como', 'Natalia & Gabriel Rios', 'k.d. lang', 'Espen Lind, Kurt Nilsen, Alejandro Fuentes & Askil Holm', 'Lisa Hordijk', 'Bastian Baker']]
+
+
+        addDiscogs(mdbmaps, "Top40", "0f17d781876da4732563e43039aaaa8b", "448654")   ### [L5 (Popstars)]
+        ### Toutes Les Femmes De Ta Vie  ,  Une Etincelle  ,  Aime  ,  Retiens-moi  ,  Maniac
+        ### Toutes Les Femmes De Ta Vie  ---> [['L5 (Popstars)']]
+        ### Une Etincelle  ---> [['L5 (Popstars)']]
+        ### Aime  ---> [['Lara Fabian', 'L5 (Popstars)']]
+        ### Retiens-moi  ---> [['L5 (Popstars)']]
+        ### Maniac  ---> [['L5 (Popstars)']]
+
+
+        addDeezer(mdbmaps, "Top40", "ce3fbaee597ec5a524a308b812541f56", "214934")    ### [Rebecca]
+        ### Bombay Dreams  ,  One Day  ,  Suddenly  ,  Bullets  ,  Taken Over
+        ### Bombay Dreams  ---> [['Aneela & Rebecca']]
+        ### One Day  ---> [['Kodaline', 'Bakermat', 'Paperboys', 'Arash & Rebecca', 'Arash & Helena', 'Krossfade']]
+        ### Suddenly  ---> [['Arash & Rebecca']]
+        ### Bullets  ---> [['Editors', 'Rebecca & Fiona']]
+        ### Taken Over  ---> [['Rebecca & Fiona']]
+
+
+        addDeezer(mdbmaps, "Top40", "ff69c3ee307619b22c2ee2969aea521d", "11328")    ### [Dj Jose]
+        ### Turn The Lights Off  ,  Access  ,  Stepping To The Beat  ,  Physical Attraction  ,  Like That
+        ### Turn The Lights Off  ---> [['Kato & Jon', 'Dj Jose']]
+        ### Access  ---> [['Dj Jose']]
+        ### Stepping To The Beat  ---> [['Dj Jose']]
+        ### Physical Attraction  ---> [['Dj Jose']]
+        ### Like That  ---> [['Dj Jose']]
+
+
+        addDiscogs(mdbmaps, "Top40", "8f7b584aa940b5b8d46129956fee0c52", "2250857")   ### [Vremia I Steklo]
+        addDeezer(mdbmaps, "Top40", "8f7b584aa940b5b8d46129956fee0c52", "4878214")    ### [Vremia I Steklo]
+        ### Serebrianoe Morie  ,  Kafel  ,  Sleza  ,  Zaberi  ,  Imia 505
+        ### Serebrianoe Morie  ---> [['Vremia I Steklo']]
+        ### Kafel  ---> [['Vremia I Steklo']]
+        ### Sleza  ---> [['Vremia I Steklo']]
+        ### Zaberi  ---> [['Vremia I Steklo']]
+        ### Imia 505  ---> [['Vremia I Steklo']]
+
+
+        addDeezer(mdbmaps, "Top40", "1af733e9abe9956b5d2ef9fdbb1ad764", "537741")    ### [Grigoriy Leps]
+        ### Samiy Luchiy Den  ,  Vodopadom  ,  Ya Schastliviy  ,  Esli Hochesh, Uhodi  ,  London
+        ### Samiy Luchiy Den  ---> [['Grigoriy Leps']]
+        ### Vodopadom  ---> [['Nikita', 'Grigoriy Leps']]
+        ### Ya Schastliviy  ---> [['Grigoriy Leps']]
+        ### Esli Hochesh, Uhodi  ---> [['Grigoriy Leps']]
+        ### London  ---> [['Pet Shop Boys', 'M24 & Tion Wayne', 'Timati & Grigoriy Leps']]
+
+
+        addDeezer(mdbmaps, "Top40", "a2ee02d0ff400d2ec0d77d2aae27d098", "164423")    ### [Stan]
+        ### Se Thelo Edo  ,  Otan Agapas  ,  Me Stenachori  ,  De Sou Aniko  ,  Tora Lipo
+        ### Se Thelo Edo  ---> [['Stan']]
+        ### Otan Agapas  ---> [['Stan']]
+        ### Me Stenachori  ---> [['Stan']]
+        ### De Sou Aniko  ---> [['Stan']]
+        ### Tora Lipo  ---> [['Stan']]
+
+
+        addDeezer(mdbmaps, "Top40", "cb1a4cdd6178852f36aba64d12602d1a", "281011")    ### [India Martinez]
+        ### Vencer Al Amor  ,  90 Minutos  ,  Hoy  ,  Todo No Es Casualidad  ,  Nino Sin Miedo
+        ### Vencer Al Amor  ---> [['India Martinez']]
+        ### 90 Minutos  ---> [['India Martinez']]
+        ### Hoy  ---> [['Gloria Estefan', 'India Martinez']]
+        ### Todo No Es Casualidad  ---> [['India Martinez']]
+        ### Nino Sin Miedo  ---> [['India Martinez & Rachid Taha']]
+
+
+        addDeezer(mdbmaps, "Top40", "2fbb9be1f137d28d5d01a88b2a61c3a6", "1366660")    ### [Taisiya Povaliy]
+        ### Verju Tebe  ,  Ukhodi  ,  V Liubov Nado Verit  ,  Mezhdu Nami  ,  Gde Liubov Tam I Rvetsia
+        ### Verju Tebe  ---> [['Taisiya Povaliy']]
+        ### Ukhodi  ---> [['Taisiya Povaliy']]
+        ### V Liubov Nado Verit  ---> [['Taisiya Povaliy']]
+        ### Mezhdu Nami  ---> [['Taisiya Povaliy']]
+        ### Gde Liubov Tam I Rvetsia  ---> [['Taisiya Povaliy']]
+
+
+        addDeezer(mdbmaps, "Top40", "43a4a6af3a411e6c9a24170f30c2815b", "13612387")    ### [Maneskin]
+        ### Chosen  ,  Moriro Da Re  ,  Torna A Casa  ,  Le Parole Lontane
+        ### Chosen  ---> [['Maneskin']]
+        ### Moriro Da Re  ---> [['Maneskin']]
+        ### Torna A Casa  ---> [['Maneskin']]
+        ### Le Parole Lontane  ---> [['Maneskin']]
+
+
+        addDeezer(mdbmaps, "Top40", "9318518ff509296fc43d312a9d65ff56", "101471")    ### [Pegasus]
+        ### Skyline  ,  Digital Kids  ,  Last Night On Earth  ,  I Take It All
+        ### Skyline  ---> [['David Lindgren', 'Pegasus']]
+        ### Digital Kids  ---> [['Pegasus']]
+        ### Last Night On Earth  ---> [['Auryn', 'Pegasus']]
+        ### I Take It All  ---> [['Pegasus']]
+
+
+        addDeezer(mdbmaps, "Top40", "0abaf01f580932db3646af80a6023868", "1710654")    ### [Potap & Nastia]
+        ### Chumachechaia Vesna  ,  My Otmeniaiem K.S.  ,  Iesli Vdrug  ,  Priletelo  ,  Ru Ru Ru  ,  Vmeste  ,  Vse Puckom  ,  Udi Udi  ,  Bumdiggibaj  ,  Umamy
+        ### Chumachechaia Vesna  ---> [['Potap & Nastia']]
+        ### My Otmeniaiem K.S.  ---> [['Potap & Nastia']]
+        ### Iesli Vdrug  ---> [['Potap & Nastia']]
+        ### Priletelo  ---> [['Potap & Nastia']]
+        ### Ru Ru Ru  ---> [['Potap & Nastia']]
+        ### Vmeste  ---> [['Potap & Nastia']]
+        ### Vse Puckom  ---> [['Potap & Nastia']]
+        ### Udi Udi  ---> [['Potap & Nastia']]
+        ### Bumdiggibaj  ---> [['Potap & Nastia']]
+        ### Umamy  ---> [['Potap & Nastia']]
+
+
+        addAllMusic(mdbmaps, "Top40", "e3b7acbc2078d13eafa2a765ce38115a", "mn0002080697")   ### [Luttenberger & Klug]
+        addDeezer(mdbmaps, "Top40", "e3b7acbc2078d13eafa2a765ce38115a", "1495367")    ### [Luttenberger & Klug]
+        ### Super Sommer  ,  Vergiss Mich  ,  Heut Nacht  ,  Weil Es Mich Nur 1x Gibt  ,  Madchen Im Regen  ,  Sag Doch Einfach  ,  Fliegen  ,  Nur An Mich  ,  Immer Wenn Du Schlafst
+        ### Super Sommer  ---> [['Luttenberger & Klug']]
+        ### Vergiss Mich  ---> [['Bushido & J-luv', 'Luttenberger & Klug']]
+        ### Heut Nacht  ---> [['Luttenberger & Klug']]
+        ### Weil Es Mich Nur 1x Gibt  ---> [['Luttenberger & Klug']]
+        ### Madchen Im Regen  ---> [['Luttenberger & Klug']]
+        ### Sag Doch Einfach  ---> [['Luttenberger & Klug']]
+        ### Fliegen  ---> [['Luttenberger & Klug']]
+        ### Nur An Mich  ---> [['Luttenberger & Klug']]
+        ### Immer Wenn Du Schlafst  ---> [['Luttenberger & Klug']]
+
+
+        addAllMusic(mdbmaps, "Top40", "760ffac9c884a2e8fabc13d4eb617e75", "mn0002744178")   ### [Kevin]
+        addDeezer(mdbmaps, "Top40", "760ffac9c884a2e8fabc13d4eb617e75", "70615702")    ### [Kevin]
+        ### She's Got Moves  ,  Niet Alleen  ,  Beetje Moe  ,  Hometown  ,  Waarom  ,  Senorita  ,  Zielige Gozer  ,  Scherp  ,  Vet Att Du Vill Ha Mig
+        ### She's Got Moves  ---> [['Kevin']]
+        ### Niet Alleen  ---> [['Kevin & Emms']]
+        ### Beetje Moe  ---> [['Kevin, Lil Kleine & Chivv']]
+        ### Hometown  ---> [['Snelle, Hef & Kevin']]
+        ### Waarom  ---> [['Kevin & Sevn Alias']]
+        ### Senorita  ---> [['Justin Timberlake', 'Shawn Mendes & Camila Cabello', 'Aminé', 'Kay One & Pietro Lombardi', 'Alexinno & Starlight', 'Abraham Mateo', 'Young Ellens, Josylvio & Kevin, Bko', 'Dr. Bellido & Papa Joe']]
+        ### Zielige Gozer  ---> [['Kevin & Bizzey']]
+        ### Scherp  ---> [['Ashafar & Kevin']]
+        ### Vet Att Du Vill Ha Mig  ---> [['Samir Badran & Kevin']]
+
+
+        addAllMusic(mdbmaps, "Top40", "c4bfdaef6a75c5b92d4314bed5324ac9", "mn0003060329")   ### [V. Meladze]
+        addDeezer(mdbmaps, "Top40", "c4bfdaef6a75c5b92d4314bed5324ac9", "4251519")    ### [V. Meladze]
+        addDiscogs(mdbmaps, "Top40", "c4bfdaef6a75c5b92d4314bed5324ac9", "753179")
+        ### Saljut Vera  ,  Inostranec  ,  Nebesa Obetovannyje  ,  Pobud So Mnoy  ,  Poterjan I Ne Najden  ,  Svet Uhodjashchego Solnca  ,  Svobodnyj Polet  ,  Belye Pticy  ,  Moj Brat
+        ### Saljut Vera  ---> [['V. Meladze']]
+        ### Inostranec  ---> [['V. Meladze']]
+        ### Nebesa Obetovannyje  ---> [['V. Meladze']]
+        ### Pobud So Mnoy  ---> [['V. Meladze']]
+        ### Poterjan I Ne Najden  ---> [['V. Meladze']]
+        ### Svet Uhodjashchego Solnca  ---> [['V. Meladze']]
+        ### Svobodnyj Polet  ---> [['V. Meladze']]
+        ### Belye Pticy  ---> [['V. Meladze']]
+        ### Moj Brat  ---> [['V. Meladze & K. Meladze']]
+
+
+        addDeezer(mdbmaps, "Top40", "299683e0e48d3508d34c59fd60d1c969", "6138354")    ### [Lora Karadzhova]
+        ### Spusnati Zavesi  ,  Mrun Mrun  ,  Neka Bqde Lyato  ,  Za Pqrvi Pqt  ,  Ostavam Tuk  ,  Poveche Ot Vsichko  ,  Paradise  ,  No Mercy
+        ### Spusnati Zavesi  ---> [['Lora Karadzhova']]
+        ### Mrun Mrun  ---> [['Upsurt & Lora Karadzhova']]
+        ### Neka Bqde Lyato  ---> [['Lora Karadzhova & Goodslav']]
+        ### Za Pqrvi Pqt  ---> [['V.O.XX & Lora Karadzhova']]
+        ### Ostavam Tuk  ---> [['Kristo & Lora Karadzhova']]
+        ### Poveche Ot Vsichko  ---> [['Kristo & Lora Karadzhova']]
+        ### Paradise  ---> [['LL Cool J', 'Kenny G', 'Coldplay', 'George Ezra', 'Benny Benassi & Chris Brown', 'Vincent', 'Cody Simpson', 'Kaci', 'E-Type', 'Kristo & Lora Karadzhova', '2 Black']]
+        ### No Mercy  ---> [['T.I.', 'Racoon', 'Kristo & Lora Karadzhova', 'Asme']]
+
+
+        addAllMusic(mdbmaps, "Top40", "9277fef69257e9c368980e44addab30d", "mn0002598754")   ### [Tove Ostman Styrke]
+        addDiscogs(mdbmaps, "Top40", "9277fef69257e9c368980e44addab30d", "2023759")    ### [Tove Ostman Styrke]
+        ### White Light Moment  ,  In The Ghetto (live)  ,  I Wish I Was A Punkrocker (live)  ,  Himlen Ar Oskyldigt Bla (live)  ,  Million Pieces  ,  Call My Name
+        ### White Light Moment  ---> [['Tove Ostman Styrke']]
+        ### In The Ghetto (live)  ---> [['Tove Ostman Styrke']]
+        ### I Wish I Was A Punkrocker (live)  ---> [['Tove Ostman Styrke']]
+        ### Himlen Ar Oskyldigt Bla (live)  ---> [['Tove Ostman Styrke']]
+        ### Million Pieces  ---> [['Tove Ostman Styrke']]
+        ### Call My Name  ---> [['Charlotte Church', 'Cheryl Cole', 'Pietro Lombardi', 'Sarah Engels', 'Tove Ostman Styrke']]
+
+
+        addAllMusic(mdbmaps, "Top40", "a2b07050b3a3158923a626ecd79a9a99", "mn0002764822")
+        addDiscogs(mdbmaps, "Top40", "a2b07050b3a3158923a626ecd79a9a99", "2241934")   ### [Maksim Barskih]
+        addDeezer(mdbmaps, "Top40", "a2b07050b3a3158923a626ecd79a9a99", "1365309")    ### [Maksim Barskih]
+        ### Glaza-Ubiytsi  ,  I Wanna Run  ,  Hochu Tancevat  ,  Podruga Noch  ,  Davai Zaimiemsia Liuboviu
+        ### Glaza-Ubiytsi  ---> [['Maksim Barskih']]
+        ### I Wanna Run  ---> [['Maksim Barskih']]
+        ### Hochu Tancevat  ---> [['Maksim Barskih']]
+        ### Podruga Noch  ---> [['Maksim Barskih']]
+        ### Davai Zaimiemsia Liuboviu  ---> [['Maksim Barskih']]
+
+
+        addDeezer(mdbmaps, "Top40", "f5cfbe3d9410cd26c9f5db2f5d00e2af", "64976")    ### [Yasin]
+        ### Kevin Gates  ,  DSGIS  ,  Pt:1  ,  Not For Sale  ,  XO
+        ### Kevin Gates  ---> [['Yasin']]
+        ### DSGIS  ---> [['Yasin']]
+        ### Pt:1  ---> [['Yasin']]
+        ### Not For Sale  ---> [['Yasin']]
+        ### XO  ---> [['Beyoncé', 'Yasin & Dree Low']]
+
+
+        addAllMusic(mdbmaps, "Top40", "2da7b3559029e16c501f19f2ca9e1f3d", "mn0001509405")   ### [Valeria]
+        addDiscogs(mdbmaps, "Top40", "2da7b3559029e16c501f19f2ca9e1f3d", "907332")    ### [Valeria]
+        ### Malenkij Samolyet  ,  Kljuchiki  ,  Mi Vmeste  ,  Ty Grustish
+        ### Malenkij Samolyet  ---> [['Valeria']]
+        ### Kljuchiki  ---> [['Valeria']]
+        ### Mi Vmeste  ---> [['Valeria']]
+        ### Ty Grustish  ---> [['Valeria & Stas Pyeha']]
+
+
+        addDeezer(mdbmaps, "Top40", "71495276459b2c8d9319a4f23736b1fe", "4188612")    ### [NeAngely]
+        ### Kiev-Moskva  ,  Tvoia  ,  Roman  ,  Znaiesh
+        ### Kiev-Moskva  ---> [['NeAngely']]
+        ### Tvoia  ---> [['NeAngely']]
+        ### Roman  ---> [['Vintaj', 'NeAngely']]
+        ### Znaiesh  ---> [['NeAngely']]
+
+
+        addDiscogs(mdbmaps, "Top40", "df1a1cf249844e537d5f8e301999f050", "508430")   ### [Romeo]
+        addDeezer(mdbmaps, "Top40", "df1a1cf249844e537d5f8e301999f050", "66510")    ### [Romeo]
+        ### Romeo Dunn  ,  The Answer Is Yes  ,  These Are My Rivers  ,  100% Verliefd
+        ### Romeo Dunn  ---> [['Romeo']]
+        ### The Answer Is Yes  ---> [['Romeo']]
+        ### These Are My Rivers  ---> [['Romeo & Julia']]
+        ### 100% Verliefd  ---> [['Gordon & Romeo']]
+
+
+        addDiscogs(mdbmaps, "Top40", "ddcae8e624e066c57c1a76f7a50c3be5", "5163802")   ### [Pianoboy]
+        addDeezer(mdbmaps, "Top40", "ddcae8e624e066c57c1a76f7a50c3be5", "4444748")    ### [Pianoboy]
+        ### Kohannja  ,  Shampanski Ochi  ,  Polunychne Nebo  ,  Na Vershyni
+        ### Kohannja  ---> [['Pianoboy']]
+        ### Shampanski Ochi  ---> [['Pianoboy']]
+        ### Polunychne Nebo  ---> [['Pianoboy']]
+        ### Na Vershyni  ---> [['Pianoboy & Morphom']]
+
+
+        addDeezer(mdbmaps, "Top40", "57dd82cd58ebc1ee03495e7111f68837", "69824902")    ### [Adel]
+        ### Santa Lucia  ,  Kapabel 2  ,  No Cap  ,  SCI-FI
+        ### Santa Lucia  ---> [['Dree Low & Adel']]
+        ### Kapabel 2  ---> [['Dree Low & Adel']]
+        ### No Cap  ---> [['Adel & Dree Low']]
+        ### SCI-FI  ---> [['Adel & P. J']]
+
+
+        addDeezer(mdbmaps, "Top40", "9790bfbf128c234ff3dfe9734a29112d", "3097771")   ### [S. Tarabarova]
+        addDiscogs(mdbmaps, "Top40", "9790bfbf128c234ff3dfe9734a29112d", "3180922")    ### [S. Tarabarova]
+        ### Daj Mne Znak  ,  My Verim V Liubov  ,  Povertajsia Zhyvym  ,  Dobre Z Toboiu
+        ### Daj Mne Znak  ---> [['S. Tarabarova']]
+        ### My Verim V Liubov  ---> [['S. Tarabarova']]
+        ### Povertajsia Zhyvym  ---> [['S. Tarabarova']]
+        ### Dobre Z Toboiu  ---> [['S. Tarabarova']]
+
+
+        addAllMusic(mdbmaps, "Top40", "e87ca03c7907697d6b985a36efec96b3", "mn0000907539")   ### [Dolcenera]
+        addDeezer(mdbmaps, "Top40", "e87ca03c7907697d6b985a36efec96b3", "77036")    ### [Dolcenera]
+        ### Il Mio Amore Unico  ,  Siamo Tutti La' Fuori  ,  Piove (condizione Dell'anima)  ,  Ci Vediamo A Casa
+        ### Il Mio Amore Unico  ---> [['Dolcenera']]
+        ### Siamo Tutti La' Fuori  ---> [['Dolcenera']]
+        ### Piove (condizione Dell'anima)  ---> [['Dolcenera']]
+        ### Ci Vediamo A Casa  ---> [['Dolcenera']]
+
+
+        addDiscogs(mdbmaps, "Top40", "1a1c4cd2bf4d0da1c3ac37eed6c5e6dd", "349539")   ### [Seer]
+        ### Eiskristall  ,  Es Braucht  ,  Sun, Wind + Regen  ,  Wild's Wasser
+        ### Eiskristall  ---> [['Seer']]
+        ### Es Braucht  ---> [['Seer']]
+        ### Sun, Wind + Regen  ---> [['Seer']]
+        ### Wild's Wasser  ---> [['Seer']]
+
+
+        addDiscogs(mdbmaps, "Top40", "479632c7dad0bc6491b1dc428c2f384b", "323925")   ### [Carola]
+        addDeezer(mdbmaps, "Top40", "479632c7dad0bc6491b1dc428c2f384b", "9621")    ### [Carola]
+        ### I Believe In Love  ,  Det Ar Bara Vi  ,  Nu Tandas Tusen Juleljus  ,  Tell Me This Night Is Over
+        ### I Believe In Love  ---> [['Carola']]
+        ### Det Ar Bara Vi  ---> [['Carola']]
+        ### Nu Tandas Tusen Juleljus  ---> [['Carola', 'Benny Anderssons Orkester & Helen Sjoholm']]
+        ### Tell Me This Night Is Over  ---> [['Ark', 'Carola']]
+
+
+        addDeezer(mdbmaps, "Top40", "1018fb9997d689d2cfbeb250cba1e0fc", "8731")    ### [Erika]
+        ### S Pervovo Vzgliada  ,  Smailyk  ,  Nebo Popolam  ,  Ves Mir
+        ### S Pervovo Vzgliada  ---> [['Erika']]
+        ### Smailyk  ---> [['Erika']]
+        ### Nebo Popolam  ---> [['Erika']]
+        ### Ves Mir  ---> [['Erika']]
+
+
+        addAllMusic(mdbmaps, "Top40", "74d19220f1e9035dc9be17ab0fa7d496", "mn0003059139")   ### [Gradysi]
+        ### Reghiser  ,  Zametaet  ,  Ya Vsegda Pomnyu O Glavnom  ,  Radio-dojd
+        ### Reghiser  ---> [['Gradysi']]
+        ### Zametaet  ---> [['Gradysi']]
+        ### Ya Vsegda Pomnyu O Glavnom  ---> [['Gradysi']]
+        ### Radio-dojd  ---> [['Gradysi']]
+
+
+        addDeezer(mdbmaps, "Top40", "5eb7994fa8fc5d454eb9975e8d0982b3", "8399")    ### [Wigwam]
+        ### In My Dreams  ,  Bless The Night  ,  Bygone Zone  ,  Do Ya Wanna Taste It
+        ### In My Dreams  ---> [['Wigwam', 'Remady & Manu-L']]
+        ### Bless The Night  ---> [['Wigwam']]
+        ### Bygone Zone  ---> [['Wigwam']]
+        ### Do Ya Wanna Taste It  ---> [['Wigwam']]
+
+
+        addDeezer(mdbmaps, "Top40", "ec7bcd247bd91b161fd3e236faf60113", "8359")    ### [Laura]
+        ### Talk Or Take A Walk  ,  Jij Doet De Wolken Verdwijnen  ,  Zo Verliefd (yodelo)  ,  Release Me
+        ### Talk Or Take A Walk  ---> [['Laura']]
+        ### Jij Doet De Wolken Verdwijnen  ---> [['Laura Lynn', 'Laura']]
+        ### Zo Verliefd (yodelo)  ---> [['Laura']]
+        ### Release Me  ---> [['Agnes', 'Laura', 'Oh Laura', 'Martin Halla', 'Barbra Streisand']]
+
+
+        addDeezer(mdbmaps, "Top40", "8cc666d82558e9a3801428ce9377e0cc", "243610")    ### [Eri Esittajia]
+        ### Black Night  ,  Lasten Liikennelaulu  ,  Unihiekkaa  ,  Rahina 4 Life
+        ### Black Night  ---> [['Eri Esittajia']]
+        ### Lasten Liikennelaulu  ---> [['Eri Esittajia']]
+        ### Unihiekkaa  ---> [['Eri Esittajia']]
+        ### Rahina 4 Life  ---> [['Eri Esittajia']]
+
+
+        addDeezer(mdbmaps, "Top40", "14035f38e39640c7b8a126848f15a17f", "6329")    ### [Belinda]
+        ### Si No Te Quisiera  ,  Te Voy A Esperar  ,  Dejate Llevar
+        ### Si No Te Quisiera  ---> [['Juan Magan, Belinda & Lapiz Conciente']]
+        ### Te Voy A Esperar  ---> [['Juan Magan & Belinda']]
+        ### Dejate Llevar  ---> [['Juan Magan, Belinda, Manuel Turizo, Snova & B-base']]
 
         #addAllMusic(mdbmaps, "Top40", "fc3c86e99326e364c73c36b59c14fb0c", "mn0000470452")   ### [Music]
         #addAllMusic(mdbmaps, "Top40", "f0f3461c81e52c4e94f8bd2a200e0e6e", "mn0001260391")   ### [Howard Brown]

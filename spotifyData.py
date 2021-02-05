@@ -228,10 +228,18 @@ class spotifyData:
 
                         if song is not None:
                             key = "Songs"
-                            title = song.replace("\n", "").strip()
+                            try:
+                                str(song)
+                            except:
+                                continue
+                            title = str(song).replace("\n", "").strip()
                         elif album is not None:
                             key = "Albums"
-                            title = album.replace("\n", "").strip()
+                            try:
+                                str(album)
+                            except:
+                                continue
+                            title = str(album).replace("\n", "").strip()
                         else:
                             continue
                             #print(chartName)

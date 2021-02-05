@@ -23,19 +23,29 @@ class spotifyCharts:
         self.hongkong    = ['regional-hk-weekly']
         self.vietnam     = ['regional-vn-weekly']
         self.colombia    = ['regional-co-weekly']
+        self.argentina   = ['regional-ar-weekly']
+        self.turkey      = ['regional-tr-weekly']
+        self.taiwan      = ['regional-tw-weekly']
+        self.austria     = ['regional-at-weekly']
+        self.greece      = ['regional-gr-weekly']
+        self.ukraine     = ['regional-ua-weekly']
+        self.uae         = ['regional-ae-weekly']
+        self.indonesia   = ['regional-id-weekly']
+        self.ireland     = ['regional-ie-weekly']
+        self.iceland     = ['regional-is-weekly']
         
         self.chartNames = self.__dict__.keys()
         
         self.chartRanks = {}
         self.chartRanks[0] = ['us']
-        self.chartRanks[1] = ['england', 'australia']
-        self.chartRanks[2] = ['world']
-        self.chartRanks[3] = ['denmark', 'southafrica']
-        self.chartRanks[4] = ['italy', 'isreal', 'phillipines']
-        self.chartRanks[5] = ['india', 'russia', 'egypt']
-        self.chartRanks[6] = ['japan', 'hongkong', 'vietnam']
-        self.chartRanks[7] = ['mexico', 'colombia']
-        self.chartRanks[8] = ['brazil']
+        self.chartRanks[1] = ['england', 'australia', 'ireland']
+        self.chartRanks[2] = ['denmark', 'southafrica']
+        self.chartRanks[3] = ['italy', 'isreal', 'phillipines', 'austria']
+        self.chartRanks[4] = ['india', 'russia', 'egypt', 'ukraine']
+        self.chartRanks[5] = ['japan', 'hongkong', 'vietnam', 'taiwan']
+        self.chartRanks[6] = ['mexico', 'colombia', 'argentina']
+        self.chartRanks[7] = ['brazil', 'turkey', 'greece', 'uae', 'indonesia', 'iceland']
+        self.chartRanks[8] = ['world']
         
         
     def getChartsByRank(self, rank):
