@@ -43,9 +43,13 @@ class spotifyData:
             self.charts += self.sc.getCharts(name)
         else:
             self.charts = self.sc.getCharts(None)
-        if name is None:
-            name = "None"
-        print("  Using Charts ({0}): {1}".format(name, self.charts))
+        #if name is None:
+        #    name = "None"
+        print("=== ChartUsage ===")
+        if name is not None:
+            print("  Using Charts (Name={0}): {1}".format(name, self.charts))
+        if rank is not None:
+            print("  Using Charts (Rank={0}): {1}".format(rank, self.charts))
         return
         
         

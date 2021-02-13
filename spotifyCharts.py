@@ -33,27 +33,42 @@ class spotifyCharts:
         self.indonesia   = ['regional-id-weekly']
         self.ireland     = ['regional-ie-weekly']
         self.iceland     = ['regional-is-weekly']
+        self.bulgaria    = ['regional-bg-weekly']
+        self.thailand    = ['regional-th-weekly']
+        self.domincan    = ['regional-do-weekly']
+        self.france      = ['regional-fr-weekly']
+        self.germany     = ['regional-de-weekly']
+        self.saudiarabia = ['regional-sa-weekly']
+        self.finland     = ['regional-fi-weekly']
+        self.sweden      = ['regional-se-weekly']
         
         self.chartNames = self.__dict__.keys()
         
         self.chartRanks = {}
         self.chartRanks[0] = ['us']
         self.chartRanks[1] = ['england', 'australia', 'ireland']
-        self.chartRanks[2] = ['denmark', 'southafrica']
-        self.chartRanks[3] = ['italy', 'isreal', 'phillipines', 'austria']
-        self.chartRanks[4] = ['india', 'russia', 'egypt', 'ukraine']
-        self.chartRanks[5] = ['japan', 'hongkong', 'vietnam', 'taiwan']
-        self.chartRanks[6] = ['mexico', 'colombia', 'argentina']
-        self.chartRanks[7] = ['brazil', 'turkey', 'greece', 'uae', 'indonesia', 'iceland']
-        self.chartRanks[8] = ['world']
+        self.chartRanks[2] = ['germany', 'austria']
+        self.chartRanks[3] = ['italy', 'france']
+        self.chartRanks[4] = ['finland', 'iceland']
+        self.chartRanks[5] = ['denmark', 'sweden']
+        self.chartRanks[6] = ['isreal', 'turkey', 'saudiarabia', 'uae', 'egypt']
+        self.chartRanks[7] = ['russia', 'ukraine', 'bulgaria']
+        self.chartRanks[8] = ['mexico', 'colombia', 'argentina', 'domincan']
+        self.chartRanks[9] = ['japan', 'hongkong', 'vietnam', 'taiwan', 'thailand']
+        self.chartRanks[10] = ['phillipines', 'greece', 'indonesia', 'india', 'southafrica']
+        self.chartRanks[11] = ['brazil']
+        self.chartRanks[12] = ['world']
         
         
     def getChartsByRank(self, rank):
+        print("Using Charts For Rank {0}".format(rank))
         categories = self.chartRanks[rank]
+        print("    Categories: {0}".format(categories))
         charts = []
         for chart in categories:
+            print("\tChart: {0}".format(chart))
             charts += self.getCharts(chart)
-        print("  Using {0} Charts".format(len(charts)))
+        print("Using {0} Charts For Rank {1}".format(len(charts), rank))
         return charts
         
     def getCharts(self, name=None):        
@@ -63,9 +78,9 @@ class spotifyCharts:
             for chart in self.chartNames:
                 charts += self.__dict__[chart]
         else:
-            print("  Getting Chart For {0}".format(name))
+            #print("  Getting Chart For [{0}]".format(name))
             name = name.replace("-", "_")
-            print("name = {0}".format(name))
+            #print("name = {0}".format(name))
             if name in self.__dict__.keys():
                 chartList = self.__dict__[name]
                 if isinstance(chartList[0], list):
