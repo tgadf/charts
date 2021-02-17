@@ -1,5 +1,5 @@
 from spotifyCharts import spotifyCharts
-from searchUtils import findExt
+from searchUtils import findExt, findPatternExt
 from webUtils import getHTML
 from timeUtils import getDateTime
 from fileUtils import getBaseFilename
@@ -8,6 +8,8 @@ from ioUtils import getFile, saveFile
 from collections import Counter
 from os.path import join
 from pandas import read_csv
+from io import StringIO
+
 
 class spotifyData:
     def __init__(self, debug=False, minYear=1, maxYear=9999):
@@ -126,45 +128,60 @@ class spotifyData:
         self.multirenameDB = multirenameDB
         
 
-    def findFiles(self):
+    def findFiles(self, abbr=None):
         savedir = join(self.basedir, "data", "spotify", "categories")
         print(savedir)
         if not isDir(savedir):
             raise ValueError("Could not find directory: {0}".format(savedir))
-        self.files   = findExt(savedir, ext='.csv')
+        if abbr is not None:
+            self.files   = findPatternExt(savedir, pattern="-{0}-".format(abbr), ext='.p')
+        else:
+            self.files   = findExt(savedir, ext='.p')
         print("Found {0} files.".format(len(self.files)))
         
     
     def parse(self):
-        self.findFiles()
+        for abbr in self.sc.countries.keys():
+            print("==> {0}".format(abbr))
+            self.findFiles(abbr)
+            data = {}
 
-        data = {}
-        for ifile in self.files:
-            bsdata = read_csv(ifile, skiprows=1)
-            
-            category  = "-".join(getBaseFilename(ifile).split("-")[:3])
-            date      = getBaseFilename(ifile).split("--")[1:][0]
-            
-            chartData = {}
-            for irow,row in bsdata.iterrows():
-                artist = row["Artist"]
-                song   = row["Track Name"]
-                rank   = row["Position"]
-                url    = row["URL"]
-                
-                chartName = "Top200"
-                if chartData.get(chartName) is None:
-                    chartData[chartName] = []
-                chartData[chartName].append({"Artist": artist, "Song": song, "URL": url, "Rank": rank})
+            for i,ifile in enumerate(self.files):
+                #if i % 100 == 0:
+                #    print("Processesing {0}/{1}".format(i,len(self.files)))
+                bsdataH = getHTML(ifile)
+                if bsdataH.find("div", {"class": "chart-error"}) is not None:
+                    continue
+                try:
+                    bsdata = read_csv(StringIO(bsdataH.find("p").text), skiprows=1)
+                except:
+                    continue
+                #bsdata = read_csv(ifile, skiprows=1)
 
-            if data.get(category) is None:
-                data[category] = {}
-            for chartName,chartInfo in chartData.items():
-                if data[category].get(chartName) is None:
-                    data[category][chartName] = {}
-                data[category][chartName][date] = chartInfo
-            
-        self.chartData = data
+                category  = "-".join(getBaseFilename(ifile).split("-")[:3])
+                date      = getBaseFilename(ifile).split("--")[1:][0]
+
+                chartData = {}
+                for irow,row in bsdata.iterrows():
+                    artist = row["Artist"]
+                    song   = row["Track Name"]
+                    rank   = row["Position"]
+                    url    = row["URL"]
+
+                    chartName = "Top200"
+                    if chartData.get(chartName) is None:
+                        chartData[chartName] = []
+                    chartData[chartName].append({"Artist": artist, "Song": song, "URL": url, "Rank": rank})
+
+                if data.get(category) is None:
+                    data[category] = {}
+                for chartName,chartInfo in chartData.items():
+                    if data[category].get(chartName) is None:
+                        data[category][chartName] = {}
+                    data[category][chartName][date] = chartInfo
+
+            self.saveChartData(category, data[category])
+            #self.chartData = data
         
         
         
@@ -173,13 +190,12 @@ class spotifyData:
         
         
         
-    def saveChartData(self):
-        for category,categoryData in self.chartData.items():
-            savedir = join(self.basedir, "data", "spotify", "results")
-            if not isDir(savedir):
-                raise ValueError("Could not find directory: {0}".format(savedir))
-            saveName = setFile(savedir, "{0}.p".format(category))
-            saveFile(idata=categoryData, ifile=saveName, debug=True)
+    def saveChartData(self, category, categoryData):
+        savedir = join(self.basedir, "data", "spotify", "results")
+        if not isDir(savedir):
+            raise ValueError("Could not find directory: {0}".format(savedir))
+        saveName = setFile(savedir, "{0}.p".format(category))
+        saveFile(idata=categoryData, ifile=saveName, debug=True)
                 
         
     def getSummaryFiles(self):
