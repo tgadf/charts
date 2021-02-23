@@ -33,6 +33,48 @@ class musicVFData:
             
         self.minYear   = minYear
         self.maxYear   = maxYear
+        
+
+        self.removes="""[country singer]
+        [singer]
+        [saxophonist]
+        [dance group]
+        [electronic music trio]
+        [German singer]
+        [Canadian singer]
+        [German dance group]
+        [British pop duo]
+        [country supergroup]
+        [English rock supergroup]
+        [American country supergroup]
+        [British rock band]
+        [English band]
+        [US band]
+        [metal band]
+        [drum and bass band]
+        [house music act]
+        [US soul band]
+        [British singer]
+        [British dance music act]
+        [Harlem vocal group]
+        [American saxophonist]
+        [electronic music group]
+        [funk band]
+        [American doo-wop group]
+        [dance music act]
+        [electronic music duo]
+        [American singer]
+        [North Carolina band]
+        [french electronic music band]
+        [Detroit rock and roll band]
+        [house project]
+        [German band]
+        [disco band]
+        [Italian dance act]
+        [soul duo]
+        [vocal group]
+        [US singer]
+        [dance music band]""".split("\n")        
     
     def setChartUsage(self, name=None, rank=None):
         if rank is not None:
@@ -83,6 +125,10 @@ class musicVFData:
         
 
     def renameArtist(self, artistName):
+        for rm in self.removes:
+            if rm in artistName:
+                artistName = artistName.replace(rm, "").strip()
+        
         ## Test for rename
         renamedArtistName = artistName
         if self.dbRenames is not None:
@@ -359,6 +405,7 @@ class musicVFData:
                         artistURL  = artistData["URL"]
                         if artistName is None:
                             continue
+                        artistName = self.renameArtist(artistName)
                             
                         if self.fullChartData.get(artistName) is None:
                             self.fullChartData[artistName] = {"Songs": {}, "Albums": {}}
@@ -386,6 +433,7 @@ class musicVFData:
                         artistURL  = artistData["URL"]
                         if artistName is None:
                             continue
+                        artistName = self.renameArtist(artistName)
                             
                         if self.fullChartData.get(artistName) is None:
                             self.fullChartData[artistName] = {"Songs": {}, "Albums": {}}
