@@ -4,7 +4,15 @@ from billboardData import billboardData
 from billboardYE import billboardYE
 from top40Data import top40Data
 from spotifyData import spotifyData
+from spotifyViral import spotifyViralData
 from musicVFData import musicVFData
+from Africa import africaData
+from eastAsia import eastAsiaData
+from russia import russiaData
+from latinAmerica import latinAmericaData
+from rateYourMusic import rateYourMusicData
+from uDiscoveryMusic import uDiscoverMusicData
+
 from multiArtist import multiartist
 
 class chartArtistAlbumData:    
@@ -12,7 +20,9 @@ class chartArtistAlbumData:
         self.chartType = chartType
         print("chartArtistAlbumData({0})".format(chartType))
         self.dclass = {"Billboard": billboardData(), "BillboardYE": billboardYE(), "Top40": top40Data(),
-                       "Spotify": spotifyData(), "MusicVF": musicVFData()}
+                       "Spotify": spotifyData(), "MusicVF": musicVFData(), "Africa": africaData(),
+                       "EastAsia": eastAsiaData(), "LatinAmerica": latinAmericaData(), "Russia": russiaData(),
+                       "RYM": rateYourMusicData(), "SpotifyViral": spotifyViralData()}
         if self.chartType not in self.dclass.keys():
             raise ValueError("ChartType {0} is not allowed".format(self.chartType))
             

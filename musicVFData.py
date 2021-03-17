@@ -427,7 +427,7 @@ class musicVFData:
                     for songData in yearData:
                         artistData = songData["Artist"]
                         titleData  = songData["Title"]
-                        albumData  = songData["Artist"]
+                        albumData  = songData["Album"]
                         
                         artistName = artistData["Name"]
                         artistURL  = artistData["URL"]
@@ -445,6 +445,7 @@ class musicVFData:
                         albumURL  = albumData["URL"]
                         
                         for key,name in {"Song": titleName, "Albums": albumName}.items():
+                            #print(artistName,'\t',titleName,'\t',albumName,'\t',name)
                             if name is not None:
                                 if self.fullChartData[artistName].get(key) is None:
                                     self.fullChartData[artistName][key] = {}

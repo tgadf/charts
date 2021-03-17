@@ -39,6 +39,15 @@ def getIterItems():
     return iterItems
 
 
+def getLooseThresholds(numArtists=50, artistCutoff=0.75, albumCutoff=0.75):
+    if albumCutoff is not None:
+        return {'numArtistName': numArtists, 'artistNameCutoff': artistCutoff, 
+                'artistAlbumCutoff': albumCutoff, 'numArtistAlbums': 1, 'score': albumCutoff}
+    else:
+        return {'numArtistName': numArtists, 'artistNameCutoff': artistCutoff, 
+                'artistAlbumCutoff': None, 'numArtistAlbums': None, 'score': None}
+
+    
 def getThresholdsWithoutAlbums(cutoff=0.9):
     return {'numArtistName': 5, 'artistNameCutoff': cutoff, 'artistAlbumCutoff': None, 'numArtistAlbums': None, 'score': None}
     
