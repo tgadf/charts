@@ -465,6 +465,7 @@ class rateYourMusicData:
         ranks["Mixes"]    = {"Best": [], "Worst": []}
         ranks["Titles"]   = []
         ranks["Artists"]  = []
+        ranks["Script"]   = []
         ranks["Other"]    = []
         for ifile in sorted(files):
             print("        self.c_{0: <75} = ['{1}']".format(ifile, ifile))
@@ -500,6 +501,8 @@ class rateYourMusicData:
                     ranks["Releases"]["Best"].append(ifile)
                 elif "Bottom" in ifile:
                     ranks["Releases"]["Worst"].append(ifile)
+                elif "Artists_Releases_" in ifile and "script" in ifile:
+                    ranks["Script"].append(ifile)
                 else:
                     ranks["Other"].append(ifile)
             elif "_Mixes_" in ifile:
@@ -512,9 +515,15 @@ class rateYourMusicData:
             elif "Album" in ifile or "Song" in ifile:
                 ranks["Titles"].append(ifile)
             elif "Artist" in ifile:
-                ranks["Artists"].append(ifile)
+                if "Artists_with_" in ifile and "script" in ifile:
+                    ranks["Script"].append(ifile)
+                else:
+                    ranks["Artists"].append(ifile)
             else:
-                ranks["Other"].append(ifile)
+                if "Artists_Releases_" in ifile and "script" in ifile:
+                    ranks["Script"].append(ifile)
+                else:
+                    ranks["Other"].append(ifile)
                      
         print("\n")        
         print("        self.chartNames = self.__dict__.keys()")
@@ -639,6 +648,15 @@ class rateYourMusicData:
             start  = ir*modVal
             end    = (ir+1)*modVal
             charts = ranks["Artists"][start:end]
+            print("        self.chartRanks[{0}] = {1}".format(rank, ['c_{0}'.format(x) for x in charts]))
+            rank += 1
+            
+        modVal=2
+        print("        ######### Script #########")
+        for ir in range(int(ceil(len(ranks["Script"])/modVal))):
+            start  = ir*modVal
+            end    = (ir+1)*modVal
+            charts = ranks["Script"][start:end]
             print("        self.chartRanks[{0}] = {1}".format(rank, ['c_{0}'.format(x) for x in charts]))
             rank += 1
             
