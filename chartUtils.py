@@ -34,8 +34,8 @@ def getIterItems():
     iterItems.update({10: {"Max": 20, "Vals": 200}})
     iterItems.update({5: {"Max": 10, "Vals": 250}})
     iterItems.update({3: {"Max": 5, "Vals": 500}})
-    iterItems.update({2: {"Max": 3, "Vals": 500}})
-    iterItems.update({1: {"Max": 2, "Vals": 500}})
+    iterItems.update({2: {"Max": 3, "Vals": 750}})
+    iterItems.update({1: {"Max": 2, "Vals": 1000}})
     return iterItems
 
 

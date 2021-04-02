@@ -1,5 +1,7 @@
 from ioUtils import getFile
 from masterArtistNameDB import masterArtistNameDB
+from masterArtistNameCorrection import masterArtistNameCorrection
+
 from billboardData import billboardData
 from billboardYE import billboardYE
 from top40Data import top40Data
@@ -11,6 +13,8 @@ from eastAsia import eastAsiaData
 from russia import russiaData
 from latinAmerica import latinAmericaData
 from rateYourMusic import rateYourMusicData
+from rateYourMusicList import rateYourMusicListData
+from rateYourMusicSong import rateYourMusicSongData
 from uDiscoveryMusic import uDiscoverMusicData
 
 from multiArtist import multiartist
@@ -22,7 +26,8 @@ class chartArtistAlbumData:
         self.dclass = {"Billboard": billboardData(), "BillboardYE": billboardYE(), "Top40": top40Data(),
                        "Spotify": spotifyData(), "MusicVF": musicVFData(), "Africa": africaData(),
                        "EastAsia": eastAsiaData(), "LatinAmerica": latinAmericaData(), "Russia": russiaData(),
-                       "RYM": rateYourMusicData(), "SpotifyViral": spotifyViralData()}
+                       "RYMAlbum": rateYourMusicData(), "RYMSong": rateYourMusicSongData(), "RYMList": rateYourMusicListData(), 
+                       "SpotifyViral": spotifyViralData()}
         if self.chartType not in self.dclass.keys():
             raise ValueError("ChartType {0} is not allowed".format(self.chartType))
             
@@ -33,7 +38,8 @@ class chartArtistAlbumData:
         self.mularts.setKnownMultiDelimArtists(multinames)
         print("  Assigning {0} known multi-name artists".format(len(multinames)))
             
-
+        self.manc = masterArtistNameCorrection()
+        
         self.setRenameDB("main")
         self.setMultiRenameDB("multi")
         
@@ -91,17 +97,26 @@ class chartArtistAlbumData:
     ################################################################################################    
     def setArtistAlbumData(self):
         rawArtistAlbumData    = getFile(self.dclass[self.chartType].getArtistAlbumDataFilename())
+        nCleaned      = 0
         nRenamed      = 0
         nRenamedMulti = 0
         fixedArtistAlbumData = {}
         print("There are {0} unique artists in artist albums data".format(len(rawArtistAlbumData)))
-        for artistName,artistAlbums in rawArtistAlbumData.items():
+        for iArtist, (artistName,artistAlbums) in enumerate(rawArtistAlbumData.items()):
+            
+            ## Corrections
+            tmpName = self.manc.clean(artistName)
+            if tmpName != artistName:
+                nCleaned += 1
+                print("{0: <7}| {1: <6}| {2: <50} ---> {3}".format("Corr", iArtist, artistName, tmpName))
+                artistName = tmpName
             
             ## Test for rename
             renamedArtistName = artistName
             if self.renameDB is not None:
                 tmpName = self.renameDB.renamed(renamedArtistName)
                 if tmpName != renamedArtistName:
+                    print("{0: <7}| {1: <6}| {2: <50} ---> {3}".format("ManDB", iArtist, renamedArtistName, tmpName))
                     nRenamed += 1
                 renamedArtistName = tmpName
             
@@ -110,6 +125,7 @@ class chartArtistAlbumData:
             if self.multirenameDB is not None:
                 tmpName = self.multirenameDB.renamed(renamedArtistName)
                 if tmpName != renamedArtistName:
+                    print("{0: <7}| {1: <6}| {2: <50} ---> {3}".format("Multi", iArtist, renamedArtistName, tmpName))
                     nRenamedMulti += 1
                 renamedArtistName = tmpName
                 
@@ -117,6 +133,7 @@ class chartArtistAlbumData:
                 fixedArtistAlbumData[renamedArtistName] = []
             fixedArtistAlbumData[renamedArtistName] += artistAlbums
         print("There are {0} newly unique artists in artist albums data".format(len(fixedArtistAlbumData)))
+        print("Cleaned {0} artists".format(nCleaned))
         print("Renamed {0} artists".format(nRenamed))
         print("Renamed {0} artists (multi)".format(nRenamedMulti))
         self.artistAlbumData = fixedArtistAlbumData

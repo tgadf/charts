@@ -10,21 +10,21 @@ from os.path import join
 from pandas import read_csv
 from io import StringIO
 import re
-from rateYourMusicCharts import rateYourMusicCharts
+from rateYourMusicSongCharts import rateYourMusicSongCharts
 from langdetect import detect
 
 
 
 
-class rateYourMusicData:
+class rateYourMusicSongData:
     def __init__(self, debug=False, minYear=1, maxYear=9999):
         
         self.basedir  = "/Volumes/Piggy/Charts/"
-        self.basename  = "RateYourMusic"
+        self.basename  = "RateYourMusicSong"
         #self.baseDir  = "/Volumes/Piggy/Charts/{0}".format(self.
         self.files     = {}
         self.chartData = None
-        self.sc        = rateYourMusicCharts()
+        self.sc        = rateYourMusicSongCharts()
 
                 
         self.charts = []
@@ -134,7 +134,7 @@ class rateYourMusicData:
         
 
     def findFiles(self, pattern=None):
-        savedir = join(self.basedir, "data", "rymcharts", "categories")
+        savedir = join(self.basedir, "data", "rymsongs", "categories")
         if not isDir(savedir):
             raise ValueError("Could not find directory: {0}".format(savedir))
         print(savedir)
@@ -435,7 +435,7 @@ class rateYourMusicData:
         return categoryName
     
     def getSaveChartFilename(self, categoryName):
-        savedir = join(self.basedir, "data", "rymcharts", "results")
+        savedir = join(self.basedir, "data", "rymsongs", "results")
         if not isDir(savedir):
             raise ValueError("Could not find directory: {0}".format(savedir))
         saveName = setFile(savedir, "{0}.p".format(self.getSaveChartName(categoryName)))
@@ -448,7 +448,7 @@ class rateYourMusicData:
                         
         
     def getSummaryFiles(self):
-        saveDir = join(self.basedir, "data", "rymcharts", "results")
+        saveDir = join(self.basedir, "data", "rymsongs", "results")
         if not isDir(saveDir):
             raise ValueError("Could not find directory: {0}".format(saveDir))
         files    = findExt(saveDir, ".p")
