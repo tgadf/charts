@@ -13,8 +13,10 @@ from eastAsia import eastAsiaData
 from russia import russiaData
 from latinAmerica import latinAmericaData
 from rateYourMusic import rateYourMusicData
-from rateYourMusicList import rateYourMusicListData
 from rateYourMusicSong import rateYourMusicSongData
+from rateYourMusicList import rateYourMusicListData
+from rateYourMusicList2 import rateYourMusicList2Data
+from rateYourMusicScript import rateYourMusicScriptData
 from uDiscoveryMusic import uDiscoverMusicData
 
 from multiArtist import multiartist
@@ -26,7 +28,11 @@ class chartArtistAlbumData:
         self.dclass = {"Billboard": billboardData(), "BillboardYE": billboardYE(), "Top40": top40Data(),
                        "Spotify": spotifyData(), "MusicVF": musicVFData(), "Africa": africaData(),
                        "EastAsia": eastAsiaData(), "LatinAmerica": latinAmericaData(), "Russia": russiaData(),
-                       "RYMAlbum": rateYourMusicData(), "RYMSong": rateYourMusicSongData(), "RYMList": rateYourMusicListData(), 
+                       "uDiscover": uDiscoverMusicData(),
+                       "RYMAlbum": rateYourMusicData(), "RYMSong": rateYourMusicSongData(), 
+                       "RYMList": rateYourMusicListData(), 
+                       "RYMList2": rateYourMusicList2Data(), 
+                       "RYMScript": rateYourMusicScriptData(), 
                        "SpotifyViral": spotifyViralData()}
         if self.chartType not in self.dclass.keys():
             raise ValueError("ChartType {0} is not allowed".format(self.chartType))
